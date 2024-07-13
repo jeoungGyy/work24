@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* ------------------------------ [ Font ] ------------------------------------------------------------------------------------------ */
+/* 한글/영어 font : Pretendard  */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local(※), url("/cm/static/font/Pretendard-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local(※), url("/cm/static/font/Pretendard-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local(※), url("/cm/static/font/Pretendard-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local(※), url("/cm/static/font/Pretendard-Regular.woff2") format("woff2");
+}/*# sourceMappingURL=font.css.map */

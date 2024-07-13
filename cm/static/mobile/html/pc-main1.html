@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- 헤더에 csrf토큰 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no, address=no, email=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        
+        <link rel="icon" href="https://m.work24.go.kr/cm/static/images/work24_logo_ico.png"><!-- favicon -->
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/css/jquery-ui.min.css">
+        
+        
+        <link rel="stylesheet" href="/cm/static/mobile/css/font.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/reset.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/layout.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/common.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_a.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_b.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_c.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_d.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_e.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_f.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_g.css">
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/css/swiper-bundle.min.css">
+		<!-- <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/main_p.css"> 기존 메인 CSS 제거 -->
+        <link rel="stylesheet" href="/cm/static/mobile/css/main_p_new.css"> <!--  및 신규 추가  -->
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/rem.css.css">
+
+
+        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/external/spin/spin.css">
+        
+        <script async="" charset="utf-8" src="https://tag.work.go.kr/static/00002/ntm.js?ver=1720828800000"></script><script async="" charset="utf-8" src="https://tag.work.go.kr/static/00002/install.js?ver=1720854000000"></script><script type="text/javascript" src="/cm/static/external/jquery/jquery-3.6.3.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jquery-ui-1.13.2/jquery-ui.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jquery-ui-1.13.2/jquery.ui.datepicker-ko.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/inputmask-5.0.8/jquery.inputmask.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jquery-validation/jquery.validate.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jquery-validation/localization/messages_ko.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jquery/jquery.form.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/blockui/jquery.blockUI_mobile.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jsrender/jsrender.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/jsrender/jsviews.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/lodash/lodash.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/lodash/lodash.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/spin/spin.js"></script><style type="text/css"></style>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/moment-2.29.4/moment.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/moment-2.29.4/locale/locales.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/templates/js/tmpl.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/file-upload/js/jquery.iframe-transport.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-process.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-validate.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-ui.js"></script>
+        
+        
+        <!-- 공통 퍼블리싱UI JS -->
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/js/ui/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/mobile/js/ui/mobile-ui-util.js"></script>
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/mobile/js/ui/mobile-ui.js"></script>
+        <!-- 공통 퍼블리싱UI JS -->
+        
+        <script type="text/javascript" src="https://m.work24.go.kr/cm/static/js/hp_common.js"></script>
+        
+        <title>고용24(시범운영)_개인</title>
+    </head>
+<body>
+    <div>
+        <header data-include="header" data-sub-btn="back" data-title="">
+			<!-- header main area -->
+			<div class="header_main_area">
+				<div class="header_title_area">
+					<a href="/cm"><h1 style="text-align:center">고용24</h1></a><!-- 23/12/04 퍼블: (시범운영) 추가 -->
+					<ul class="header_division"><!-- 활성화 할 li에 active 클래스네임 추가 -->
+						<li class="active">
+							<a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM01')">개인</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM00')">기업</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header_util_area">
+					<ul>
+						<li class="header_btn_set_mobile" style="display:none">
+							<button type="button" onclick="fn_setMobile();"><span class="blind">환경설정</span></button>
+						</li>
+						<li class="header_btn_search">
+							<button type="button" class="search_open"><span class="blind">검색창 열기</span></button>
+							<div class="search_layer" style="display: none;">
+								<strong>통합검색</strong>
+								<button type="button" class="search_close">
+									<span class="blind">검색창 닫기</span>
+								</button>
+								<div class="search_bar">
+									<input type="text" placeholder="검색어를 입력하세요" id="top-topQuery" maxlength="150" class="ui-autocomplete-input" autocomplete="off">
+									<button type="button" class="search_submit" id="top-findSearchData">
+										<span class="blind">검색</span>
+									</button>
+								</div>
+								<div class="scroll_wrap">
+									<div class="keyword_area">
+										<div class="keyword_list">
+											<ul id="top-keyword">
+											</ul>
+										</div>
+										<div class="keyword_list">
+											<strong>정책/서비스 바로가기</strong>
+											<ul id="top-policyList">
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="header_btn_all_menu">
+							<button type="button" onclick="ui.call_layer_all_menu('#layer_all_menu')"><span class="blind">전체메뉴</span></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- header banner area -->
+			<div class="header_banner"></div>
+			<!-- header sub search area -->
+			<div class="header_sub_search"></div>
+        </header>
+		
+		<!-- contents -->
+        <div class="contents main_new"> <!-- mainNew 신규매인 클래스 추가 -->
+			<!-- 검색 -->
+			<div class="search_bar">
+				<input type="text" placeholder="필요한 서비스를 검색해 보세요" id="top-topQuery" maxlength="150" class="ui-autocomplete-input" autocomplete="off">
+				<button type="button" class="search_submit" id="top-findSearchData">
+					<span class="blind">검색</span>
+				</button>
+			</div>
+			<!-- //검색 -->
+
+			<!-- 로그인 -->
+			<div>
+				<!-- 로그인 전 -->
+				<div class="main_login_notice person">
+					<p class="s1_r"><span class="em_blue">로그인</span>하시면 나만의 맞춤서비스를 만날 수 있어요.</p>
+					<button type="button" class="notice_expand ui-layer" data-my-layer="noticeLayer">
+						<span class="blind">열기</span>
+					</button>
+				</div>
+				<!-- //로그인 전 -->
+
+				<!-- 로그인 후 -->
+				<div>
+					로그인 후
+				</div>
+				<!-- //로그인 후 -->
+			</div>
+			<!-- //로그인 -->
+
+			<!-- 자주찾는 서비스 -->
+			<div class="main_swiperFreqAccMenu">
+				<div class="tit_group">
+					<h3 class="t2_sb">자주찾는 서비스<span class="f_size_default ml_xmini"></span></h3>
+				</div>
+		
+				<div class="freqAccMnu_swiper_wrap type02">
+					<div class="swiper-container freqAccMnu_swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+						<div class="swiper-wrapper" id="swiper-wrapper-a3a2793e28c100cac" aria-live="polite">
+							<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 1" style="width: 360px;">
+								<div class="famenu">
+									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000161', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', 'EBM01', 'N','');">
+										<span class="ico ico60_main_fam_persn1"></span>
+										<p><strong>수급자격 신청자
+										<br>온라인 교육</strong></p>
+									</a>
+								</div>
+								<div class="famenu">
+									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
+										<span class="ico ico60_main_fam_persn2"></span>
+										<p><strong>실업인정<br>인터넷 신청</strong></p>
+									</a>
+								</div>
+								<div class="famenu">
+									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000235', '/a/g/1100/openHPEIAG1100M01Post.do', 'EBM01', 'N','');">
+										<span class="ico ico60_main_fam_persn3"></span>
+										<p><strong>온라인 취업특강</strong>
+										   <br>1차 실업인정 교육</p>
+									</a>
+								</div>
+								<div class="famenu">
+									<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000000018', '/a/b/2100/resumeMngMainPost.do', 'EBM01', 'N','');">
+										<span class="ico ico60_main_fam_persn4"></span>
+										<p><strong>구직신청</strong></p>
+									</a>
+								</div>
+								<div class="famenu">
+									<a href="#none" onclick="fn_goPageUrl('/ua', 'EBG120000000003', '/t/b/1100/selectEmpmActFlflMngn.do', 'EBM01', 'N','');">
+										<span class="ico ico60_main_fam_persn5"></span>
+										<p><strong>국민취업<br>구직촉진수당 신청</strong></p>
+									</a>
+								</div>
+								<div class="famenu">
+									<a href="#none">
+										<span class="ico ico60_main_fam_persn6" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', 'EBM01', 'N','');"></span>
+										<p><strong>국민내일배움카드<br>발급신청</strong></p>
+									</a>
+								</div>
+							</div>
+						</div>
+					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+				</div>
+			</div>
+			<!-- //자주찾는 서비스 -->
+
+			<!-- 지원 제도 -->
+			<!-- //지원 제도 -->
+
+			<!-- 채용정보 -->
+			<!-- //채용정보 -->
+
+			<!-- 고용24 이용가이드 -->
+			<!-- //고용24 이용가이드 -->
+
+			<!-- 고용24 소식 -->
+			<!-- //고용24 소식 -->
+		</div>
+		<!-- // contents -->
+	</div>
+
+
+
+
+
+	<footer data-include="footer" class="is_bottom">
+		<!-- quick menu -->
+		<div class="quick_links">
+			<button type="button">관련 사이트 바로가기</button>
+		</div>
+		<!-- footer menu -->
+		<ul class="footer_menu">
+			<!-- <li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0110/retrieveSiteItcnPost.do')">서비스소개</a></li> -->
+			<li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveUtzeStptPost.do')">이용약관</a></li>
+			<li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/selectBbttListPost.do')"><strong class="em_blue">개인정보처리방침</strong></a></li>
+			<li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveEmailAdrPrssPlcyPost.do')">이메일무단수집거부</a></li>
+			<!-- <li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveWbpgAcesPolyPost.do')">웹접근성정책</a></li> -->
+			<li><a onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveCpyrPolyPost.do')">저작권보호정책</a></li>
+			<li><a onclick="fn_goPageUrl('/cm', 'X', '/e/a/0110/selectOpenApiIntroPost.do')">오픈API 서비스</a></li>
+			<li><a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000001790', '/s/a/1100/loginForm.do');">화상상담 관리자</a></li>
+			<!-- 		<li><a href="javascript:void(0)" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0150/retrieveStmpPost.do')">사이트맵</a></li> -->
+		</ul>
+		<!-- footer address -->
+		<div class="footer_address">
+			<h1>고용24</h1>
+			<div class="address">
+				<p>고용24는 <strong>통신판매중개자</strong>이며, 통신판매의 당사자가 아닙니다.<br>
+					상품(훈련), 상품(훈련)정보, 거래에 관한 <strong>의무와 책임</strong>은 <strong>판매자(훈련기관)</strong>에게 있습니다.</p>
+				<p>27740 충청북도 음성군 맹동면 태정로 6 한국고용정보원</p>
+				<p>홈페이지 전산문의 : <a href="tel:1577-7114" title="tel:1577-7114 전화걸기">1577-7114</a>(유료, 한국고용정보원 고객상담센터 평일 09:00~18:00)</p>
+				<p>고용·노동 분야 제도 문의: 국번없이 <a href="tel:1350" title="1350으로 전화걸기">1350</a>(유료, 고용노동부 고객상담센터 평일 09:00~18:00)</p>
+				<p>Copyright © 2023 고용노동부 한국고용정보원</p>
+				<p>All rights reserved.</p>
+			</div>
+		</div>
+
+		<!-- bottom layer -->
+		<div class="bottom_layer footer_quick">
+			<ul class="footer_quick_menu">
+				<div class="footer_info_list">
+					<span class="tit bold">패밀리사이트</span>
+					<ul class="list">
+						<li class="item"><a href="https://www.work.go.kr" target="_blank">워크넷</a></li>
+						<li class="item"><a href="https://www.hrd.go.kr" target="_blank">직업훈련포털</a></li>
+						<li class="item"><a href="https://www.eps.go.kr" target="_blank">외국인고용</a></li>
+						<li class="item"><a href="https://www.kua.go.kr" target="_blank">국민취업지원제도</a></li>
+						<li class="item"><a href="https://eis.work.go.kr" target="_blank">고용행정통계</a></li>
+						<li class="item"><a href="https://www.workplus.go.kr" target="_blank">고용복지센터</a></li>
+						<li class="item"><a href="https://www.worktogether.or.kr" target="_blank">장애인고용포털</a></li>
+						<li class="item"><a href="https://www.work.go.kr/cyberedu/main.do" target="_blank">사이버진로교육센터</a></li>
+						<li class="item"><a href="https://saeil.mogef.go.kr/hom/HOM_Main.do" target="_blank">여성새로일하기센터</a></li>
+						<li class="item"><a href="https://www.gasarang.go.kr/hpgsMain.do" target="_blank">가사랑</a></li>
+					</ul>
+				</div>
+
+				<div class="footer_info_list">
+					<span class="tit bold">유관기관</span>
+					<ul class="list">
+						<li class="item"><a href="https://www.4insure.or.kr/ins4/ptl/Main.do" target="_blank">4대사회보험정보연계센터</a></li>
+						<li class="item"><a href="https://www.comwel.or.kr" target="_blank">근로복지공단</a></li>
+						<li class="item"><a href="https://www.hrdkorea.or.kr" target="_blank">한국산업인력공단</a></li>
+						<li class="item"><a href="https://ncs.go.kr" target="_blank">직무능력표준</a></li>
+						<li class="item"><a href="https://c.q-net.or.kr" target="_blank">CQ넷</a></li>
+						<li class="item"><a href="https://www.koreatech.ac.kr" target="_blank">한국기술교육대학교</a></li>
+						<li class="item"><a href="https://www.kopo.ac.kr" target="_blank">한국폴리텍대학</a></li>
+						<li class="item"><a href="https://www.hikorea.go.kr" target="_blank">하이코리아</a></li>
+						<li class="item"><a href="https://eps.hrdkorea.or.kr/h2/main/main.do" target="_blank">외국국적동포(H-2)취업교육홈페이지</a></li>
+						<li class="item"><a href="http://www.hugkorea.or.kr" target="_blank">외국인력상담센터</a></li>
+						<li class="item"><a href="https://www.kosha.or.kr" target="_blank">안전보건공단</a></li>
+					</ul>
+				</div>
+			</ul>
+			<button type="button" class="layer_close">
+				<span class="blind">레이어 닫기</span>
+			</button>
+		</div>
+		<div id="spin"></div>
+		<!-- main layer popup -->
+		<!-- //main layer popup -->
+	</footer>
+    </div>
+    <div class="bottom_bar person" data-include="bottombar" data-bar-type="person" data-active-menu="1">
+        <ul>
+            <li class="active">
+                <a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001645', '/c/f/1100/selecPolicyListPost.do', 'EBM02', 'N', '')" class="bottom_bar_job_center">
+                    <i></i>
+                    <span>정책/제도</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="javascript:$('.search_open').click(); return false;" class="bottom_bar_btn_search">
+                    <i></i>
+                    <span>통합검색</span>
+                </a>
+            </li>
+             <li>
+                <a href="/cm" class="bottom_bar_home">
+                    <i></i>
+                    <span>홈</span>
+                </a>
+            </li>
+			<li>
+				<a href="javascript:void(0);" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p01';" class="bottom_bar_chatbot">
+					<i></i>
+					<span>이용안내</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do')" class="bottom_bar_customer_center">
+					<i></i>
+					<span>로그인</span>
+				</a>
+			</li>
+        </ul>
+    </div>
+</body>
+</html>
