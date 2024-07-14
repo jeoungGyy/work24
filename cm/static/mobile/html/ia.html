@@ -2,15 +2,14 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<title>Work24 메인 수정</title>
-	<script src="../include/head.js"></script> <!-- include: 공통 헤드 -->
 	<style>
-		:root { font-size: 11px;}
-		body { padding: 1rem;}
+		body { padding: 10px;}
 		.ia_flex { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;}
-		.ia_h1 { font-size: 34px; font-weight: 700;}
+		.ia_h1 { font-size: 24px; font-weight: 700;}
 		.ia_line { border-top: 1px double #000;}
-		.ia_style { font-size: 1.4rem;}
+		.ia_style { font-size: 14px;}
 		.ia_style:hover { text-decoration: underline;}
 
 		table { border: 2px solid #000;}
@@ -18,7 +17,7 @@
 		table thead tr th[rowspan],
 		table thead tr:last-child th { border-bottom: 1px solid #000;}
 		table th,
-		table td { padding: 20px; font-size: 28px; text-align: center; border: 1px solid #ddd;}
+		table td { padding: 20px; font-size: 16px; text-align: center; border: 1px solid #ddd;}
 		table td a { display: block; color: #999;}
 		table td a.active { font-weight: 700; color: #000 !important;}
 		table td.tac { color: #999; text-align: center;}
@@ -33,15 +32,15 @@
 
 <body>
 <div id="root">
-	<div class="container" style="padding-top: 2rem;">
+	<div class="container" style="padding-top: 20px;">
 		<div class="ia_flex">
 			<div class="ia_h1">Work24 메인 수정 화면목록</div>
 		</div>
 		
-		<div class="menutarget">
-			<table>
+		<div class="menutarget" style="margin-top: 15px;">
+			<table style="width: 100%;">
 				<colgroup>
-					<col style="width: 200px;" />
+					<col style="width: 100px;" />
 					<col />
 				</colgroup>
 				<thead>
@@ -52,20 +51,12 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>PGM01</td>
-						<td><a href="pc-main1.html" class="active">PC-main-개인</a></td>
+						<td>모바일 개인</td>
+						<td><a href="mo-main-person.html" class="active" target="_blank">mo-main-person</a></td>
 					</tr>
 					<tr>
-						<td>PGM02</td>
-						<td><a href="pc-main1.html" class="active">PC-main-기업</a></td>
-					</tr>
-					<tr>
-						<td>PGM01</td>
-						<td><a href="mo-main1.html" class="active">MO-main-개인</a></td>
-					</tr>
-					<tr>
-						<td>PGM02</td>
-						<td><a href="mo-main1.html" class="active">MO-main-기업</a></td>
+						<td>모바일 기업</td>
+						<td><a href="mo-main-coporation.html" class="active" target="_blank">mo-main-coporation</a></td>
 					</tr>
 				</tbody>
 			</table>
