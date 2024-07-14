@@ -88,6 +88,7 @@ header .header_main_area .header_title_area {
   justify-content: center;
   align-items: center;
 }
+header .header_main_area .header_title_area a img { vertical-align: top;}
 
 header .header_main_area .header_title_area .header_division {
   display: flex;
@@ -254,7 +255,7 @@ header .header_main_area .header_util_area > ul > li.header_btn_all_menu { displ
 header .header_main_area .header_util_area > ul > li.header_btn_all_menu > button {
   width: 24px;
   height: 32px;
-  background: url(/cm/static/mobile/images/main_new/ico24_category_mo.svg);
+  background: url(../images/main_new/ico24_category_mo.svg);
   background-size: contain;
 }
 header .header_main_area .header_util_area > ul > li.header_btn_set_mobile > button {
@@ -375,7 +376,7 @@ footer .quick_links button::after {
   width: 1.5rem;
   height: 1.5rem;
   content: "";
-  background: url(/cm/static/mobile/images/main_new/ico24_plus.svg) no-repeat;
+  background: url(../images/main_new/ico24_plus.svg) no-repeat;
   background-size: contain;
   position: absolute;
   top: 0.875rem;
@@ -436,7 +437,7 @@ footer .footer_address .address p a {
 footer .footer_address .guide { display: flex; align-items: center;}
 footer .footer_address .guide a { display: flex; align-items: center; width: 50%;}
 footer .footer_address .guide a span { font-size: 14px; font-weight: 600; color: #111;}
-footer .footer_address .guide a .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(/cm/static/mobile/images/main_new/ico16_arrow_right.svg) no-repeat;}
+footer .footer_address .guide a .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 footer .footer_address .sns { display: flex; align-items: center; margin-top: 24px;}
 footer .footer_address .sns a { display: block; margin-right: 8px;}
 footer .footer_address .logos {
