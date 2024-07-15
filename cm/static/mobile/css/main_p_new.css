@@ -34,16 +34,16 @@
 /* 개인 */
 .main_new .search_bar { position: relative; height: 48px; border: 3px solid transparent;  border-radius: 20px;  border-image-slice: 1; background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #5ECB69 0%, #7E9BFF 100%); background-origin: border-box; background-clip: content-box, border-box; border-radius: 24px;}
 .main_new .search_bar input { display: block; width: 100%; height: 100%; padding: 0 44px 0 20px; color: #555; border: transparent; background-color: transparent;}
-.main_new .search_bar .search_submit { display: block; position: absolute; right: 20px; top: 10px; width: 1.5rem; height: 1.5rem; background: url(../images/main_new/ico_search.svg) no-repeat center; background-size: 1.1875rem;}
+.main_new .search_bar .search_submit { display: block; position: absolute; right: 20px; top: 8px; width: 1.5rem; height: 1.5rem; background: url(../images/main_new/ico_search.svg) no-repeat center; background-size: 1.1875rem;}
 
 .main_new .main_login { margin-top: 24px; border: 1px solid #62D491; border-radius: 8px;}
 .main_new .main_login .main_login_notice { padding: 24px 16px; text-align: center;}
 .main_new .main_login .main_login_notice .s1_r { font-size: 18px; font-weight: 600;}
-.main_new .main_login .main_login_notice .s1_r .em_blue { color: #117935;}
+.main_new .main_login .main_login_notice .s1_r .em_blue { font-weight: 600; color: #117935;}
 .main_new .main_login .main_login_notice .notice_expand { display: flex; justify-content: center; align-items: center; width: 100%; height: 40px; margin-top: 24px; background-color: #62D491; border-radius: 20px;}
 .main_new .main_login .main_login_notice .notice_expand span { font-weight: 600; color: #111;}
 .main_new .main_login_after { padding: 24px 16px;}
-.main_new .main_login_after .mla_list { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px 12px; margin-top: 24px;}
+.main_new .main_login_after .mla_list { display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 24px 12px; margin-top: 24px;}
 .main_new .main_login_after .mla_list li { width: calc(100% / 3 - 24px); text-align: center;}
 .main_new .main_login_after .mla_list li .round { display: flex; justify-content: center; align-items: center; position: relative; width: 48px; height: 48px; margin: 0 auto; background-color: #F5F5F5; border-radius: 50%;}
 .main_new .main_login_after .mla_list li .round .icon { display: block; width: 24px; height: 24px; position: relative;}
@@ -82,7 +82,8 @@
 
 .main_new .main_employment_information { position: relative; margin: 0 -20px; padding: 40px 20px 87px; background-color: #F8F8F8;}
 .main_new .main_employment_information .mei_text { margin-top: 8px;}
-.main_new .main_employment_information .mei_text .link_txt { color: #117935;}
+.main_new .main_employment_information .mei_text .link_txt { font-weight: 600; color: #117935;}
+.main_new .main_employment_information .mei_text .link_txt.noUnderline { text-decoration: none;}
 .main_new .main_employment_information .employment_swiper_wrap { position: relative; margin-top: 24px; padding: 0 12px;}
 .main_new .main_employment_information .swiper-slide { width: 100%; padding: 20px 16px 0; background-color: #fff; border-radius: 8px; box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, .08);}
 .main_new .main_employment_information .cl_body { margin-top: 4px;}
@@ -90,10 +91,10 @@
 .main_new .main_employment_information .cl_logo img { max-width: 100%; height: auto;}
 .main_new .main_employment_information .cl_tag { display: inline-flex; justify-content: center; align-items: center; height: 30px; padding: 0 8px; font-size: 14px; color: #fff; border-radius: 4px;}
 .main_new .main_employment_information .cl_tag--blue { background-color: #19B3BD;}
-.main_new .main_employment_information .cl_tit { margin-top: 8px; font-size: 18px; font-weight: 600; color: #111;}
+.main_new .main_employment_information .cl_tit { margin-top: 8px; font-size: 18px; font-weight: 600; color: #111; line-height: 28px;}
 .main_new .main_employment_information .cl_sub { margin-top: 8px;}
 .main_new .main_employment_information .cl_style { margin-top: 16px;}
-.main_new .main_employment_information .cl_style li { position: relative; padding-left: 16px; color: #555;}
+.main_new .main_employment_information .cl_style li { position: relative; padding-left: 16px; color: #555; line-height: 24px;}
 .main_new .main_employment_information .cl_style li::after { content: ''; display: block; position: absolute; left: 4px; top: 7px; width: 4px; height: 4px; background-color: #555; border-radius: 50%;}
 .main_new .main_employment_information .cl_style li ~ li { margin-top: 4px;}
 .main_new .main_employment_information .cl_bottom { display: flex; justify-content: center; align-items: center; height: 56px; margin: 24px -16px 0; border-top: 1px solid #ddd;}
@@ -122,6 +123,7 @@
 .main_new .main_employment .salary .btn_more .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 
 .main_new .main_information { position: relative; margin: 0 -20px; padding: 40px 20px 84px; background-color: #F8F8F8;}
+.main_new .main_information .link_txt { font-weight: 600; color: #117935; text-decoration: none;}
 .main_new .main_information .swiper-slide { width: 100%;}
 .main_new .main_information >a { display: block;}
 .main_new .main_information a .tit { margin-top: 20px; font-size: 20px; color: #111; line-height: 30px;}
@@ -164,7 +166,7 @@
 .main_new .main_beginner_wrap .list li .list_body span { display: block; font-size: 18px; font-weight: 600; color: #111;}
 .main_new .main_beginner_wrap .list li .list_text { margin-top: 8px; color: #555;}
 
-.main_new .main_work24_news { padding-top: 40px;}
+.main_new .main_work24_news { position: relative; padding-top: 40px;}
 .main_new .main_work24_news .work24_news_article { margin-top: 24px;}
 .main_new .main_work24_news .list { border: 1px solid #eee; border-radius: 8px;}
 .main_new .main_work24_news .list li a { display: block; padding: 20px 16px;}
@@ -181,6 +183,7 @@
 
 /* 기업 */
 .main_new.coporation .main_login { border-color: #4D65E1;}
+.main_new.coporation .main_login .main_login_notice .s1_r .em_blue { color: #4D65E1;}
 .main_new.coporation .main_login .main_login_notice .notice_expand { background-color: #4D65E1;}
 .main_new.coporation .main_login .main_login_notice .notice_expand span { color: #fff;}
 .main_new.coporation .main_login_after .mla_list li .round .num { color: #fff; background-color: #4D65E1;}
@@ -194,6 +197,7 @@
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn6 { background: url(../images/main_new/ico60_main_fam_coporation6.svg) no-repeat;}
 
 .main_new.coporation .main_talent { position: relative; margin: 0 -20px; padding: 40px 20px 80px; background-color: #F8F8F8;}
+.main_new.coporation .main_talent .link_txt { font-weight: 600;}
 .main_new.coporation .main_talent .bgico4 { display: block; position: absolute; right: 0; top: 92px; width: 92px; height: 153px; background: url(../images/main_new/ico_bgico4.svg) no-repeat;}
 .main_new.coporation .main_talent .bgico5 { display: block; position: absolute; left: 0; bottom: 0; width: 137px; height: 160px; background: url(../images/main_new/ico_bgico5.svg) no-repeat;}
 .main_new.coporation .main_talent .bgico6 { display: block; position: absolute; left: 0; top: 340px; width: 51px; height: 48px; background: url(../images/main_new/ico_bgico6.svg) no-repeat;}
