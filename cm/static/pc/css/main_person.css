@@ -340,6 +340,7 @@
 #container .main_section_wrap .recomm_tab .tablist li .count { color: #117935;}
 #container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] .count { color: #111;}
 #container .information_group { background-color: #F5F5F5;}
+#container .main_informationMenu { position: relative; z-index: 2;}
 #container .main_recruitment .before { position: relative;}
 #container .main_recruitment .after { position: relative;}
 #container .main_recruitment .after .flex { display: flex; justify-content: space-between; align-items: center;}
@@ -361,7 +362,12 @@
 #container .main_recruitment .company_list .info.calendar span { display: block; padding-left: 32px; color: #111; background: url(https://www.work24.go.kr/cm/static/images/ico24_calendar.svg) no-repeat left 16px;}
 #container .main_support { padding: 80px 0;}
 #container .main_recruitment { padding: 80px 0 146px;}
+#container .main_recruitment .bgico2 { position: absolute; right: -114px; top: 20px; width: 247px; height: 276px; background: url(../images/bgico2.png) no-repeat;}
+#container .main_recruitment .bgico3 { position: absolute; left: -140px; bottom: -144px; width: 387px; height: 243px; background: url(../images/bgico3.png) no-repeat;}
+#container .main_recruitment .bgico4 { position: absolute; left: -200px; bottom: -49px; width: 226px; height: 92px; background: url(../images/bgico4.png) no-repeat;}
 #container .main_favorite { margin-top: 50px; padding: 40px 0; background-color: #F5F5F5;}
+#container .main_favorite .bgico1 { position: absolute; right: -162px; bottom: -40px; width: 156px; height: 87px; background: url(../images/bgico1.png) no-repeat;}
+#container .main_recruit_information_person { overflow: initial;}
 #container .main_bann { padding: 80px 64px;}
 #container .main_swiperFreqAccMenu_control { width: 176px !important; margin-top: 8px;}
 #container .main_swiperFreqAccMenu_control h1 { margin: 0; font-size: 32px; line-height: 42px;}
@@ -371,7 +377,7 @@
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .famenu ~ .famenu { margin-left: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a { display: block; text-align: center;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a .round { display: inline-flex; justify-content: center; align-items: center; width: 80px; height: 80px; margin: 0; background-color: #fff; border-radius: 50%; transition: background-color ease-out .2s;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #62D491;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico { display: block; width: 48px; height: 48px; margin: 0;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico48_main_fam_persn1.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico48_main_fam_persn2.png) no-repeat;}
@@ -492,6 +498,7 @@
 #container .training { padding: 80px 0;}
 #container .training .flex { display: flex; justify-content: space-between; align-items: center;}
 #container .training .jobs_list_wrap { margin-top: 24px;}
+#container .training .main_jobs_recomm .jobs_list { border: 3px solid #fff; box-shadow: 2px 2px 16px rgba(0,0,0,.04);}
 #container .training .main_jobs_recomm .jobs_list .list dd .mark_info { margin-top: 0;}
 #container .training .main_jobs_recomm .jobs_list .list dd .desc { font-size: 18px; text-align: left;}
 #container .training .main_jobs_recomm .jobs_list .list dd .reg { font-size: 16px; text-align: left;}
@@ -499,11 +506,12 @@
 #container .training .main_jobs_recomm .jobs_list dd li .obj_value { flex: 1;}
 #container .training .main_jobs_recomm .jobs_list .expense_info .detail_view { display: flex; align-items: center;}
 #container .training .main_jobs_recomm .jobs_list .expense_info .detail_view .text { font-weight: 600; color: #111;}
+#container .training .main_jobs_recomm .jobs_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px rgba(0,0,0,.08);}
 #container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container .training .mfs_more { top: 125px;}
 #container .training .jobs_list_wrap { overflow: hidden;}
 #container .work24_news_article .news_item { transition: border ease-out .2s;}
-#container .work24_news_article .news_item:hover { border: 3px solid #62D491;}
+#container .work24_news_article .news_item:hover { border: 3px solid #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container 
 #container 
 #container 
