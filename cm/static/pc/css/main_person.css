@@ -314,7 +314,7 @@
 #container .login_guide .ico.ico02 { background: url(https://www.work24.go.kr/cm/static/images/ico24_login_guide02.svg) no-repeat;}
 #container .login_guide .ico.ico03 { background: url(https://www.work24.go.kr/cm/static/images/ico24_login_guide03.svg) no-repeat;}
 #container .login_guide .ico.ico04 { background: url(https://www.work24.go.kr/cm/static/images/ico24_login_guide04.svg) no-repeat;}
-#container .login_guide .btn { display: flex; justify-content: center; align-items: center; height: 48px; margin-top: 24px; color: #111; background-color: #62D491; border-radius: 8px;}
+#container .login_guide .btn { display: flex; justify-content: center; align-items: center; height: 48px; margin-top: 24px; font-weight: 600; color: #111; background-color: #62D491; border-radius: 8px;}
 #container .my_app_status { position: initial; top: initial; right: initial; width: 100%; height: auto; padding-bottom: 50px; border: none; background-color: transparent; border-radius: 0;}
 #container .my_app_status h3.t3_sb { position: initial; top: initial; left: initial;}
 #container .my_app_status h3.t3_sb .highlight { color: #117935;}
