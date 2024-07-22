@@ -458,7 +458,7 @@
 #container .work24_news .h1_sb { text-align: left;}
 #container .work24_news .recomm_tab { position: absolute; right: 0; top: 0;}
 #container .work24_news_article { margin-top: 32px; padding: 0 2px;}
-#container .work24_news_article .news_item { transition: all ease-out .2s;}
+#container .work24_news_article .news_item { transition: all ease-out .2s; outline: 2px solid #fff;}
 #container .work24_news_article .news_item:hover { border-color: #62D491; outline: 2px solid #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container .work24_news_article .news_division { align-items: flex-start; justify-content: space-between;}
 #container .work24_news_article .news_division .ico_news { background: url(../images/ico_24_news.svg) no-repeat;}
