@@ -274,7 +274,8 @@
 
 /* [고도화] */
 #container .top_search_form { display: flex; width: 1248px; margin: 0 auto;}
-#container .topsearch_wrap--flex { justify-content: space-between; align-items: flex-start; width: 100%; margin-top: 50px;}
+#container .topsearch_wrap--flex { justify-content: space-between; align-items: flex-start; position: relative; width: 100%; margin-top: 50px;}
+#container .topsearch_wrap--flex .bgico5 { display: block; position: absolute; left: -232px; top: 22px; width: 186px; height: 79px; background: url(../images/bg_visual.png) no-repeat;}
 #container .search_group { width: 682px; padding-top: 47px;}
 #container .login_group { width: 506px; padding: 32px 22px 0; border: 1px solid var(--col_green); border-radius: 8px;}
 #container .form_search_wrap {  margin: initial;}
