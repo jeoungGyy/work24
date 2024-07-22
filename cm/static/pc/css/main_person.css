@@ -272,12 +272,37 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* [고도화] */
 #container .top_search_form { display: flex; width: 1248px; margin: 0 auto;}
 #container .topsearch_wrap--flex { justify-content: space-between; align-items: flex-start; position: relative; width: 100%; margin-top: 50px;}
 #container .topsearch_wrap--flex .bgico5 { display: block; position: absolute; left: -232px; top: 22px; width: 186px; height: 79px; background: url(../images/bg_visual.png) no-repeat;}
-#container .search_group { width: 682px; padding-top: 47px;}
-#container .login_group { width: 506px; padding: 32px 22px 0; border: 1px solid var(--col_green); border-radius: 8px;}
+#container .search_group { position: relative; z-index: 10; width: 682px; padding-top: 47px;}
+#container .login_group { position: relative; z-index: 10; width: 506px; padding: 32px 22px 0; border: 1px solid var(--col_green); border-radius: 8px;}
 #container .form_search_wrap {  margin: initial;}
 #container .main_search_area { width: 100%;}
 #container .login_guide { margin-top: 0; padding: 0 0 32px; border: none; border-radius: 0;}
@@ -300,7 +325,9 @@
 #container .my_app_status .status_list { flex-wrap: initial; margin-top: 48px; padding: 0;}
 #container .my_app_status .status_list li { width: initial; margin-bottom: 0;}
 #container .my_app_status .status_list li a { display: block; width: 100%; font-size: 14px;}
+#container .my_app_status .status_list li a::before { transition: background-color ease-out .2s;}
 #container .my_app_status .status_list li .count { font-weight: 600; color: #111; background: #62D491;}
+#container .my_app_status .status_list li a:hover::before { background-color: #E8FCF0;}
 #container .main_search_area .inner_search { justify-content: flex-start; height: 64px; border-width: 5px; border-radius: 32px;}
 #container .main_search_area .inner_search .btn_cate_select { margin-left: 24px;}
 #container .main_search_area .inner_search .btn_cate_select span { font-size: 20px;}
@@ -341,12 +368,12 @@
 #container .main_section_wrap .recomm_tab .tablist li .count { color: #117935;}
 #container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] .count { color: #111;}
 #container .information_group { background-color: #F5F5F5;}
-#container .main_informationMenu { position: relative; z-index: 2;}
+#container .main_informationMenu,
+#container .main_informationMenu2 { position: relative; z-index: 2;}
+#container .main_recruitment { padding: 80px 0 146px;}
 #container .main_recruitment .before { position: relative;}
 #container .main_recruitment .after { position: relative;}
 #container .main_recruitment .after .flex { display: flex; justify-content: space-between; align-items: center;}
-#container .btn_setting { display: flex; align-items: center; height: 36px; padding: 0 12px; border: 1px solid #ddd; background-color: #fff; border-radius: 18px;}
-#container .btn_setting .icon { display: block; width: 24px; height: 24px; margin-right: 4px; background: url(../images/ico24_setting.svg) no-repeat;}
 #container .main_recruitment .after .mfs_more { top: 125px;}
 #container .main_recruitment .company_list_wrap { gap: initial; margin: 32px 0; padding: 0;}
 #container .main_recruitment .company_list { height: 438px; padding: 12px 20px 0; border: none; border: 3px solid #fff; background-color: #fff; box-shadow: 2px 2px 16px 0 rgba(0,0,0,.04); transition: all ease-out .2s;}
@@ -361,11 +388,14 @@
 #container .main_recruitment .company_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container .main_recruitment .company_list:hover .info { background-color: #E8FCF0; border-radius: 0 0 8px 8px;}
 #container .main_recruitment .company_list .info.calendar span { display: block; padding-left: 32px; color: #111; background: url(https://www.work24.go.kr/cm/static/images/ico24_calendar.svg) no-repeat left 16px;}
-#container .main_support { padding: 80px 0;}
-#container .main_recruitment { padding: 80px 0 146px;}
+#container .main_recruitment .swiper-button-prev.btn_left { left: -65px; top: 320px;}
+#container .main_recruitment .swiper-button-next.btn_right { right: -65px; top: 320px;}
 #container .main_recruitment .bgico2 { position: absolute; right: -114px; top: 20px; width: 247px; height: 276px; background: url(../images/bgico2.png) no-repeat;}
 #container .main_recruitment .bgico3 { position: absolute; left: -140px; bottom: -144px; width: 387px; height: 243px; background: url(../images/bgico3.png) no-repeat;}
 #container .main_recruitment .bgico4 { position: absolute; left: -200px; bottom: -49px; width: 226px; height: 92px; background: url(../images/bgico4.png) no-repeat;}
+#container .btn_setting { display: flex; align-items: center; position: relative; z-index: 2; height: 36px; padding: 0 12px; border: 1px solid #ddd; background-color: #fff; border-radius: 18px;}
+#container .btn_setting .icon { display: block; width: 24px; height: 24px; margin-right: 4px; background: url(../images/ico24_setting.svg) no-repeat;}
+#container .main_support { padding: 80px 0;}
 #container .main_favorite { margin-top: 50px; padding: 40px 0; background-color: #F5F5F5;}
 #container .main_favorite .bgico1 { position: absolute; right: -162px; bottom: -40px; width: 156px; height: 87px; background: url(../images/bgico1.png) no-repeat;}
 #container .main_recruit_information_person { overflow: initial;}
@@ -378,7 +408,6 @@
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .famenu ~ .famenu { margin-left: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a { display: block; text-align: center;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a .round { display: inline-flex; justify-content: center; align-items: center; width: 80px; height: 80px; margin: 0; background-color: #fff; border-radius: 50%; transition: background-color ease-out .2s;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico { display: block; width: 48px; height: 48px; margin: 0;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico48_main_fam_persn1.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico48_main_fam_persn2.png) no-repeat;}
@@ -386,6 +415,15 @@
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn4 { background: url(../images/ico48_main_fam_persn4.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn5 { background: url(../images/ico48_main_fam_persn5.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn1 { background: url(../images/ico48_main_fam_persn1_over.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn2 { background: url(../images/ico48_main_fam_persn2_over.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn3 { background: url(../images/ico48_main_fam_persn3_over.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn4 { background: url(../images/ico48_main_fam_persn4_over.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn5 { background: url(../images/ico48_main_fam_persn5_over.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6_over.png) no-repeat;}
+
+
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { margin-top: 12px; line-height: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p { text-decoration: underline;}
 #container .main_swiperFreqAccMenu { position: relative; width: 1072px; margin: 0; padding: 0;}

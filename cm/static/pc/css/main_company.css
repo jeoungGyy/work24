@@ -287,16 +287,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* [고도화] */
 #wrap.company #container .login_guide .btn { color: #fff; background-color: #4D65E1;}
 #wrap.company #container .my_app_status .status_list li .count { color: #fff; background-color: #4D65E1;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1.svg) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2.svg) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn3 { background: url(../images/ico60_main_fam_compny3.svg) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn4 { background: url(../images/ico60_main_fam_compny4.svg) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn5 { background: url(../images/ico60_main_fam_compny5.svg) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn6 { background: url(../images/ico60_main_fam_compny6.svg) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn3 { background: url(../images/ico60_main_fam_compny3.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn4 { background: url(../images/ico60_main_fam_compny4.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn5 { background: url(../images/ico60_main_fam_compny5.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn6 { background: url(../images/ico60_main_fam_compny6.png) no-repeat;}
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #4D65E1;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1_over.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2_over.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn3 { background: url(../images/ico60_main_fam_compny3_over.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn4 { background: url(../images/ico60_main_fam_compny4_over.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn5 { background: url(../images/ico60_main_fam_compny5_over.png) no-repeat;}
+#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico60_main_fam_compny6_over.png) no-repeat;}
+#wrap.company #container .topsearch_wrap--flex .bgico6 { display: block; position: absolute; left: -335px; top: -50px; width: 480px; height: 354px; background: url(../images/bg_search_left.png) no-repeat;}
+#wrap.company #container .topsearch_wrap--flex .bgico7 { display: block; position: absolute; right: -335px; top: -50px; width: 480px; height: 354px; background: url(../images/bg_search_right.png) no-repeat;}
+#wrap.company #container .login_group { border-color: #4D65E1;}
 #wrap.company #container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] { color: #fff; border-color: #4D65E1; background-color: #4D65E1;}
 #wrap.company #container .main_explain_txt01 a { color: #4D65E1;}
 #wrap.company .main_recruit_information { overflow: initial; height: auto; margin-top: 32px; padding: 0!important;}
