@@ -339,7 +339,7 @@
 #wrap.company #container .main_beginner_guide .guide_list li a:hover dd p { color: #fff;}
 #wrap.company #container .work24_news .news_item:nth-child(1),
 #wrap.company #container .work24_news .news_item:nth-child(3) { border-color: #4D65E1; background-color: rgba(227, 238, 255, 0.15);}
-#wrap.company .work24_news_article .news_item:hover { border: 3px solid #4D65E1;}
+#wrap.company .work24_news_article .news_item:hover { border-color: #4D65E1; outline-color: #4D65E1;}
 #wrap.company 
 #wrap.company 
 #wrap.company 

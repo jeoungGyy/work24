@@ -457,7 +457,15 @@
 #container .work24_news { position: relative; margin-top: 80px; padding: 0;}
 #container .work24_news .h1_sb { text-align: left;}
 #container .work24_news .recomm_tab { position: absolute; right: 0; top: 0;}
-#container .work24_news_article { margin-top: 32px;}
+#container .work24_news_article { margin-top: 32px; padding: 0 2px;}
+#container .work24_news_article .news_item { transition: all ease-out .2s;}
+#container .work24_news_article .news_item:hover { border-color: #62D491; outline: 2px solid #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
+#container .work24_news_article .news_division { align-items: flex-start; justify-content: space-between;}
+#container .work24_news_article .news_division .ico_news { background: url(../images/ico_24_news.svg) no-repeat;}
+#container .work24_news_article .news_division .ico_notice { background: url(../images/ico24_loudspeaker.svg) no-repeat;}
+#container .work24_news_article .news_division .ico_pds { background: url(../images/ico24_pds.svg) no-repeat;}
+#container .work24_news_article .news_division .list_body { display: flex; align-items: center;}
+#container .work24_news_article .news_division .icon { display: block; width: 16px; height: 16px; background: url(../images/ico16_ipin.svg) no-repeat;}
 #container .work24_news .news_item:nth-child(1) { height: 324px; border-color: #62D491; background-color: rgba(98,212,145, .04);}
 #container .work24_news .news_item:nth-child(2) { height: 184px;}
 #container .work24_news .news_item:nth-child(3) { height: 184px; border-color: #62D491; background-color: rgba(98,212,145, .04);}
@@ -470,14 +478,8 @@
 #container .work24_news .news_item:nth-child(3) .news_article,
 #container .work24_news .news_item:nth-child(6) .news_article,
 #container .work24_news .news_item:nth-child(8) .news_article { display: none;}
-#container .work24_news_article .news_division { align-items: flex-start; justify-content: space-between;}
-#container .work24_news_article .news_division .ico_news { background: url(../images/ico_24_news.svg) no-repeat;}
-#container .work24_news_article .news_division .ico_notice { background: url(../images/ico24_loudspeaker.svg) no-repeat;}
-#container .work24_news_article .news_division .ico_pds { background: url(../images/ico24_pds.svg) no-repeat;}
-#container .work24_news_article .news_division .list_body { display: flex; align-items: center;}
-#container .work24_news_article .news_division .icon { display: block; width: 16px; height: 16px; background: url(../images/ico16_ipin.svg) no-repeat;}
 #container .news_swiper { overflow: hidden; padding-bottom: 35px;}
-#container .swiper_policy { overflow: hidden; padding-bottom: 55px;}
+#container .swiper_policy { overflow: hidden; padding: 0 2px 55px;}
 #container .main_policy_recomm { position: relative; margin: 80px 0;}
 #container .main_policy_recomm .mfs_more { top: 28px;}
 #container .main_policy_recomm .inner_service_list dl { height: auto; padding: 32px 20px 0;}
@@ -485,8 +487,8 @@
 #container .main_policy_recomm .inner_service_list a.detail_view { margin: 24px -20px 0; transition: background-color ease-out .2s;}
 #container .main_policy_recomm .inner_service_list a.detail_view .text { display: block; font-weight: 600; color: #111;}
 #container .main_policy_recomm .inner_service_list a.detail_view .iocn { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
-#container .main_policy_recomm .inner_service_list:hover dl { padding: 30px 18px 0; border: 3px solid #62D491;}
-#container .main_policy_recomm .inner_service_list:hover a.detail_view { margin: 22px -18px 0; background-color: #E8FCF0; border-radius: 0 0 8px 8px;}
+#container .main_policy_recomm .inner_service_list:hover dl { border-color: #62D491; outline: 2px solid #62D491;}
+#container .main_policy_recomm .inner_service_list:hover a.detail_view { background-color: #E8FCF0; border-radius: 0 0 8px 8px;}
 #container .main_policy_recomm .inner_service_list:hover a.detail_view .text { color: #117935;}
 #container .main_policy_recomm .inner_service_list:hover a.detail_view .iocn { filter: invert(22%) sepia(90%) saturate(6937%) hue-rotate(151deg) brightness(91%) contrast(87%);}
 #container .main_policy_recomm .swiper-button-prev { left: -62px; top: 50%; border: none;}
@@ -554,8 +556,6 @@
 #container .training .bgico10 { display: block; position: absolute; right: -168px; bottom: -80px; width: 357px; height: 231px; background: url(../images/bgico10.png) no-repeat;}
 #container .training .bgico11 { display: block; position: absolute; right: -230px; bottom: -80px; width: 204px; height: 72px; background: url(../images/bgico11.png) no-repeat;}
 #container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
-#container .work24_news_article .news_item { transition: border ease-out .2s;}
-#container .work24_news_article .news_item:hover { border: 3px solid #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container 
 #container 
 #container 
