@@ -537,7 +537,7 @@
 #container .training { padding: 80px 0;}
 #container .training .flex { display: flex; justify-content: space-between; align-items: center;}
 #container .training .jobs_list_wrap { margin-top: 24px;}
-#container .training .main_jobs_recomm .jobs_list { border: 3px solid #fff; box-shadow: 2px 2px 16px rgba(0,0,0,.04);}
+#container .training .main_jobs_recomm .jobs_list { border: 3px solid #fff; box-shadow: 2px 2px 16px rgba(0,0,0,.04); transition: all ease-out .2s;}
 #container .training .main_jobs_recomm .jobs_list .list dd .mark_info { margin-top: 0;}
 #container .training .main_jobs_recomm .jobs_list .list dd .desc { font-size: 18px; text-align: left;}
 #container .training .main_jobs_recomm .jobs_list .list dd .reg { font-size: 16px; text-align: left;}
@@ -546,9 +546,14 @@
 #container .training .main_jobs_recomm .jobs_list .expense_info .detail_view { display: flex; align-items: center;}
 #container .training .main_jobs_recomm .jobs_list .expense_info .detail_view .text { font-weight: 600; color: #111;}
 #container .training .main_jobs_recomm .jobs_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px rgba(0,0,0,.08);}
-#container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container .training .mfs_more { top: 125px;}
-#container .training .jobs_list_wrap { overflow: hidden;}
+#container .training .jobs_list_wrap { overflow: hidden; padding-bottom: 32px;}
+#container .training .swiper-wrapper { position: relative; z-index: 2;}
+#container .training .bgico8 { display: block; position: absolute; left: -233px; top: 90px; width: 297px; height: 296px; background: url(../images/bgico8.png) no-repeat;}
+#container .training .bgico9 { display: block; position: absolute; right: -215px; bottom: 125px; width: 106px; height: 106px; background: url(../images/bgico9.png) no-repeat;}
+#container .training .bgico10 { display: block; position: absolute; right: -168px; bottom: -80px; width: 357px; height: 231px; background: url(../images/bgico10.png) no-repeat;}
+#container .training .bgico11 { display: block; position: absolute; right: -230px; bottom: -80px; width: 204px; height: 72px; background: url(../images/bgico11.png) no-repeat;}
+#container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container .work24_news_article .news_item { transition: border ease-out .2s;}
 #container .work24_news_article .news_item:hover { border: 3px solid #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container 
