@@ -484,7 +484,7 @@
 #container .main_policy_recomm .mfs_more { top: 28px;}
 #container .main_policy_recomm .inner_service_list dl { height: auto; padding: 32px 20px 0;}
 #container .main_policy_recomm .inner_service_list dt span { height: 56px;}
-#container .main_policy_recomm .inner_service_list a.detail_view { margin: 24px -20px 0; transition: background-color ease-out .2s;}
+#container .main_policy_recomm .inner_service_list a.detail_view { margin: 24px -20px 0; transition: all ease-out .2s;}
 #container .main_policy_recomm .inner_service_list a.detail_view .text { display: block; font-weight: 600; color: #111;}
 #container .main_policy_recomm .inner_service_list a.detail_view .iocn { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container .main_policy_recomm .inner_service_list:hover dl { border-color: #62D491; outline: 2px solid #62D491;}
