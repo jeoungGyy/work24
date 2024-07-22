@@ -298,6 +298,8 @@
 
 
 /* [고도화] */
+#wrap #header_bottom .header_bottom_area h1 a { width: 136px; height: 48px; margin-top: 14px; background: url(../images/h1_ci.png) no-repeat;}
+
 #container .top_search_form { display: flex; width: 1248px; margin: 0 auto;}
 #container .topsearch_wrap--flex { justify-content: space-between; align-items: flex-start; position: relative; width: 100%; margin-top: 50px;}
 #container .topsearch_wrap--flex .bgico5 { display: block; position: absolute; left: -232px; top: 22px; width: 186px; height: 79px; background: url(../images/bg_visual.png) no-repeat;}
@@ -318,6 +320,7 @@
 #container .my_app_status { position: initial; top: initial; right: initial; width: 100%; height: auto; padding-bottom: 50px; border: none; background-color: transparent; border-radius: 0;}
 #container .my_app_status h3.t3_sb { position: initial; top: initial; left: initial;}
 #container .my_app_status h3.t3_sb .highlight { color: #117935;}
+#container .my_app_status h3.t3_sb .highlight:hover { text-decoration: underline;}
 #container .my_app_status .flex { display: flex; justify-content: space-between; align-items: center;}
 #container .my_app_status .btn_mypage { display: flex; justify-content: center; align-items: center; height: 48px; padding: 0 12px 0 16px; border: 1px solid #ddd; border-radius: 8px;}
 #container .my_app_status .btn_mypage .text { display: block; font-weight: 600; color: #333;}
@@ -340,7 +343,7 @@
 #container .recommend_keyword dd ul { justify-content: flex-start; flex-wrap: wrap; gap: 8px;}
 #container .recommend_keyword dd ul a { display: flex; justify-content: center; align-items: center; height: 32px; padding: 0 12px; font-size: 14px; border-radius: 16px;}
 #container .form_search_wrap .layer_search { top: 70px;}
-#container .main_swiper01_wrap .h1_sb { font-size: 32px; text-align: left; letter-spacing: -1px;}
+#container .main_swiper01_wrap .h1_sb { font-size: 32px; font-weight: 700; text-align: left; letter-spacing: -1px;}
 #container .main_service_list_person { position: relative;}
 #container .mfs_more { display: flex; align-items: center; position: absolute; right: 0; top: 59px; z-index: 10;}
 #container .mfs_more span { font-weight: 600; color: #111;}
@@ -387,6 +390,7 @@
 #container .main_recruitment .company_list .info { display: flex; justify-content: center; align-items: center; transition: all ease-out .2s;}
 #container .main_recruitment .company_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
 #container .main_recruitment .company_list:hover .info { background-color: #E8FCF0; border-radius: 0 0 8px 8px;}
+#container .main_recruitment .company_list:hover .tit { text-decoration: underline;}
 #container .main_recruitment .company_list .info.calendar span { display: block; padding-left: 32px; color: #111; background: url(https://www.work24.go.kr/cm/static/images/ico24_calendar.svg) no-repeat left 16px;}
 #container .main_recruitment .swiper-button-prev.btn_left { left: -65px; top: 320px;}
 #container .main_recruitment .swiper-button-next.btn_right { right: -65px; top: 320px;}
@@ -400,10 +404,11 @@
 #container .main_favorite .bgico1 { position: absolute; right: -162px; bottom: -40px; width: 156px; height: 87px; background: url(../images/bgico1.png) no-repeat;}
 #container .main_recruit_information_person { overflow: initial;}
 #container .main_bann { padding: 80px 64px;}
+#container .main_swiperFreqAccMenu { position: relative; width: 1072px; margin: 0; padding: 0 56px;}
 #container .main_swiperFreqAccMenu_control { width: 176px !important; margin-top: 8px;}
 #container .main_swiperFreqAccMenu_control h1 { margin: 0; font-size: 32px; line-height: 42px;}
-#container .main_swiperFreqAccMenu .swiper-wrapper { width: 100% !important;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide { padding-left: 56px;}
+#container .main_swiperFreqAccMenu .swiper-wrapper { width: initial !important;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide { width: initial !important; }
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .famenu { width: 140px; height: initial; margin: 0; padding: 0;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .famenu ~ .famenu { margin-left: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a { display: block; text-align: center;}
@@ -422,11 +427,8 @@
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn4 { background: url(../images/ico48_main_fam_persn4_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn5 { background: url(../images/ico48_main_fam_persn5_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6_over.png) no-repeat;}
-
-
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { margin-top: 12px; line-height: 24px;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p { text-decoration: underline;}
-#container .main_swiperFreqAccMenu { position: relative; width: 1072px; margin: 0; padding: 0;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { display: flex; align-items: center; justify-content: center; margin-top: 12px; letter-spacing: -0.5px; line-height: 24px;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p { font-weight: 600; text-decoration: underline;}
 #container .main_swiperFreqAccMenu_wrap { display: flex; justify-content: space-between; height: initial;}
 #container .main_swiperFreqAccMenu_control { height: initial;}
 #container .main_swiperFreqAccMenu_wrap .swiper-button-prev { left: 0; top: 54px; width: 32px; height: 32px; background: url(../images/ico32_arrow_left.svg) no-repeat;}
@@ -444,22 +446,28 @@
 #container .main_swiper01_wrap .btn_main_banner.pause { width: 24px; height: 24px; background: url(../images/ico24_pause.svg) no-repeat;}
 #container .main_swiper01_wrap .btn_main_banner.play { background: url(https://www.work24.go.kr/cm/static/images/btn26_play.png) no-repeat;}
 #container .main_beginner_guide { padding: 0; background-color: #fff;}
-#container .main_beginner_guide .h1_sb { text-align: left;}
+#container .main_beginner_guide .h1_sb { font-size: 32px; font-weight: 700; letter-spacing: -1px; text-align: left;}
 #container .main_beginner_guide .inner_guide { position: relative; width: 1248px;}
 #container .main_beginner_guide .guide_list { justify-content: initial; margin: 16px 0 0 -24px;}
 #container .main_beginner_guide .guide_list li { width: calc(100% / 3 -24px); height: initial; margin: 24px 0 0 24px; padding: 0;}
 #container .main_beginner_guide .guide_list li a { padding: 24px 20px; background-color: #F5F5F5; border-radius: 8px; transition: all ease-out .2s;}
 #container .main_beginner_guide .guide_list li a dt { padding-left: 32px; font-size: 18px; color: #111; line-height: 28px;}
 #container .main_beginner_guide .guide_list li a dt .ico { left: 0;}
-#container .main_beginner_guide .guide_list li a .ico24_member_login { background: url(https://www.work24.go.kr/cm/static/images/ico24_member_login.svg) no-repeat;}
 #container .main_beginner_guide .guide_list li a dd { margin-top: 8px;}
+#container .main_beginner_guide .guide_list li a .ico24_smail { background: url(../images/ico24_home_smile.svg) no-repeat;}
+#container .main_beginner_guide .guide_list li a .ico24_calculator { background: url(../images/ico24_cal_normal.svg) no-repeat;}
+#container .main_beginner_guide .guide_list li a .ico24_shield-tick { background: url(../images/ico24_shield-tick.svg) no-repeat;}
+#container .main_beginner_guide .guide_list li a .ico24_jobfind_search { background: url(../images/ico24_jobfind_search.svg) no-repeat;}
+#container .main_beginner_guide .guide_list li a .ico24_pencil { background: url(../images/ico24_pencil.svg) no-repeat;}
 #container .main_beginner_guide .guide_list li a:hover { background-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
+#container .main_beginner_guide .guide_list li a:hover dt { text-decoration: underline;}
 #container .work24_news { position: relative; margin-top: 80px; padding: 0;}
-#container .work24_news .h1_sb { text-align: left;}
+#container .work24_news .h1_sb { font-size: 32px; font-weight: 700; letter-spacing: -1px; text-align: left;}
 #container .work24_news .recomm_tab { position: absolute; right: 0; top: 0;}
 #container .work24_news_article { margin-top: 32px; padding: 0 2px;}
 #container .work24_news_article .news_item { transition: all ease-out .2s; outline: 2px solid #fff;}
 #container .work24_news_article .news_item:hover { border-color: #62D491; outline: 2px solid #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
+#container .work24_news_article .news_item:hover .news_title a { text-decoration: underline;}
 #container .work24_news_article .news_division { align-items: flex-start; justify-content: space-between;}
 #container .work24_news_article .news_division .ico_news { background: url(../images/ico_24_news.svg) no-repeat;}
 #container .work24_news_article .news_division .ico_notice { background: url(../images/ico24_loudspeaker.svg) no-repeat;}
@@ -481,6 +489,7 @@
 #container .news_swiper { overflow: hidden; padding-bottom: 35px;}
 #container .swiper_policy { overflow: hidden; padding: 0 2px 55px;}
 #container .main_policy_recomm { position: relative; margin: 80px 0;}
+#container .main_policy_recomm .h1_sb { font-size: 32px; font-weight: 700; letter-spacing: -1px;}
 #container .main_policy_recomm .mfs_more { top: 28px;}
 #container .main_policy_recomm .inner_service_list dl { height: auto; padding: 32px 20px 0;}
 #container .main_policy_recomm .inner_service_list dt span { height: 56px;}
@@ -488,6 +497,7 @@
 #container .main_policy_recomm .inner_service_list a.detail_view .text { display: block; font-weight: 600; color: #111;}
 #container .main_policy_recomm .inner_service_list a.detail_view .iocn { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container .main_policy_recomm .inner_service_list:hover dl { border-color: #62D491; outline: 2px solid #62D491;}
+#container .main_policy_recomm .inner_service_list:hover dt b { text-decoration: underline;}
 #container .main_policy_recomm .inner_service_list:hover a.detail_view { background-color: #E8FCF0; border-radius: 0 0 8px 8px;}
 #container .main_policy_recomm .inner_service_list:hover a.detail_view .text { color: #117935;}
 #container .main_policy_recomm .inner_service_list:hover a.detail_view .iocn { filter: invert(22%) sepia(90%) saturate(6937%) hue-rotate(151deg) brightness(91%) contrast(87%);}
@@ -537,6 +547,7 @@
 
 #container .grayBg { background-color: #F5F5F5;}
 #container .training { padding: 80px 0;}
+#container .training .h1_sb { font-size: 32px; font-weight: 700; letter-spacing: -1px;}
 #container .training .flex { display: flex; justify-content: space-between; align-items: center;}
 #container .training .jobs_list_wrap { margin-top: 24px;}
 #container .training .main_jobs_recomm .jobs_list { border: 3px solid #fff; box-shadow: 2px 2px 16px rgba(0,0,0,.04); transition: all ease-out .2s;}
@@ -545,11 +556,16 @@
 #container .training .main_jobs_recomm .jobs_list .list dd .reg { font-size: 16px; text-align: left;}
 #container .training .main_jobs_recomm .jobs_list dd li .obj_key { width: 60px;}
 #container .training .main_jobs_recomm .jobs_list dd li .obj_value { flex: 1;}
+#container .training .main_jobs_recomm .jobs_list .expense_info { padding: 0 20px; transition: all ease-out .2s; border-radius: 0 0 8px 8px;}
 #container .training .main_jobs_recomm .jobs_list .expense_info .detail_view { display: flex; align-items: center;}
 #container .training .main_jobs_recomm .jobs_list .expense_info .detail_view .text { font-weight: 600; color: #111;}
 #container .training .main_jobs_recomm .jobs_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px rgba(0,0,0,.08);}
+#container .training .main_jobs_recomm .jobs_list:hover .list dd .desc { text-decoration: underline;}
+#container .training .main_jobs_recomm .jobs_list:hover .expense_info { background-color: #E8FCF0;}
 #container .training .mfs_more { top: 125px;}
 #container .training .jobs_list_wrap { overflow: hidden; padding-bottom: 32px;}
+#container .training .jobs_list_wrap .page_survey_wrap.type2 { background: url(../images/ico_star_green.svg) 0 0 no-repeat;}
+#container .training .jobs_list_wrap .page_survey_wrap.type2 .starpoint_bg { background: url(../images/ico_star_green.svg) 0 -16px no-repeat;}
 #container .training .swiper-wrapper { position: relative; z-index: 2;}
 #container .training .bgico8 { display: block; position: absolute; left: -233px; top: 90px; width: 297px; height: 296px; background: url(../images/bgico8.png) no-repeat;}
 #container .training .bgico9 { display: block; position: absolute; right: -215px; bottom: 125px; width: 106px; height: 106px; background: url(../images/bgico9.png) no-repeat;}

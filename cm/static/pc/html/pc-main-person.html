@@ -262,7 +262,7 @@
 						<div class="my_app_status">
 							<div class="flex">
 								<h3 class="t3_sb">
-									<span class="highlight">김고용</span>
+									<a href="#" class="highlight">김고용</a>
 									<span>님의 서비스 신청 현황</span>
 								</h3>
 								<button type="button" class="btn_mypage">
@@ -306,30 +306,40 @@
 										<p>수급자격 신청자<br>온라인 교육</p>
 									</a>
 								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="famenu">
 									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
 										<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
-										<p>실업인정<br>인터넷 신청</p>
+										<p>실업인정 인터넷 신청</p>
 									</a>
 								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="famenu">
 									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000235', '/a/g/1100/openHPEIAG1100M01Post.do', 'EBM01', 'N','');">
 										<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
 										<p>온라인 취업특강<br>1차 실업인정 교육</p>
 									</a>
 								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="famenu">
 									<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000000018', '/a/b/2100/resumeMngMainPost.do', 'EBM01', 'N','');">
 										<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
 										<p>구직신청</p>
 									</a>
 								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="famenu">
 									<a href="#none" onclick="fn_goPageUrl('/ua', 'EBG120000000003', '/t/b/1100/selectEmpmActFlflMngn.do', 'EBM01', 'N','');">
 										<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
 										<p>국민취업<br>구직촉진수당 신청</p>
 									</a>
 								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="famenu">
 									<a href="#none">
 										<span class="round"><span class="ico ico60_main_fam_persn6" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', 'EBM01', 'N','');"></span></span>
@@ -339,35 +349,13 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000161', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
-										<p>수급자격 신청자<br>온라인 교육</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
-										<p>실업인정<br>인터넷 신청</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000235', '/a/g/1100/openHPEIAG1100M01Post.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
-										<p>온라인 취업특강<br>1차 실업인정 교육</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000000018', '/a/b/2100/resumeMngMainPost.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
-										<p>구직신청</p>
-									</a>
-								</div>
-								<div class="famenu">
 									<a href="#none" onclick="fn_goPageUrl('/ua', 'EBG120000000003', '/t/b/1100/selectEmpmActFlflMngn.do', 'EBM01', 'N','');">
 										<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
 										<p>국민취업<br>구직촉진수당 신청</p>
 									</a>
 								</div>
+							</div>
+							<div class="swiper-slide">
 								<div class="famenu">
 									<a href="#none">
 										<span class="round"><span class="ico ico60_main_fam_persn6" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', 'EBM01', 'N','');"></span></span>
@@ -387,6 +375,8 @@
 
 				<script>
 					const mainswiperFreqAccMenu = new Swiper(".main_swiperFreqAccMenu",{
+						slidesPerView: 6,
+						spaceBetween: 24,
 						pagination: {
 							el: ".main_swiperFreqAccMenu_wrap .swiper-pagination",
 							type: "fraction",
