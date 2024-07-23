@@ -404,7 +404,8 @@
 #container .main_favorite .bgico1 { position: absolute; right: -162px; bottom: -40px; width: 156px; height: 87px; background: url(../images/bgico1.png) no-repeat;}
 #container .main_recruit_information_person { overflow: initial;}
 #container .main_bann { padding: 80px 64px;}
-#container .main_swiperFreqAccMenu { position: relative; width: 1072px; margin: 0; padding: 0 56px;}
+#container .main_overflow { position: relative; width: 1072px;}
+#container .main_swiperFreqAccMenu { overflow: hidden;  position: relative; width: 957px; margin: 0 auto; padding: 0;}
 #container .main_swiperFreqAccMenu_control { width: 176px !important; margin-top: 8px;}
 #container .main_swiperFreqAccMenu_control h1 { margin: 0; font-size: 32px; line-height: 42px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper { width: initial !important;}
@@ -427,7 +428,7 @@
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn4 { background: url(../images/ico48_main_fam_persn4_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn5 { background: url(../images/ico48_main_fam_persn5_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6_over.png) no-repeat;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { display: flex; align-items: center; justify-content: center; margin-top: 12px; letter-spacing: -0.5px; line-height: 24px;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 12px; letter-spacing: -0.5px; line-height: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p { font-weight: 600; text-decoration: underline;}
 #container .main_swiperFreqAccMenu_wrap { display: flex; justify-content: space-between; height: initial;}
 #container .main_swiperFreqAccMenu_control { height: initial;}
@@ -511,13 +512,25 @@
 
 
 #footer { background-color: transparent;}
-#footer .area { width: 1248px; margin: 0 auto;}
+#footer .area { position: relative; width: 1248px; margin: 0 auto;}
 #footer .site { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 #footer .site .area { display: flex; align-items: center;}
-#footer .site button { display: flex; justify-content: space-between; align-items: center; width: 213px; height: 54px; padding: 0 24px; border-left: 1px solid #ddd;}
-#footer .site button ~ button { border-right: 1px solid #ddd;}
-#footer .site button .text { display: block; color: #111;}
-#footer .site button .icon { display: block; width: 20px; height: 20px; background: url(../images/icon20_plus.svg) no-repeat;}
+#footer .site .btnsite { display: flex; justify-content: space-between; align-items: center; width: 200px; height: 54px; padding: 0 24px; border-left: 1px solid #ddd;}
+#footer .site .btnsite ~ .btnsite { border-right: 1px solid #ddd;}
+#footer .site .btnsite .text { display: block; color: #111;}
+#footer .site .btnsite .icon { display: block; width: 24px; height: 24px; background: url(../images/ico24_plus.svg) no-repeat;}
+#footer .site .btnsite.active .icon { background: url(../images/ico24_minus.svg) no-repeat;}
+
+
+#footer .site_list .list { overflow: hidden; position: absolute; left: 0; bottom: 55px; width: 200px; padding-right: 4px; border: 1px solid #ddd; border-bottom: none; background-color: #fff; border-radius: 8px 8px 0 0;}
+#footer .site_list .list li a { display: block; padding: 4px 0 4px 24px; line-height: 28px;}
+#footer .site_list .list li a:hover { font-weight: 600; text-decoration: underline; background-color: #f5f5f5;}
+#footer .site_list .list--related { left: 200px;}
+#footer .site_list .list ul { overflow-y: auto; height: 216px;}
+#footer .site_list .list ul::-webkit-scrollbar { width: 4px;}
+#footer .site_list .list ul::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px;}
+#footer .site_list .list ul::-webkit-scrollbar-track { background-color: #fff;}
+
 #footer .group { background-color: #F5F5F5;}
 #footer .group .area { padding: 40px 0;}
 #footer .logos { display: flex; align-items: center;}

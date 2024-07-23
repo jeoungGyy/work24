@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/reset.css">
 		<link rel="stylesheet" href="../css/font.css">
-		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/common.css">
+		<link rel="stylesheet" href="../css/common.css">
 		<link rel="stylesheet" href="../css/main_person.css">
 		<link rel="stylesheet" href="../css/main_company.css">
 		<link rel="stylesheet" href="../css/contents.css">
@@ -73,9 +73,6 @@
 						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM00')">기업</a></li>
 					</ul>
 					<ul class="header_info">
-						<!-- <li>
-							<a href="javascript:void(0);" onclick="fn_goPopPage()" title="웹스타일가이드">퍼블</a>
-						</li> -->
 						<li>
 						
 							<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do')">로그인</a>
@@ -97,15 +94,15 @@
 			<!-- #header_bottom : hover시 extend 클래스 추가 -->
 			<div id="header_bottom" class="">
 				<div class="header_bottom_area">
-					<h1><!-- 23/12/04 퍼블: .temp 추가 시 "고용24(시범운영)" 로고 -->
+					<h1>
 						<a href="/cm"><span class="blind">고용24</span></a>
 					</h1>
-		
+                    
 					<!-- gnb -->
 					<div id="gnb">
 						<ul>
 							<li>
-								<a href="javascript:void(0);">채용정보</a>
+								<a href="javascript:void(0);" class="active"><span>채용정보</span></a><!-- [고도화] active 클래스 추가시 활성화 -->
 								<ul>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')">일자리 찾기</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000016', '/a/b/2100/resumeMngMainPost.do', '', 'N', '')">구직신청</a></li>
@@ -114,7 +111,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="javascript:void(0);">취업지원</a>
+								<a href="javascript:void(0);"><span>취업지원</span></a>
 								<ul>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000054', '', '', 'N', '')">취업역량강화</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000084', '/r/d/1110/resumeSelfIntroGuide1Post.do', '', 'N', '')">취업가이드</a></li>
@@ -124,7 +121,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="javascript:void(0);">실업급여</a>
+								<a href="javascript:void(0);"><span>실업급여</span></a>
 								<ul>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000160', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', '', 'N', '')">수급자격</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000206', '/a/h/1100/retrieveEmpymnHopeCardInfoPost.do', '', 'N', '')">실업인정</a></li>
@@ -132,7 +129,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="javascript:void(0);">직업 능력 개발</a>
+								<a href="javascript:void(0);"><span>직업 능력 개발</span></a>
 								<ul>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', '', 'N', '')">국민내일배움카드</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000308', '/a/a/1100/trnnCrsInfPost.do', '', 'N', '')">훈련 찾기·신청</a></li>
@@ -140,7 +137,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="javascript:void(0);">출산 휴가·육아 휴직</a>
+								<a href="javascript:void(0);"><span>출산 휴가·육아 휴직</span></a>
 								<ul>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000393', '/b/a/1100/openHPEIBA1100M02Post.do', '', 'N', '')">출산(전후)휴가</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000418', '/b/b/1100/openHPEIBB1100M01Post.do', '', 'N', '')">육아휴직</a></li>
@@ -297,89 +294,77 @@
 					<div class="main_swiperFreqAccMenu_control">
 						<h1>자주찾는<br>서비스</h1>
 					</div>
-					<div class="swiper-container main_swiperFreqAccMenu">
+					<div class="main_overflow">
 						<div class="swiper-button-prev" title="이전 배너"></div>
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000161', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
-										<p>출산육아기 지원금</p>
-									</a>
+						<div class="swiper-container main_swiperFreqAccMenu">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000161', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
+											<p>출산육아기 지원금</p>
+										</a>
+									</div>
 								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
-										<p>고령자 고용 지원금</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
+											<p>고령자 고용 지원금</p>
+										</a>
+									</div>
 								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000235', '/a/g/1100/openHPEIAG1100M01Post.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
-										<p>이직확인서 신고</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000235', '/a/g/1100/openHPEIAG1100M01Post.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
+											<p>이직확인서 신고</p>
+										</a>
+									</div>
 								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000000018', '/a/b/2100/resumeMngMainPost.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
-										<p>구인신청관리</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000000018', '/a/b/2100/resumeMngMainPost.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
+											<p>구인신청관리</p>
+										</a>
+									</div>
 								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ua', 'EBG120000000003', '/t/b/1100/selectEmpmActFlflMngn.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
-										<p>(청년도약)<br>참여사업관리</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/ua', 'EBG120000000003', '/t/b/1100/selectEmpmActFlflMngn.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
+											<p>(청년도약)<br>참여사업관리</p>
+										</a>
+									</div>
 								</div>
-								<div class="famenu">
-									<a href="#none">
-										<span class="round"><span class="ico ico60_main_fam_persn6" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', 'EBM01', 'N','');"></span></span>
-										<p>국민내일배움카드<br>발급신청</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="ico ico60_main_fam_persn6" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', 'EBM01', 'N','');"></span></span>
+											<p>국민내일배움카드<br>발급신청</p>
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000161', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
-										<p>사업주훈련<br>사업주계좌 등록</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000161', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
+											<p>테스트1</p>
+										</a>
+									</div>
 								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
-										<p>실업인정<br>인터넷 신청</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000235', '/a/g/1100/openHPEIAG1100M01Post.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
-										<p>온라인 취업특강<br>1차 실업인정 교육</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000000018', '/a/b/2100/resumeMngMainPost.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
-										<p>구직신청</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none" onclick="fn_goPageUrl('/ua', 'EBG120000000003', '/t/b/1100/selectEmpmActFlflMngn.do', 'EBM01', 'N','');">
-										<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
-										<p>국민취업<br>구직촉진수당 신청</p>
-									</a>
-								</div>
-								<div class="famenu">
-									<a href="#none">
-										<span class="round"><span class="ico ico60_main_fam_persn6" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', 'EBM01', 'N','');"></span></span>
-										<p>국민내일배움카드<br>발급신청</p>
-									</a>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none" onclick="fn_goPageUrl('/ei', 'EBG020000000210', '/a/h/1200/openHPEIAH1200M01Post.do', 'EBM01', 'N','');">
+											<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
+											<p>테스트2</p>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-			
 						<div class="swiper-button-next" title="다음 배너"></div>
-						
 					</div>
 					<div class="swiper-pagination">1 / 1</div>
 
@@ -388,6 +373,8 @@
 
 				<script>
 					const mainswiperFreqAccMenu = new Swiper(".main_swiperFreqAccMenu",{
+						slidesPerView: 6,
+						spaceBetween: 24,
 						pagination: {
 							el: ".main_swiperFreqAccMenu_wrap .swiper-pagination",
 							type: "fraction",
@@ -1590,22 +1577,70 @@
 		<footer id="footer">
 			<div class="site">
 				<div class="area">
-					<button type="button">
+					<button type="button" class="btnsite btn_family">
 						<span class="text">패밀리사이트</span>
 						<span class="icon"></span>
 					</button>
-					<button type="button">
+					<button type="button" class="btnsite btn_related">
 						<span class="text">유관기관</span>
 						<span class="icon"></span>
 					</button>
+
+					<div class="site_list">
+						<div class="list list--family" style="display: none;">
+							<ul>
+								<li class="item"><a href="https://www.work.go.kr" target="_blank">워크넷</a></li>
+								<li class="item"><a href="https://www.hrd.go.kr" target="_blank">직업훈련포털</a></li>
+								<li class="item"><a href="https://www.eps.go.kr" target="_blank">외국인고용</a></li>
+								<li class="item"><a href="https://www.kua.go.kr" target="_blank">국민취업지원제도</a></li>
+								<li class="item"><a href="https://eis.work.go.kr" target="_blank">고용행정통계</a></li>
+								<li class="item"><a href="https://www.workplus.go.kr" target="_blank">고용복지센터</a></li>
+								<li class="item"><a href="https://www.worktogether.or.kr" target="_blank">장애인고용포털</a></li>
+								<li class="item"><a href="https://www.work.go.kr/cyberedu/main.do" target="_blank">사이버진로교육센터</a></li>
+								<li class="item"><a href="https://saeil.mogef.go.kr/hom/HOM_Main.do" target="_blank">여성새로일하기센터</a></li>
+								<li class="item"><a href="https://www.gasarang.go.kr/hpgsMain.do" target="_blank">가사랑</a></li>
+							</ul>
+						</div>
+						<div class="list list--related" style="display: none;">
+							<ul>
+								<li class="item"><a href="https://www.4insure.or.kr/ins4/ptl/Main.do" target="_blank">4대사회보험정보연계센터</a></li>
+								<li class="item"><a href="https://www.comwel.or.kr" target="_blank">근로복지공단</a></li>
+								<li class="item"><a href="https://www.hrdkorea.or.kr" target="_blank">한국산업인력공단</a></li>
+								<li class="item"><a href="https://ncs.go.kr" target="_blank">직무능력표준</a></li>
+								<li class="item"><a href="https://c.q-net.or.kr" target="_blank">CQ넷</a></li>
+								<li class="item"><a href="https://www.koreatech.ac.kr" target="_blank">한국기술교육대학교</a></li>
+								<li class="item"><a href="https://www.kopo.ac.kr" target="_blank">한국폴리텍대학</a></li>
+								<li class="item"><a href="https://www.hikorea.go.kr" target="_blank">하이코리아</a></li>
+								<li class="item"><a href="https://eps.hrdkorea.or.kr/h2/main/main.do" target="_blank">외국국적동포(H-2)취업교육홈페이지</a></li>
+								<li class="item"><a href="http://www.hugkorea.or.kr" target="_blank">외국인력상담센터</a></li>
+								<li class="item"><a href="https://www.kosha.or.kr" target="_blank">안전보건공단</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
+			<script>
+				$('.site .btnsite').on('click', function() {
+					var _btnIndex = $(this).index();
+					$('.site_list >div').slideUp(200);
+					if($('.site_list >div').eq(_btnIndex).is(':visible') === false) {
+						$('.site .btnsite').removeClass('active').removeAttr('title')
+						$(this).addClass('active').attr('title', '펼쳐짐')
+
+						$('.site_list >div').eq(_btnIndex).slideDown(200);
+					} else {
+						$('.site .btnsite').removeClass('active').removeAttr('title')
+					}
+				});
+			</script>
 
 			<div class="group">
 				<div class="area">
 					<div class="logos">
 						<a href="http://www.moel.go.kr" target="_blank"><img src="../images/footer_ci01.png" alt="고용노동부"></a>
 						<a href="https://www.keis.or.kr" target="_blank"><img src="../images/footer_ci02.png" alt="한국고용정보원"></a>
+
+						
 					</div>
 					<div class="flex">
 						<div class="flex_left">
