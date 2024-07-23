@@ -519,6 +519,7 @@
 #footer .site .btnsite ~ .btnsite { border-right: 1px solid #ddd;}
 #footer .site .btnsite .text { display: block; color: #111;}
 #footer .site .btnsite .icon { display: block; width: 24px; height: 24px; background: url(../images/ico24_plus.svg) no-repeat;}
+#footer .site .btnsite.active span { font-weight: 600; text-decoration: underline;}
 #footer .site .btnsite.active .icon { background: url(../images/ico24_minus.svg) no-repeat;}
 
 
