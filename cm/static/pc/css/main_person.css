@@ -382,7 +382,7 @@
 #container .main_recruitment .company_list { height: 438px; padding: 12px 20px 0; border: none; border: 3px solid #fff; background-color: #fff; box-shadow: 2px 2px 16px 0 rgba(0,0,0,.04); transition: all ease-out .2s;}
 #container .main_recruitment .company_list .logo { height: 120px;}
 #container .main_recruitment .company_list .logo img { width: initial;}
-#container .main_recruitment .company_list .label_box { height: initial; margin-top: 4px;}
+#container .main_recruitment .company_list .label_box { height: 22px; margin-top: 4px;}
 #container .main_recruitment .company_list .label_box .label { height: 22px; font-size: 12px; line-height: 22px;}
 #container .main_recruitment .company_list .tit { overflow: hidden; display: block; height: initial; white-space:nowrap;}
 #container .main_recruitment .company_list .recruit_info { margin-top: 4px;}
@@ -576,6 +576,7 @@
 #container .training .main_jobs_recomm .jobs_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px rgba(0,0,0,.08);}
 #container .training .main_jobs_recomm .jobs_list:hover .list dd .desc { text-decoration: underline;}
 #container .training .main_jobs_recomm .jobs_list:hover .expense_info { background-color: #E8FCF0;}
+#container .training .main_jobs_recomm .jobs_list .list dd .mark_info img { width: 48px; height: auto; vertical-align: top;}
 #container .training .mfs_more { top: 125px;}
 #container .training .jobs_list_wrap { overflow: hidden; padding-bottom: 32px;}
 #container .training .jobs_list_wrap .page_survey_wrap.type2 { background: url(../images/ico_star_green.svg) 0 0 no-repeat;}
@@ -585,6 +586,7 @@
 #container .training .bgico9 { display: block; position: absolute; right: -215px; bottom: 125px; width: 106px; height: 106px; background: url(../images/bgico9.png) no-repeat;}
 #container .training .bgico10 { display: block; position: absolute; right: -168px; bottom: -80px; width: 357px; height: 231px; background: url(../images/bgico10.png) no-repeat;}
 #container .training .bgico11 { display: block; position: absolute; right: -230px; bottom: -80px; width: 204px; height: 72px; background: url(../images/bgico11.png) no-repeat;}
+
 #container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container 
 #container 
