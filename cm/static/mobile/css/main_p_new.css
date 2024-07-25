@@ -2,19 +2,20 @@
 
 
 /* 공통 */
-.main_new .tit_group { margin: 0;}
-.main_new .tit_group--between { justify-content: space-between;}
-.main_new .tit_group .setting { display: flex; justify-content: center; align-items: center; height: 32px; padding: 0 8px; font-size: 14px; border: 1px solid #ddd; background-color: #fff; border-radius: 16px;}
+.main_new button { cursor: pointer;}
+.main_new .tit_group { margin: 0; gap: 0;}
+.main_new .tit_group .setting { display: flex; justify-content: center; align-items: center; height: 32px; margin-left: 16px; font-size: 14px;}
 .main_new .tit_group .setting .icon { display: block; width: 16px; height: 16px; margin-right: 4px; background: url(../images/main_new/ico16_ui_setting.svg) no-repeat;}
-.main_new .t2_sb { font-size: 24px; font-weight: 700; color: #111;}
-.main_new .swiper-button-prev { left: -17px;}
-.main_new .swiper-button-next { right: -17px;}
-.main_new .swiper-button-next:after, 
-.main_new .swiper-button-prev:after { font-size: 14px; font-weight: 600;}
-.main_new .swiper-pagination { display: flex; justify-content: center; align-items: center; left: 50%; bottom: -48px; width: 46px; height: 24px; margin-left: -23px; font-size: 12px; color: #757575; letter-spacing: 1.5px; border: 1px solid #eee; background-color: #fff; border-radius: 12px;}
+.main_new .tit_group .setting span { font-size: 14px; font-weight: 600; color: #555;}
+.main_new .t2_sb { font-size: 20px; font-weight: 700; color: #111;}
+.main_new .swiper-button-prev { display: block; left: 50%; top: initial; bottom: -45px; width: 32px; height: 32px; margin-left: -57px; background: url(../images/main_new/ico32_arrow_circle_left.svg) no-repeat;}
+.main_new .swiper-button-next { display: block; left: 50%; top: initial; bottom: -45px; width: 32px; height: 32px; margin-left: 21px; background: url(../images/main_new/ico32_arrow_circle_right.svg) no-repeat;}
+.main_new .swiper-button-prev::after,
+.main_new .swiper-button-next::after { display: none;}
+.main_new .swiper-pagination { display: flex; justify-content: center; align-items: center; left: 50%; bottom: -40px; width: 46px; height: 24px; margin-left: -23px; font-size: 14px; color: #757575; letter-spacing: 2.5px;}
 .main_new .swiper-pagination-current { color: #333; font-weight: 600;}
 .main_new .mfs_more { display: flex; align-items: center; position: absolute; right: 0; top: 43px;}
-.main_new .mfs_more span { font-weight: 600;}
+.main_new .mfs_more span { font-size: 14px; font-weight: 600; color: #555;}
 .main_new .mfs_more .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 .main_new .mfs_text { margin-top: 8px;}
 .main_new .mfs_tab { display: flex; align-items: center; margin-top: 24px;}
@@ -28,6 +29,8 @@
 .main_new .tab_body a { display: flex; align-items: center;}
 .main_new .tab_body a span { font-weight: 600;}
 .main_new .tab_body a .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
+
+
 .main_new.contents { padding: 24px 20px 60px !important;}
 
 
@@ -38,23 +41,27 @@
 
 .main_new .main_login { margin-top: 24px; border: 1px solid #62D491; border-radius: 8px;}
 .main_new .main_login .main_login_notice { padding: 24px 16px; text-align: center;}
-.main_new .main_login .main_login_notice .s1_r { font-size: 18px; font-weight: 600;}
+.main_new .main_login .main_login_notice .s1_r { font-size: 18px; font-weight: 600; color: #000;}
 .main_new .main_login .main_login_notice .s1_r .em_blue { font-weight: 600; color: #117935;}
-.main_new .main_login .main_login_notice .notice_expand { display: flex; justify-content: center; align-items: center; width: 100%; height: 40px; margin-top: 24px; background-color: #62D491; border-radius: 20px;}
+.main_new .main_login .main_login_notice .notice_expand { display: flex; justify-content: center; align-items: center; width: 100%; height: 40px; margin-top: 24px; background-color: #62D491; border-radius: 4px;}
 .main_new .main_login .main_login_notice .notice_expand span { font-weight: 600; color: #111;}
-.main_new .main_login_after { padding: 24px 16px;}
-.main_new .main_login_after .mla_list { display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 24px 12px; margin-top: 24px;}
-.main_new .main_login_after .mla_list li { width: calc(100% / 3 - 24px); text-align: center;}
-.main_new .main_login_after .mla_list li .round { display: flex; justify-content: center; align-items: center; position: relative; width: 48px; height: 48px; margin: 0 auto; background-color: #F5F5F5; border-radius: 50%;}
-.main_new .main_login_after .mla_list li .round .icon { display: block; width: 24px; height: 24px; position: relative;}
-.main_new .main_login_after .mla_list li .round .icon.icon--register { background: url(../images/main_new/ico24_ui_register.svg) no-repeat center;}
-.main_new .main_login_after .mla_list li .round .icon.icon--task { background: url(../images/main_new/ico24_ui_task.svg) no-repeat center;}
-.main_new .main_login_after .mla_list li .round .icon.icon--more { background: url(../images/main_new/ico24_ui_more.svg) no-repeat center;}
-.main_new .main_login_after .mla_list li .round .icon.icon--menu { background: url(../images/main_new/ico24_ui_menu.svg) no-repeat center;}
-.main_new .main_login_after .mla_list li .round .icon.icon--return { background: url(../images/main_new/ico24_ui_return.svg) no-repeat center;}
-.main_new .main_login_after .mla_list li .round .icon.icon--checked { background: url(../images/main_new/ico24_ui_checked.svg) no-repeat center;}
-.main_new .main_login_after .mla_list li .round .num { display: flex; justify-content: center; align-items: center; position: absolute; right: -14px; top: -4px; height: 24px; padding: 0 8px; font-size: 12px; font-weight: 600; color: #111; background-color: #62D491; border-radius: 12px;}
+.main_new .main_login_after { position: relative; padding: 20px 16px;}
+.main_new .main_login_after .mla_list { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 24px; gap: 20px 40px;}
+.main_new .main_login_after .mla_list li { width: calc(50% - 20px);}
+.main_new .main_login_after .link { display: flex; justify-content: space-between; align-items: center; position: relative;}
+.main_new .main_login_after .link::after { content: ''; display: block; position: absolute; left: -20px; top: 50%; width: 1px; height: 16px; margin-top: -8px; background-color: #eee;}
+.main_new .main_login_after .link .icon { display: block; width: 24px; height: 24px; margin-right: 8px;}
+.main_new .main_login_after .link .icon.icon--img1 { background: url(../images/main_new/ico24_ui_register.svg) no-repeat center;}
+.main_new .main_login_after .link .icon.icon--img2 { background: url(../images/main_new/ico24_ui_task.svg) no-repeat center;}
+.main_new .main_login_after .link .icon.icon--img3 { background: url(../images/main_new/ico24_ui_close.svg) no-repeat center;}
+.main_new .main_login_after .link .icon.icon--img4 { background: url(../images/main_new/ico24_ui_checked.svg) no-repeat center;}
+.main_new .main_login_after .link .num { display: flex; justify-content: center; align-items: center; position: absolute; right: -14px; top: -4px; height: 24px; padding: 0 8px; font-size: 12px; font-weight: 600; color: #111; background-color: #62D491; border-radius: 12px;}
+.main_new .main_login_after .left { display: flex; align-items: center;}
+.main_new .main_login_after .right { display: flex; align-items: center;}
+.main_new .main_login_after .right .count { display: block; margin-right: 2px; font-size: 18px; font-weight: 600; color: #117935;}
+.main_new .main_login_after .right span { font-size: 14px;}
 .main_new .main_login_after .mla_list li .text { display: block; margin-top: 8px; font-size: 14px;}
+.main_new .main_login_after .mfs_more { right: 13px; top: 26px;}
 
 .main_new .main_swiperFreqAccMenu { position: relative; margin: 40px -20px 0; padding: 40px 20px 88px; background-color: #F8F8F8;}
 .main_new .main_swiperFreqAccMenu .bgico1 { display: block; position: absolute; right: 0; top: 15px; width: 107px; height: 125px; background: url(../images/main_new/ico_bgico1.svg) no-repeat;}
@@ -74,10 +81,14 @@
 .main_new .freqAccMnu_swiper_wrap .ico60_main_fam_persn6 { background: url(../images/main_new/ico60_main_fam_persn6.svg) no-repeat;}
 
 .main_new .main_favorite_service { position: relative; padding: 40px 0 87px;}
-.main_new .main_favorite_service .a_block { display: block;}
-.main_new .main_favorite_service .a_block .tit { min-height: 108px; padding: 24px 20px; font-size: 20px; font-weight: 600; color: #111; line-height: 30px; background-color: #E3EEFF; border-radius: 8px 8px 0 0;}
-.main_new .main_favorite_service .a_block .service_summary { min-height: 97px; padding: 24px 20px; color: #555; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px;}
-.main_new .main_favorite_service .service_swiper_wrap { position: relative; margin-top: 24px; padding: 0 12px;}
+.main_new .main_favorite_service .swiper-slide a { display: block; padding: 24px 20px; border-radius: 8px;}
+.main_new .main_favorite_service .swiper-slide a.blue { background-color: #E3EEFF;}
+.main_new .main_favorite_service .swiper-slide a.green { background-color: #E8FCF0;}
+.main_new .main_favorite_service .swiper-slide a.red { background-color: #FDEDE5;}
+.main_new .main_favorite_service .swiper-slide a .tit { font-size: 18px; font-weight: 600; color: #111; line-height: 28px;}
+.main_new .main_favorite_service .swiper-slide a .service_summary { color: #555; line-height: 24px;}
+.main_new .main_favorite_service .service_swiper_wrap { position: relative; margin: 24px -20px 0; padding: 0 30px;}
+.main_new .main_favorite_service .swiper-wrapper { display: flex; align-items: center;}
 .main_new .main_favorite_service .swiper-slide { width: 100%;}
 
 .main_new .main_employment_information { position: relative; margin: 0 -20px; padding: 40px 20px 87px; background-color: #F8F8F8;}
@@ -140,7 +151,7 @@
 .main_new .main_information .company_list { padding: 32px 24px 0; background-color: #fff; border-radius: 8px; box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, .04);}
 .main_new .main_information .salary { display: flex; justify-content: space-between; align-items: center; height: 60px; margin: 24px -24px 0; padding: 0 24px; border-top: 1px solid #eee;}
 .main_new .main_information .salary a { display: flex; align-items: center;}
-.main_new .main_information .salary a.a_block .icon { display: block; width: 16px; height: 16px; margin: -1px 4px 0 0; background: url(../images/main_new/ico16_money_filled.svg) no-repeat;}
+.main_new .main_information .salary a.icon { display: block; width: 16px; height: 16px; margin: -1px 4px 0 0; background: url(../images/main_new/ico16_money_filled.svg) no-repeat;}
 .main_new .main_information .salary a.detail_view .icon { display: block; width: 16px; height: 16px; margin: -2px 0 0 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 .main_new .main_information .salary a.detail_view span { font-weight: 600; color: #111;}
 .main_new .main_information .jobTrReq_swiper_wrap { position: relative;}
@@ -168,18 +179,31 @@
 
 .main_new .main_work24_news { position: relative; padding-top: 40px;}
 .main_new .main_work24_news .work24_news_article { margin-top: 24px;}
-.main_new .main_work24_news .list { border: 1px solid #eee; border-radius: 8px;}
-.main_new .main_work24_news .list li a { display: block; padding: 20px 16px;}
+.main_new .main_work24_news .list li a { display: block; padding: 20px 16px; border: 1px solid #ddd; border-radius: 8px;}
 .main_new .main_work24_news .list li a .list_body { display: flex; justify-content: space-between; align-items: center;}
-.main_new .main_work24_news .list li a .list_body .icon { display: block; width: 16px; height: 16px; background: url(../images/main_new/ico16_ipin.svg) no-repeat;}
+.main_new .main_work24_news .list li a .list_body .icon { display: none; width: 16px; height: 16px; background: url(../images/main_new/ico16_ipin.svg) no-repeat;}
 .main_new .main_work24_news .list li a .list_title { margin-top: 8px; font-size: 18px; font-weight: 600; color: #111;}
-.main_new .main_work24_news .list li a .date { display: block; margin-top: 8px; font-size: 14px; color: #757575; line-height: 24px;}
-.main_new .main_work24_news .list li a .topic { display: block; position: relative; padding-left: 20px; font-size: 14px; color: #555;}
+.main_new .main_work24_news .list li a .date { display: block; margin-top: 8px; font-size: 14px; color: #555; line-height: 24px;}
+.main_new .main_work24_news .list li a .topic { display: block; position: relative; padding-left: 20px; font-size: 14px; font-weight: 600; color: #555;}
 .main_new .main_work24_news .list li a .topic::after { content: ''; display: block; position: absolute; left: 0; top: 4px; width: 16px; height: 16px;}
 .main_new .main_work24_news .list li a .topic.news::after { background: url(../images/main_new/ico_16_news.svg) no-repeat;}
 .main_new .main_work24_news .list li a .topic.notice::after { background: url(../images/main_new/ico16_notice.svg) no-repeat;}
 .main_new .main_work24_news .list li a .topic.guide::after { background: url(../images/main_new/ico16_guide.svg) no-repeat;}
-.main_new .main_work24_news .list li ~ li a { border-top: 1px solid #eee;}
+.main_new .main_work24_news .list li a.fixed { background-color: rgba(98, 212, 145, 0.04); border-color: #62D491;}
+.main_new .main_work24_news .list li a.fixed .list_body .icon { display: block;}
+.main_new .main_work24_news .list li ~ li { margin-top: 8px;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 기업 */
 .main_new.coporation .main_login { border-color: #4D65E1;}
@@ -188,6 +212,7 @@
 .main_new.coporation .main_login .main_login_notice .notice_expand span { color: #fff;}
 .main_new.coporation .main_login_after .mla_list li .round .num { color: #fff; background-color: #4D65E1;}
 .main_new.coporation .mfs_tab button.active { color: #fff; border-color: #4D65E1; background-color: #4D65E1;}
+.main_new.coporation .main_login_after .right .count { color: #4D65E1;}
 
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn1 { background: url(../images/main_new/ico60_main_fam_coporation1.svg) no-repeat;}
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn2 { background: url(../images/main_new/ico60_main_fam_coporation2.svg) no-repeat;}
@@ -216,7 +241,7 @@
 .main_new.coporation .talent_swiper_wrap .talent_tag span ~ span { margin-left: 8px;}
 .main_new.coporation .talent_swiper_wrap .talent_tag span::before { content: '#';}
 
-
+.main_new.coporation .main_work24_news .list li a.fixed { background-color: rgba(227, 238, 255, 0.15); border-color: #4D65E1;}
 
 
 

@@ -250,25 +250,85 @@
 					
 						<!-- 로그인 후 노출 -->
 						<div class="my_app_status">
+							<h3 class="t3_sb">
+								<a href="#" class="highlight">김고용</a>
+								<span>님의 서비스 신청 현황</span>
+							</h3>
 							<div class="flex">
-								<h3 class="t3_sb">
-									<a href="#" class="highlight">김고용</a>
-									<span>님의 서비스 신청 현황</span>
-								</h3>
-								<button type="button" class="btn_mypage">
-									<span class="text">마이페이지 바로가기</span>
-									<span class="icon"></span>
-								</button>
+								
+								
 							</div>
 							<ul class="status_list">
-								<li><a href="#none" onclick="fn_goCvplList('A0700')">작성중<span class="count">1</span></a></li>
-								<li><a href="#none" onclick="fn_goCvplList('A0701')">제출<span class="count">11</span></a></li>
-								<li><a href="#none" onclick="fn_goCvplList('A0703')">처리중<span class="count">2</span></a></li>
-								<li><a href="#none" onclick="fn_goCvplList('A0705')">보완<span class="count">2</span></a></li>
-								<li><a href="#none" onclick="fn_goCvplList('A0706')">반려<span class="count">2</span></a></li>
-								<li><a href="#none" onclick="fn_goCvplList('A0704')">처리완료<span class="count">3</span></a></li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0700')">
+										<div class="left">
+											<i class="icon icon--img1"></i>
+											<span class="lineBg2s">작성중</span>
+										</div>
+										<div class="right">
+											<span class="count">3</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0701')">
+										<div class="left">
+											<i class="icon icon--img2"></i>
+											<span class="lineBg2s">제출</span>
+										</div>
+										<div class="right">
+											<span class="count">11</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0703')">
+										<div class="left">
+											<i class="icon icon--img3"></i>
+											<span class="lineBg2s">처리중</span>
+										</div>
+										<div class="right">
+											<span class="count">0</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0705')">
+										<div class="left">
+											<i class="icon icon--img4"></i>
+											<span class="lineBg2s">보완</span>
+										</div>
+										<div class="right">
+											<span class="count">3</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0706')">
+										<div class="left">
+											<i class="icon icon--img5"></i>
+											<span class="lineBg2s">반려</span>
+										</div>
+										<div class="right">
+											<span class="count">0</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0704')">
+										<div class="left">
+											<i class="icon icon--img6"></i>
+											<span class="lineBg2s">처리완료</span>
+										</div>
+										<div class="right">
+											<span class="count">0</span><span>건</span>
+										</div>
+									</a>
+								</li>
 							</ul>
-							<button class="close"><span class="blind">나의 신청 현황 닫기</span></button>
+							<button type="button" class="btn_mypage">
+								<span class="text">마이페이지 바로가기</span>
+							</button>
 						</div>
 						<!--// 로그인 후 노출 -->
 					</div>
@@ -278,7 +338,6 @@
 				<!-- //검색영역 -->
 			</div>
 			<!-- //검색/로그인 -->
-			
 			
 			<!-- 자주찾는 서비스 -->
 			<div class="main_favorite">
@@ -845,16 +904,15 @@
 			<div class="information_group main_recruitment">
 				<div class="main_section_wrap main_recruit_information_person main_swiper01_wrap" id="job_recom_recruit_info_sec">
 					<div class="after main_jobs_information">
-						<div class="al_center">
+						<div class="h_body">
 							<h2 class="h1_sb">일자리 추천</h2>
-						</div>
-						<div class="flex">
-							<p class="main_explain_txt01 mt08"><span class="em">김고용</span>님께 적합한 일자리를 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
 							<button type="button" class="btn_setting">
 								<span class="icon"></span>
 								<span class="text">설정</span>
 							</button>
 						</div>
+						<p class="main_explain_txt01 mt08"><span class="em">김고용</span>님께 적합한 일자리를 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+							
 						<div class="recomm_tab mt32">
 							<ul class="tablist" role="tablist">
 								<li><button type="button" role="tab" id="recruit1" aria-selected="true" aria-controls="일자리개인특성" onclick="fn_showDiv(this,'main_jobs_information')">개인특성<span class="count">3</span></button></li>
@@ -1381,13 +1439,16 @@
 			<div class="grayBg training">
 				<div class="main_section_wrap" id="jobs_recomm_sec">
 					<div class="main_jobs_recomm">
-						<h2 class="h1_sb">직업훈련 추천</h2>
-						<div class="flex">
-							<p class="main_explain_txt01 mt08"><span class="em">김고용</span>님께 적합한 직업훈련을 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+						<div class="h_body">
+							<h2 class="h1_sb">직업훈련 추천</h2>
 							<button type="button" class="btn_setting" onclick="fn_setFixTrain()">
 								<span class="icon"></span>
 								<span class="text">설정</span>
 							</button>
+						</div>
+						<div class="flex">
+							<p class="main_explain_txt01 mt08"><span class="em">김고용</span>님께 적합한 직업훈련을 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+							
 						</div>
 				
 						<div class="recomm_tab mt32">

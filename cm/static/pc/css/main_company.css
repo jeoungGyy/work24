@@ -298,10 +298,16 @@
 
 
 /* [고도화] */
-#container .my_app_status h3.t3_sb .highlight { color: #4D65E1;}
-#wrap.company .my_app_status h3.t3_sb . { color: #4D65E1;}
+.lineBg2s {
+	background-image: linear-gradient(transparent 60%, rgba(77, 101, 225, .5) 40%);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	transition: background-size 0.2s
+}
+
+#wrap.company .my_app_status h3.t3_sb .highlight { color: #4D65E1;}
 #wrap.company #container .login_guide .btn { color: #fff; background-color: #4D65E1;}
-#wrap.company #container .my_app_status .status_list li .count { color: #fff; background-color: #4D65E1;}
+#wrap.company #container .my_app_status .status_list li .count { color: #4D65E1;}
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1.png) no-repeat;}
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2.png) no-repeat;}
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn3 { background: url(../images/ico60_main_fam_compny3.png) no-repeat;}
