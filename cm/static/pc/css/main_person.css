@@ -343,12 +343,12 @@
 #container .my_app_status .status_list li a .left span { font-size: 14px;}
 #container .my_app_status .status_list li a .right { display: flex; align-items: center;}
 #container .my_app_status .status_list li a .icon { display: block; width: 24px; height: 24px; margin-right: 8px;}
-#container .my_app_status .status_list li a .icon--img1 { background: url(../images/mainNew/ico24_member.png) no-repeat;}
-#container .my_app_status .status_list li a .icon--img2 { background: url(../images/mainNew/ico24_member2.png) no-repeat;}
-#container .my_app_status .status_list li a .icon--img3 { background: url(../images/mainNew/ico24_member3.png) no-repeat;}
-#container .my_app_status .status_list li a .icon--img4 { background: url(../images/mainNew/ico24_member4.png) no-repeat;}
-#container .my_app_status .status_list li a .icon--img5 { background: url(../images/mainNew/ico24_member5.png) no-repeat;}
-#container .my_app_status .status_list li a .icon--img6 { background: url(../images/mainNew/ico24_member6.png) no-repeat;}
+#container .my_app_status .status_list li a .icon--img1 { background: url(../images/main_new/ico24_member.png) no-repeat;}
+#container .my_app_status .status_list li a .icon--img2 { background: url(../images/main_new/ico24_member2.png) no-repeat;}
+#container .my_app_status .status_list li a .icon--img3 { background: url(../images/main_new/ico24_member3.png) no-repeat;}
+#container .my_app_status .status_list li a .icon--img4 { background: url(../images/main_new/ico24_member4.png) no-repeat;}
+#container .my_app_status .status_list li a .icon--img5 { background: url(../images/main_new/ico24_member5.png) no-repeat;}
+#container .my_app_status .status_list li a .icon--img6 { background: url(../images/main_new/ico24_member6.png) no-repeat;}
 #container .my_app_status .status_list li a:hover .left span { font-weight: 600; background-size: 100% 100%;}
 #container .swiper-button-disabled { display: none !important; }
 
@@ -394,12 +394,12 @@
 #container .main_section_wrap .recomm_tab .tablist li .count { color: #117935;}
 #container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] .count { color: #111;}
 #container .information_group { background-color: #F5F5F5;}
-#container .main_informationMenu,
-#container .main_informationMenu2 { position: relative; z-index: 2;}
+#container .main_informationMenu .swiper-wrapper,
+#container .main_informationMenu2 .swiper-wrapper { z-index: 2;}
 
 
 .person #container .btn_setting { display: flex; align-items: center; position: relative; z-index: 2; height: 36px; margin-left: 16px;}
-.person #container .btn_setting .icon { display: block; width: 16px; height: 16px; margin-right: 4px; background: url(../images/mainNew/ico16_ui_setting.png) no-repeat;}
+.person #container .btn_setting .icon { display: block; width: 16px; height: 16px; margin-right: 4px; background: url(../images/main_new/ico16_ui_setting.png) no-repeat;}
 .person #container .btn_setting .text { font-weight: 600; color: #555;}
 
 /* 일자리 추천 */
@@ -423,8 +423,8 @@
 #container .main_recruitment .company_list:hover .info { background-color: #E8FCF0; border-radius: 0 0 8px 8px;}
 #container .main_recruitment .company_list:hover .tit { text-decoration: underline;}
 #container .main_recruitment .company_list .info.calendar span { display: block; padding-left: 32px; color: #111; background: url(https://www.work24.go.kr/cm/static/images/ico24_calendar.svg) no-repeat left 16px;}
-#container .main_recruitment .swiper-button-prev.btn_left { left: -65px; top: 320px;}
-#container .main_recruitment .swiper-button-next.btn_right { right: -65px; top: 320px;}
+#container .main_recruitment .swiper-button-prev.btn_left { left: -65px; top: calc(50% + 35px);}
+#container .main_recruitment .swiper-button-next.btn_right { right: -65px; top: calc(50% + 35px);}
 #container .main_recruitment .bgico2 { position: absolute; right: -114px; top: 20px; width: 247px; height: 276px; background: url(../images/bgico2.png) no-repeat;}
 #container .main_recruitment .bgico3 { position: absolute; left: -140px; bottom: -144px; width: 387px; height: 243px; background: url(../images/bgico3.png) no-repeat;}
 #container .main_recruitment .bgico4 { position: absolute; left: -200px; bottom: -49px; width: 226px; height: 92px; background: url(../images/bgico4.png) no-repeat;}
@@ -503,10 +503,12 @@
 #container .work24_news_article .news_division .ico_notice { background: url(../images/ico24_loudspeaker.svg) no-repeat;}
 #container .work24_news_article .news_division .ico_pds { background: url(../images/ico24_pds.svg) no-repeat;}
 #container .work24_news_article .news_division .list_body { display: flex; align-items: center;}
-#container .work24_news_article .news_division .icon { display: block; width: 16px; height: 16px; background: url(../images/ico16_ipin.svg) no-repeat;}
-#container .work24_news .news_item:nth-child(1) { height: 324px; border-color: #62D491; background-color: rgba(98,212,145, .04);}
+#container .work24_news_article .news_division .icon { display: none; width: 16px; height: 16px; background: url(../images/ico16_ipin.svg) no-repeat;}
+#container .work24_news .news_item.fixed { border-color: #62D491; background-color: rgba(98,212,145, .04);}
+#container .work24_news .news_item.fixed .icon { display: block;}
+#container .work24_news .news_item:nth-child(1) { height: 324px;}
 #container .work24_news .news_item:nth-child(2) { height: 184px;}
-#container .work24_news .news_item:nth-child(3) { height: 184px; border-color: #62D491; background-color: rgba(98,212,145, .04);}
+#container .work24_news .news_item:nth-child(3) { height: 184px;}
 #container .work24_news .news_item:nth-child(4) { height: 324px;}
 #container .work24_news .news_item:nth-child(5) { height: 324px;}
 #container .work24_news .news_item:nth-child(6) { height: 184px;}
@@ -516,6 +518,8 @@
 #container .work24_news .news_item:nth-child(3) .news_article,
 #container .work24_news .news_item:nth-child(6) .news_article,
 #container .work24_news .news_item:nth-child(8) .news_article { display: none;}
+#container .work24_news .btn_left { left: -62px; top: calc(50% - 20px); border: none;}
+#container .work24_news .btn_right { right: -62px; top: calc(50% - 20px); border: none;}
 #container .news_swiper { overflow: hidden; padding-bottom: 35px;}
 #container .swiper_policy { overflow: hidden; padding: 0 2px 55px;}
 #container .main_policy_recomm { position: relative; margin: 80px 0;}
@@ -615,6 +619,8 @@
 #container .training .bgico9 { display: block; position: absolute; right: -215px; bottom: 125px; width: 106px; height: 106px; background: url(../images/bgico9.png) no-repeat;}
 #container .training .bgico10 { display: block; position: absolute; right: -168px; bottom: -80px; width: 357px; height: 231px; background: url(../images/bgico10.png) no-repeat;}
 #container .training .bgico11 { display: block; position: absolute; right: -230px; bottom: -80px; width: 204px; height: 72px; background: url(../images/bgico11.png) no-repeat;}
+#container .training .btn_left { left: -62px; top: calc(50% + 35px); border: none;}
+#container .training .btn_right { right: -62px; top: calc(50% + 35px); border: none;}
 
 #container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/ico16_arrow_right.svg) no-repeat;}
 #container 

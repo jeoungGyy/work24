@@ -67,25 +67,31 @@
 		<header>
 			<!-- #header_top -->
 			<div id="header_top">
+				<div class="header_lt">
+					<div class="get_top">
+						<i class="icon"></i>
+						<span class="text">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+					</div>
+					<ul class="header_info">
+						<li class="after">
+							<i class="icons"></i>
+							<span id="timeOut">29분39초</span>
+							<a href="javascript:void(0);" onclick="gfn_nowTimeAdd()" class="btn xxsmall btn_round type05">시간연장</a>
+							<span class="at_header_name_area">김고용님</span>
+							<a href="/cm/z/b/0210/lgut.do" class="btn xxsmall btn_round type05">로그아웃</a>
+							<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001287', '/z/z/1000/selectMyPageByPersonPost.do', 'EBM04');" class="btn xxsmall btn_round type05">마이페이지</a>
+						</li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do')">로그인</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '2', '/a/a/0110/openJoinPagePost.do')">회원가입</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'x', '/c/d/0180/retrieveSiteEasyHpcmPost.do')">이용안내</a></li>
+						<li class="line"><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001589', '/c/c/0120/selectUtzeInqrLstPost.do', 'EBM02', 'N', '')">질문과 답변</a></li>
+						<li class="line"><a href="http://as82.kr/keis" target="_blank">원격지원</a></li>
+					</ul>
+				</div>
 				<div class="header_top_area">
 					<ul class="header_type">
 						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM01')">개인</a></li>
 						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM00')">기업</a></li>
-					</ul>
-					<ul class="header_info">
-						<li>
-						
-							<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do')">로그인</a>
-							</li><li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '2', '/a/a/0110/openJoinPagePost.do')">회원가입</a></li>
-						
-						
-						
-						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'x', '/c/d/0180/retrieveSiteEasyHpcmPost.do')">이용안내 | </a></li>
-						<li class="headerliSpaceCtrl"><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001589', '/c/c/0120/selectUtzeInqrLstPost.do', 'EBM02', 'N', '')">질문과 답변 | </a></li>
-						<li><a href="http://as82.kr/keis" target="_blank">원격지원</a></li>
-						<!--<li class="bul_li"><a href="#none">글자크기</a></li>
-						<li><button type="button" class="btn_num plus" onclick="zoomControl.zoomIn();"><span class="blind">확대</span></button></li>
-						<li><button type="button" class="btn_num minus" onclick="zoomControl.zoomOut();"><span class="blind">축소</span></button></li> -->
 					</ul>
 				</div>
 			</div>
@@ -884,16 +890,15 @@
 
 				<script>
 					const mainSwiper02 = new Swiper(".main_swiper02",{
-						loop: true,
 						slidesPerView: 4,
 						spaceBetween: 24,
 						pagination: {
-							el: ".main_swiper02_wrap .swiper-pagination",
+							el: ".main_swiper02 .swiper-pagination",
 							clickable: true,
 						},
 						navigation: {
-							nextEl: ".main_swiper02_wrap .swiper-button-next",
-							prevEl: ".main_swiper02_wrap .swiper-button-prev",
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
 						},
 					});
 				</script>
@@ -933,7 +938,6 @@
 
 				<script>
 					const mainSwiper01= new Swiper(".main_swiper01",{
-						loop: true,
 						pagination: {
 							el: ".main_swiper01 .swiper-pagination",
 							lickable: true,
@@ -1051,8 +1055,8 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item">
-											<div class="news_division">
+										<div class="news_item fixed"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
 												<div class="list_body">
 													<span class="ico ico_news"></span>
 													<span>뉴스</span>
@@ -1065,7 +1069,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1080,7 +1084,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1100,6 +1104,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
@@ -1113,6 +1118,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 					
 											<h3 class="news_title">
@@ -1127,6 +1133,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
@@ -1140,6 +1147,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
@@ -1153,6 +1161,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
@@ -1164,7 +1173,7 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1178,7 +1187,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1213,6 +1222,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
@@ -1226,6 +1236,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 					
 											<h3 class="news_title">
@@ -1240,6 +1251,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
@@ -1253,6 +1265,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
@@ -1266,6 +1279,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
@@ -1277,7 +1291,7 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1291,7 +1305,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1306,7 +1320,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1326,6 +1340,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
@@ -1339,6 +1354,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 					
 											<h3 class="news_title">
@@ -1353,6 +1369,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
@@ -1366,6 +1383,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
@@ -1379,6 +1397,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
@@ -1390,7 +1409,7 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1404,7 +1423,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1419,7 +1438,7 @@
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -1439,6 +1458,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
@@ -1452,6 +1472,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 					
 											<h3 class="news_title">
@@ -1466,6 +1487,7 @@
 													<span class="ico ico_notice"></span>
 													<span>공지</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
@@ -1479,6 +1501,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
@@ -1492,6 +1515,7 @@
 													<span class="ico ico_pds"></span>
 													<span>자료</span>
 												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
 												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
@@ -1502,6 +1526,9 @@
 									</div>
 								</div>
 							</div>
+							
+							<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+							<div class="swiper-button-next btn_right" title="다음 배너"></div>
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
@@ -1512,6 +1539,10 @@
 						pagination: {
 							el: ".news_swiper .swiper-pagination",
 							clickable: true,
+						},
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
 						},
 						on: {
 							slideChange: function () {

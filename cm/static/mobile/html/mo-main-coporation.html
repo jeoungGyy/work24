@@ -581,6 +581,40 @@
 									<span>굴삭기 운전</span>
 								</div>
 							</div>
+							<div class="swiper-slide">
+								<span class="talent_img">
+									<img src="../images/main_new/ico60_profile_M.png" alt="">
+								</span>
+								<p class="tit">김OO</p>
+								<div class="poly_list">
+									<ul>
+										<li>
+											<span class="title">직종</span>
+											<span class="sub">장애인 생활 지도원</span>
+										</li>
+										<li>
+											<span class="title">지역</span>
+											<span class="sub">경기 시흥시, 인천</span>
+										</li>
+										<li>
+											<span class="title">경력</span>
+											<span class="sub">13년 10개월</span>
+										</li>
+										<li>
+											<span class="title">자격증</span>
+											<span class="sub">굴착기운전기능사, 건설기계조종사면허(지게차)</span>
+										</li>
+									</ul>
+								</div>
+								<div class="talent_tag">
+									<span>영업 및 납품</span>
+									<span>거래처 관리</span>
+									<span>굴삭기 운전</span>
+									<span>영업 및 납품</span>
+									<span>거래처 관리</span>
+									<span>굴삭기 운전</span>
+								</div>
+							</div>
 						</div>
 						<div class="swiper-button-prev" title="이전 배너"></div>
 						<div class="swiper-button-next" title="다음 배너"></div>
@@ -594,24 +628,29 @@
 
 				<script>
 					const talentSwiper = new Swiper(".talent_swiper", {
-						autoplay: false
-						, slidesPerView: "auto"
-						, spaceBetween	: 60
-						, centeredSlides: true
-						, noSwipingClass: 'talent_tag'
-						, navigation: {
-							nextEl: ".talent_swiper > .swiper-button-next",
-							prevEl: ".talent_swiper > .swiper-button-prev",
-						}
-						, pagination: {
+						autoplay: false, 
+						centeredSlides: true, 
+						effect: 'coverflow',
+						grabCursor: true,
+						centeredSlides: true,
+						slidesPerView: 'auto',
+						observer : true,
+						observeParents : true,
+						navigation: {
+							nextEl: ".talent_swiper .swiper-button-next",
+							prevEl: ".talent_swiper .swiper-button-prev",
+						}, 
+						pagination: {
 							el: ".swiper-pagination",
 							type: "fraction",
-						}
-						, on: {
-							init: function() {
-								
-							},
-						}
+						},
+						coverflowEffect: {
+							rotate: 0,
+							stretch: -68,
+							depth: 350,
+							modifier: 1,
+							slideShadows: false,
+						},
 					});
 				</script>
 			</div>
@@ -631,32 +670,47 @@
 								<img src="../images/main_new/img_banner_temp01.png" alt="일생일대 취업이룸 일과 생계 지원을 한번에! 대한민국의 취업이름">
 							</a>
 						</div>
+						<div class="swiper-slide">		
+							<a href="https://www.work24.go.kr/cm/c/b/0130/selectBbttInfo.do?ntceStno=21&amp;bbsClCd=%2BWhIYyX4MTPwl6gr4E19tQ%3D%3D" target="_self" role="button">
+								<img src="../images/main_new/img_banner_temp01.png" alt="일생일대 취업이룸 일과 생계 지원을 한번에! 대한민국의 취업이름">
+							</a>
+						</div>
 					</div>
-		
+					
 					<div class="pagination_container">
-						<div class="swiper-pagination-fa">1 / 1</div>
+						<div class="swiper-pagination">1 / 1</div>
+						<div class="swiper-button-prev" title="이전 배너"></div>
 						<button type="button" class="btn_main_banner pause"><span class="blind">pause</span></button>
 						<button type="button" class="btn_main_banner play" style="display:none"><span class="blind">play</span></button>
+						<div class="swiper-button-next" title="다음 배너"></div>
 					</div>
-					<div class="swiper-button-prev" title="이전 배너"></div>
-					<div class="swiper-button-next" title="다음 배너"></div>
-					
 				</div>
 
 				<script>
 					const mainSwiper01 = new Swiper(".main_swiper01", {
-						autoplay		: true
-						, slidesPerView	: "auto"
-						, spaceBetween	: 60
-						, centeredSlides: true
-						, navigation : {
-							nextEl	: ".main_swiper01 > .swiper-button-next",
-							prevEl	: ".main_swiper01 > .swiper-button-prev",
-						}
-						, pagination: {
-							el: ".swiper-pagination-fa",
+						autoplay: false, 
+						centeredSlides: true, 
+						effect: 'coverflow',
+						grabCursor: true,
+						centeredSlides: true,
+						slidesPerView: 'auto',
+						observer : true,
+						observeParents : true,
+						navigation: {
+							nextEl: ".main_swiper01 .swiper-button-next",
+							prevEl: ".main_swiper01 .swiper-button-prev",
+						}, 
+						pagination: {
+							el: ".swiper-pagination",
 							type: "fraction",
-						}
+						},
+						coverflowEffect: {
+							rotate: 0,
+							stretch: -68,
+							depth: 350,
+							modifier: 1,
+							slideShadows: false,
+						},
 					});
 	
 					$(document).on('click', '.main_swiper01_wrap .btn_main_banner', function() {
