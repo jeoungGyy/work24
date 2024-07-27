@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="../css/font.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/reset.css">
         <link rel="stylesheet" href="../css/layout.css">
-        <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/common.css">
+        <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_a.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_b.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_c.css">
@@ -1767,7 +1767,8 @@
 
 		<!-- bottom layer -->
 		<div class="bottom_layer footer_quick">
-			<ul class="footer_quick_menu">
+			<h5 class="title">패밀리사이트 및 유관기관 바로가기</h5>
+			<div class="footer_quick_menu">
 				<div class="footer_info_list">
 					<span class="tit bold">패밀리사이트</span>
 					<ul class="list">
@@ -1800,7 +1801,7 @@
 						<li class="item"><a href="https://www.kosha.or.kr" target="_blank">안전보건공단</a></li>
 					</ul>
 				</div>
-			</ul>
+			</div>
 			<button type="button" class="layer_close">
 				<span class="blind">레이어 닫기</span>
 			</button>
@@ -1825,7 +1826,7 @@
                 </a>
             </li>
              <li>
-                <a href="/cm" class="bottom_bar_home">
+                <a href="/cm" class="bottom_bar_home active"> <!-- 활성화시 active 클래스 추가 -->
                     <i></i>
                     <span>홈</span>
                 </a>
@@ -1842,7 +1843,20 @@
 					<span>로그인</span>
 				</a>
 			</li>
+			<!-- <li>
+				<a href="javascript:void(0);" class="bottom_bar_attendance">
+					<i></i>
+					<span>출석체크</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" class="bottom_bar_my">
+					<i></i>
+					<span>마이페이지</span>
+				</a>
+			</li> -->
         </ul>
     </div>
+	<div class="dimmed" style="display: none;"></div>
 </body>
 </html>

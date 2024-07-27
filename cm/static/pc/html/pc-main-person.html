@@ -43,7 +43,7 @@
 		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/solution/netfunnel/netfunnel.js"></script><link rel="preconnect" href="https://fonts.gstatic.com"><link type="text/css" rel="stylesheet" href="/css?family=Noto+Sans+KR">
 		
 		<!-- 공통 퍼블리싱UI JS -->
-		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/ui/ui.js"></script>
+		<script type="text/javascript" src="../js/ui/ui.js"></script>
 		<!-- 공통 퍼블리싱UI JS -->
 		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/hp_common.js?ver=2023_12_28"></script>
 		<title>TEST 고용24(시범운영)_개인</title>
@@ -108,9 +108,11 @@
 					<div id="gnb">
 						<ul>
 							<li>
-								<a href="javascript:void(0);" class="active"><span>채용정보</span></a><!-- [고도화] active 클래스 추가시 활성화 -->
-								<ul>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')">일자리 찾기</a></li>
+								<a href="javascript:void(0);">채용정보</a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								<ul class="gnb2depth">
+								<li>
+									<a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')">일자리 찾기</a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								</li> 
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000016', '/a/b/2100/resumeMngMainPost.do', '', 'N', '')">구직신청</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000001836', '/a/f/1100/retrieveEmpEventListPost.do', '', 'N', '')">채용행사</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000000050', '/jobyoung/smallGiants/corpInfoSrchList.do?coGbCd=small', '', 'N', '')" title="새창 열림">강소기업</a></li>
@@ -118,7 +120,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>취업지원</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000054', '', '', 'N', '')">취업역량강화</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000084', '/r/d/1110/resumeSelfIntroGuide1Post.do', '', 'N', '')">취업가이드</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ua', 'EBG120000000001', '', '', 'N', '')">국민취업지원제도</a></li>
@@ -128,7 +130,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>실업급여</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000160', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', '', 'N', '')">수급자격</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000206', '/a/h/1100/retrieveEmpymnHopeCardInfoPost.do', '', 'N', '')">실업인정</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000265', '/a/m/1200/createPuElempAllwncViewPost.do', '', 'N', '')">취업촉진수당</a></li>
@@ -136,7 +138,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>직업 능력 개발</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', '', 'N', '')">국민내일배움카드</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000308', '/a/a/1100/trnnCrsInfPost.do', '', 'N', '')">훈련 찾기·신청</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000324', '/i/b/1100/selectCrqfcIssuReqstPost.do', '', 'N', '')">훈련 기관·강사</a></li>
@@ -144,7 +146,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>출산 휴가·육아 휴직</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000393', '/b/a/1100/openHPEIBA1100M02Post.do', '', 'N', '')">출산(전후)휴가</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000418', '/b/b/1100/openHPEIBB1100M01Post.do', '', 'N', '')">육아휴직</a></li>
 								</ul>
@@ -277,7 +279,7 @@
 									<a href="#none" onclick="fn_goCvplList('A0700')">
 										<div class="left">
 											<i class="icon icon--img1"></i>
-											<span class="lineBg2s">작성중</span>
+											<span class="lineBg3s">작성중</span>
 										</div>
 										<div class="right">
 											<span class="count">3</span><span>건</span>
@@ -288,7 +290,7 @@
 									<a href="#none" onclick="fn_goCvplList('A0701')">
 										<div class="left">
 											<i class="icon icon--img2"></i>
-											<span class="lineBg2s">제출</span>
+											<span class="lineBg3s">제출</span>
 										</div>
 										<div class="right">
 											<span class="count">11</span><span>건</span>
@@ -299,7 +301,7 @@
 									<a href="#none" onclick="fn_goCvplList('A0703')">
 										<div class="left">
 											<i class="icon icon--img3"></i>
-											<span class="lineBg2s">처리중</span>
+											<span class="lineBg3s">처리중</span>
 										</div>
 										<div class="right">
 											<span class="count">0</span><span>건</span>
@@ -310,7 +312,7 @@
 									<a href="#none" onclick="fn_goCvplList('A0705')">
 										<div class="left">
 											<i class="icon icon--img4"></i>
-											<span class="lineBg2s">보완</span>
+											<span class="lineBg3s">보완</span>
 										</div>
 										<div class="right">
 											<span class="count">3</span><span>건</span>
@@ -321,7 +323,7 @@
 									<a href="#none" onclick="fn_goCvplList('A0706')">
 										<div class="left">
 											<i class="icon icon--img5"></i>
-											<span class="lineBg2s">반려</span>
+											<span class="lineBg3s">반려</span>
 										</div>
 										<div class="right">
 											<span class="count">0</span><span>건</span>
@@ -332,7 +334,7 @@
 									<a href="#none" onclick="fn_goCvplList('A0704')">
 										<div class="left">
 											<i class="icon icon--img6"></i>
-											<span class="lineBg2s">처리완료</span>
+											<span class="lineBg3s">처리완료</span>
 										</div>
 										<div class="right">
 											<span class="count">0</span><span>건</span>
@@ -367,7 +369,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
-											<p>수급자격 신청자<br>온라인 교육</p>
+											<p><span class="lineBg3s">수급자격 신청자<br>온라인 교육</span></p>
 										</a>
 									</div>
 								</div>
@@ -375,7 +377,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
-											<p>실업인정 인터넷 신청</p>
+											<p class="string"><span class="lineBg3s">실업인정 인터넷 신청</span></p>
 										</a>
 									</div>
 								</div>
@@ -383,7 +385,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
-											<p>온라인 취업특강<br>1차 실업인정 교육</p>
+											<p><span class="lineBg3s">온라인 취업특강<br>1차 실업인정 교육</span></p>
 										</a>
 									</div>
 								</div>
@@ -391,7 +393,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
-											<p>구직신청</p>
+											<p class="string"><span class="lineBg3s">구직신청</span></p>
 										</a>
 									</div>
 								</div>
@@ -399,7 +401,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
-											<p>국민취업<br>구직촉진수당 신청</p>
+											<p><span class="lineBg3s">국민취업<br>구직촉진수당 신청</span></p>
 										</a>
 									</div>
 								</div>
@@ -407,7 +409,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn6"></span></span>
-											<p>국민내일배움카드<br>발급신청</p>
+											<p><span class="lineBg3s">국민내일배움카드<br>발급신청</span></p>
 										</a>
 									</div>
 								</div>
@@ -415,7 +417,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
-											<p>테스트1</p>
+											<p class="string"><span class="lineBg3s">테스트1</span></p>
 										</a>
 									</div>
 								</div>
@@ -423,7 +425,7 @@
 									<div class="famenu">
 										<a href="#none">
 											<span class="round"><span class="ico ico60_main_fam_persn6"></span></span>
-											<p>테스트2</p>
+											<p class="string"><span class="lineBg3s">테스트2</span></p>
 										</a>
 									</div>
 								</div>
@@ -464,101 +466,137 @@
 					<div class="main_tabs">
 						<div class="recomm_tab mt32">
 							<ul class="tablist" role="tablist">
-								<li role="presentation"><button type="button" role="tab" id="person" aria-selected="true" aria-controls="개인" onclick="fn_showDiv(this,'main_tabs')">개인</button></li>
-								<li role="presentation"><button type="button" role="tab" id="company" aria-controls="기업" onclick="fn_showDiv(this,'main_tabs')">기업</button></li>
+								<li role="presentation"><button type="button" role="tab" id="person" aria-selected="true" aria-controls="개인" onclick="fn_showDiv()">개인</button></li>
+								<li role="presentation"><button type="button" role="tab" id="company" aria-controls="기업" onclick="fn_showDiv()">기업</button></li>
 							</ul>
 						</div>
 
 						<div role="tabpanel" id="panel1" class="person">
 							<div class="inner_service_list list_type02">
-								<dl onclick="fn_goPolicyIntro('SC00000001', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											취업은 하고 싶은데, 어떻게 해야 할지 모르겠어요
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000001', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>기초 취업능력 키우기, 1:1 상담, 나에게 맞는 지원 추천 등</span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000002', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											취업하기 위해 공부하거나 자격증을 따고 싶어요
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000002', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>취업과 이직에 도움이 되는 교육 / 훈련 받기</span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000028', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											내게 맞는 일자리를 찾고 싶어요
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000028', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>일자리 추천, 다양한 일 경험, 취업지원금 등</span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000033', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											출산/육아를 위해 일을 쉬거나 근무 시간을 줄여야 할 거 같아요
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000033', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>출산(유산, 사산 포함) 급여, 육아휴직, 육아기 근로시간 단축 등</span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000034', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											최근에 어쩔 수 없이 퇴사했어요.　조만간 퇴사할 것 같아요
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000034', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>실업급여, 재취업 수당 등</span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000037', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											나이는 좀 있지만, 다시 취업을 하고 싶습니다
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000037', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>경력직을 위한 경력설계 컨설팅, 공공 일자리, 취업 지원금, 취업 능력 키우기 등</span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000038', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											전 장애가 있는데, 어떤 도움을 받을 수 있을까요?
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000038', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>장애인의 취업을 위한 단계별 통합 지원 프로그램, 교육/훈련 등 </span>
-									</dd>
-								</dl>
-								<dl onclick="fn_goPolicyIntro('SC00000039', '')" style="cursor:pointer">
-									<dt>
-										<b>
-											기타 제도
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000039', '')"><span class="blind">자세히 보기</span></a>
-										</b>
-									</dt>
-									<dd>
-										<span>고용보험 등 고용 관련 기업의 의무와 알아두면 좋은 다양한 제도</span>
-									</dd>
-								</dl>
+								<a href="#" class="card_list" class="card_list">
+									<dl onclick="fn_goPolicyIntro('SC00000001', '')">
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">취업은 하고 싶은데, 어떻게 해야 할지 모르겠어요</span>
+												<span class="detail_view"><span class="blind">자세히 보기</span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>기초 취업능력 키우기, 1:1 상담, 나에게 맞는 지원 추천 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list seh">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">취업하기 위해 공부하거나 자격증을 따고 싶어요</span>
+												<span class="detail_view"><span class="blind">자세히 보기</span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>취업과 이직에 도움이 되는 교육 / 훈련 받기</span>
+										</dd>
+										<div class="wave"></div>
+										<div class="wave wave--1"></div>
+									</dl>
+								</a>
+								
+								<a href="#" class="card_list flip" style="overflow: initial; padding: 0; transition: initial; background-color: transparent;">
+									<div class="card">
+										<div class="front">
+											<dl>
+												<dt>
+													<b>
+														내게 맞는 일자리를 찾고 싶어요
+														<span class="detail_view"><span class="blind">자세히 보기</span></span>
+													</b>
+												</dt>
+												<dd>
+													<span>일자리 추천, 다양한 일 경험, 취업지원금 등</span>
+												</dd>
+											</dl>
+										</div>
+										<div class="back">
+											<dl>
+												<dt>
+													<b>
+														<span class="text lineBg3s red">내게 맞는 일자리를 찾고 싶어요</span>
+														<span class="detail_view"><span class="blind">자세히 보기</span></span>
+													</b>
+												</dt>
+												<dd>
+													<span>일자리 추천, 다양한 일 경험, 취업지원금 등</span>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="card_list high_top">
+									<dl onclick="fn_goPolicyIntro('SC00000033', '')" style="cursor:pointer">
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">출산/육아를 위해 일을 쉬거나 근무 시간을 줄여야 할 거 같아요</span>
+												<span class="detail_view"><span class="blind">자세히 보기</span></aspan>
+											</b>
+										</dt>
+										<dd>
+											<span style="transition:initial;">출산(유산, 사산 포함) 급여, 육아휴직, 육아기 근로시간 단축 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl onclick="fn_goPolicyIntro('SC00000034', '')" style="cursor:pointer">
+										<dt>
+											<b>
+												최근에 어쩔 수 없이 퇴사했어요. 조만간 퇴사할 것 같아요
+												<span class="detail_view"><span class="blind">자세히 보기</span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>실업급여, 재취업 수당 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl onclick="fn_goPolicyIntro('SC00000037', '')" style="cursor:pointer">
+										<dt>
+											<b>
+												나이는 좀 있지만, 다시 취업을 하고 싶습니다
+												<span class="detail_view"><span class="blind">자세히 보기</span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>경력직을 위한 경력설계 컨설팅, 공공 일자리, 취업 지원금, 취업 능력 키우기 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl onclick="fn_goPolicyIntro('SC00000038', '')" style="cursor:pointer">
+										<dt>
+											<b>
+												전 장애가 있는데, 어떤 도움을 받을 수 있을까요?
+												<span class="detail_view"><span class="blind">자세히 보기</span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>장애인의 취업을 위한 단계별 통합 지원 프로그램, 교육/훈련 등 </span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl onclick="fn_goPolicyIntro('SC00000039', '')" style="cursor:pointer">
+										<dt>
+											<b>
+												기타 제도
+												<span class="detail_view"><span class="blind">자세히 보기</span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>고용보험 등 고용 관련 기업의 의무와 알아두면 좋은 다양한 제도</span>
+										</dd>
+									</dl>
+								</a>
 							</div>
 						</div>
 						<div role="tabpanel" id="panel2" class="company" style="display:none">
@@ -567,7 +605,7 @@
 									<dt>
 										<b>
 											채 용
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000096', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -578,7 +616,7 @@
 									<dt>
 										<b>
 											교육/훈련
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000097', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -589,7 +627,7 @@
 									<dt>
 										<b>
 											출산/육아
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000098', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -600,7 +638,7 @@
 									<dt>
 										<b>
 											유연 근무
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000099', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -611,7 +649,7 @@
 									<dt>
 										<b>
 											고용 유지
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000100', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -622,7 +660,7 @@
 									<dt>
 										<b>
 											재취업 지원
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000101', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -633,7 +671,7 @@
 									<dt>
 										<b>
 											장애인 고용
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000102', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -644,7 +682,7 @@
 									<dt>
 										<b>
 											외국인 고용
-											<a href="#none" class="detail_view" onclick="fn_goPolicyIntro('SC00000103', '')"><span class="blind">자세히 보기</span></a>
+											<span class="detail_view"><span class="blind">자세히 보기</span></span>
 										</b>
 									</dt>
 									<dd>
@@ -658,25 +696,15 @@
 					<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
 				</div>
 				<script>
-					function fn_showDiv(obj, clsName) {
-						var objId = $(obj).attr('id');
-						var child = $(".tablist").children('li');
+					function fn_showDiv() {
+						var $this = $(event.currentTarget);
+						$this.closest('.tablist').find('button').attr('aria-selected', '');
+						$this.attr('aria-selected', 'true');
 
-						child.each(function() {
-							if (objId != $(this).children('button').attr('id')) {
-								$(this).children('button').attr('aria-selected', '');
-							} else {
-								$(this).children('button').attr('aria-selected', 'true');
-							}
-						});
-						var childDiv = $("." + clsName).children('div');
+						var childDiv = $this.attr('id');
 						console.log(childDiv)
-						childDiv.each(function() {
-							if ($(this).attr('role') == 'tabpanel') {
-								$(this).hide();
-							}
-						});
-						$("." + objId).show();
+						$('.'+childDiv).siblings('div[role=tabpanel]').hide();
+						$('.'+childDiv).show();
 					}
 				</script>
 			</div>
@@ -705,7 +733,7 @@
 													<span class="label col_cyan">벤처</span>
 													<span class="label col_p">외국계</span>
 												</div>
-												<div class="tit">중소기업기술정보진흥원 중소기업기술정보진흥원</div>
+												<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원 중소기업기술정보진흥원</span></div>
 												<span class="recruit_info">
 													2024년 제6차 전문위원
 												</span>
@@ -734,7 +762,7 @@
 													<span class="label col_orange">나라</span>
 													<span class="label col_navy">나라</span>
 												</div>
-												<div class="tit">중소기업기술정보진흥원</div>
+												<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 												<span class="recruit_info">
 													2024년 제6차 전문위원(가급, 다급) 채용
 												</span>
@@ -759,7 +787,7 @@
 												</span>
 												<div class="label_box">
 												</div>
-												<div class="tit">중소기업기술정보진흥원</div>
+												<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 												<span class="recruit_info">
 													2024년 제6차 전문위원(가급, 다급) 채용
 												</span>
@@ -784,7 +812,7 @@
 												</span>
 												<div class="label_box">
 												</div>
-												<div class="tit">중소기업기술정보진흥원</div>
+												<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 												<span class="recruit_info">
 													2024년 제6차 전문위원(가급, 다급) 채용
 												</span>
@@ -841,7 +869,7 @@
 													<span class="label col_orange">나라</span>
 													<span class="label col_navy">나라</span>
 												</div>
-												<div class="tit">중소기업기술정보진흥원</div>
+												<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 												<span class="recruit_info">
 													2024년 제6차 전문위원(가급, 다급) 채용
 												</span>
@@ -866,7 +894,7 @@
 												</span>
 												<div class="label_box">
 												</div>
-												<div class="tit">중소기업기술정보진흥원</div>
+												<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 												<span class="recruit_info">
 													2024년 제6차 전문위원(가급, 다급) 채용
 												</span>
@@ -930,8 +958,8 @@
 							
 						<div class="recomm_tab mt32">
 							<ul class="tablist" role="tablist">
-								<li><button type="button" role="tab" id="recruit1" aria-selected="true" aria-controls="일자리개인특성" onclick="fn_showDiv(this,'main_jobs_information')">개인특성<span class="count">3</span></button></li>
-								<li><button type="button" role="tab" id="recruit2" aria-selected="false" aria-controls="일자리A.I.분석" onclick="fn_showDiv(this,'main_jobs_information')">A.I.분석<span class="count">12</span></button></li>
+								<li><button type="button" role="tab" id="recruit1" aria-selected="true" aria-controls="일자리개인특성" onclick="fn_showDiv()">개인특성<span class="count">3</span></button></li>
+								<li><button type="button" role="tab" id="recruit2" aria-selected="false" aria-controls="일자리A.I.분석" onclick="fn_showDiv()">A.I.분석<span class="count">12</span></button></li>
 							</ul>
 						</div>
 
@@ -948,7 +976,36 @@
 												<span class="label col_cyan">벤처</span>
 												<span class="label col_p">외국계</span>
 											</div>
-											<div class="tit">중소기업기술정보진흥원 중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원 중소기업기술정보진흥원</span></div>
+											<span class="recruit_info">
+												2024년 제6차 전문위원
+											</span>
+											<ul class="info_list">
+												<li>강원도 원주, 전국</li>
+												<li>연봉 4000만원 이상</li>
+												<li>정보제공처: 고용24</li>
+											</ul>
+											<div class="info calendar">
+												<span id="pubdDayInfo0">
+													채용시까지
+												</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide company_list_wrap">
+									<div class="company_list">
+										<a href="#none" class="a_block" onclick="fn_goEmpDetail('ALL all ALI ali', '273786','');">
+											<span class="logo">
+												<img src="../images/img_logo2.png" alt="">
+											</span>
+											<div class="label_box">
+												<span class="label col_cyan">나라일터</span>
+												<span class="label col_green">나라</span>
+												<span class="label col_orange">나라</span>
+												<span class="label col_navy">나라</span>
+											</div>
+											<div class="tit"><span class="lineBg3s">소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원
 											</span>
@@ -969,40 +1026,11 @@
 									<div class="company_list">
 										<a href="#none" class="a_block" onclick="fn_goEmpDetail('ALL all ALI ali', '273786','');">
 											<span class="logo">
-												<img src="../images/img_logo2.png" alt="">
-											</span>
-											<div class="label_box">
-												<span class="label col_cyan">나라일터</span>
-												<span class="label col_green">나라</span>
-												<span class="label col_orange">나라</span>
-												<span class="label col_navy">나라</span>
-											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
-											<span class="recruit_info">
-												2024년 제6차 전문위원(가급, 다급) 채용
-											</span>
-											<ul class="info_list">
-												<li>강원도 원주, 전국</li>
-												<li>연봉 4000만원 이상</li>
-												<li>정보제공처: 고용24</li>
-											</ul>
-											<div class="info calendar">
-												<span id="pubdDayInfo0">
-													2024-08-01 (D-15)
-												</span>
-											</div>
-										</a>
-									</div>
-								</div>
-								<div class="swiper-slide company_list_wrap">
-									<div class="company_list">
-										<a href="#none" class="a_block" onclick="fn_goEmpDetail('ALL all ALI ali', '273786','');">
-											<span class="logo">
 												<img src="../images/img_logo3.png" alt="">
 											</span>
 											<div class="label_box">
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1031,7 +1059,7 @@
 												<span class="label col_orange">나라</span>
 												<span class="label col_navy">나라</span>
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1056,7 +1084,7 @@
 											</span>
 											<div class="label_box">
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1092,7 +1120,7 @@
 												<span class="label col_cyan">벤처</span>
 												<span class="label col_p">외국계</span>
 											</div>
-											<div class="tit">중소기업기술정보진흥원 중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원 중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원
 											</span>
@@ -1121,7 +1149,7 @@
 												<span class="label col_orange">나라</span>
 												<span class="label col_navy">나라</span>
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1146,7 +1174,7 @@
 											</span>
 											<div class="label_box">
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1171,7 +1199,7 @@
 											</span>
 											<div class="label_box">
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1199,7 +1227,7 @@
 												<span class="label col_cyan">벤처</span>
 												<span class="label col_p">외국계</span>
 											</div>
-											<div class="tit">중소기업기술정보진흥원 중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원
 											</span>
@@ -1228,7 +1256,7 @@
 												<span class="label col_orange">나라</span>
 												<span class="label col_navy">나라</span>
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1253,7 +1281,7 @@
 											</span>
 											<div class="label_box">
 											</div>
-											<div class="tit">중소기업기술정보진흥원</div>
+											<div class="tit"><span class="lineBg3s">중소기업기술정보진흥원</span></div>
 											<span class="recruit_info">
 												2024년 제6차 전문위원(가급, 다급) 채용
 											</span>
@@ -1314,8 +1342,8 @@
 								<div class="inner_service_list">
 									<dl>
 										<dt>
-											<b>실업급여(상용직)</b>
-											<span>퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
+											<b><span class="lineBg3s">실업급여(상용직)</span></b>
+											<span class="text">퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
 										</dt>
 										<dd>
 											<ul>
@@ -1349,8 +1377,8 @@
 								<div class="inner_service_list">
 									<dl>
 										<dt>
-											<b>실업급여(상용직)</b>
-											<span>퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
+											<b><span class="lineBg3s">대한적십자사</span></b>
+											<span class="text">부산혈액원 비정규직 대체인력 임상병리사 모집 공고</span>
 										</dt>
 										<dd>
 											<ul>
@@ -1384,8 +1412,8 @@
 								<div class="inner_service_list">
 									<dl>
 										<dt>
-											<b>실업급여(상용직)</b>
-											<span>퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
+											<b><span class="lineBg3s">애플키즈어린이집</span></b>
+											<span class="text">조리사 모집</span>
 										</dt>
 										<dd>
 											<ul>
@@ -1419,8 +1447,8 @@
 								<div class="inner_service_list">
 									<dl>
 										<dt>
-											<b>실업급여(상용직)</b>
-											<span>퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
+											<b><span class="lineBg3s">실업급여(상용직)</span></b>
+											<span class="text">퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
 										</dt>
 										<dd>
 											<ul>
@@ -1454,8 +1482,8 @@
 								<div class="inner_service_list">
 									<dl>
 										<dt>
-											<b>실업급여(상용직)</b>
-											<span>퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
+											<b><span class="lineBg3s">실업급여(상용직)</span></b>
+											<span class="text">퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여</span>
 										</dt>
 										<dd>
 											<ul>
@@ -1530,8 +1558,8 @@
 				
 						<div class="recomm_tab mt32">
 							<ul class="tablist" role="tablist">
-								<li><button type="button" role="tab" id="jobs1" aria-selected="true" aria-controls="훈련개인특성" onclick="fn_showDiv(this,'main_jobs_recomm')">개인특성<span class="count">452</span></button></li>
-								<li><button type="button" role="tab" id="jobs2" aria-selected="false" aria-controls="훈련A.I.분석" onclick="fn_showDiv(this,'main_jobs_recomm')">A.I.분석<span class="count">10</span></button></li>
+								<li><button type="button" role="tab" id="jobs1" aria-selected="true" aria-controls="훈련개인특성" onclick="fn_showDiv()">개인특성<span class="count">452</span></button></li>
+								<li><button type="button" role="tab" id="jobs2" aria-selected="false" aria-controls="훈련A.I.분석" onclick="fn_showDiv()">A.I.분석<span class="count">10</span></button></li>
 							</ul>
 						</div>
 
@@ -1548,7 +1576,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">기업의 업무 자동화(RPA, 챗GPT) 플랫폼(JAVA, Spring) 개발</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1600,7 +1628,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">한국패션실용전문학교</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1652,7 +1680,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1704,7 +1732,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1756,7 +1784,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1808,7 +1836,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1865,13 +1893,13 @@
 										<div class="list">
 											<a href="#none" class="a_block" onclick="fn_viewTracseInfo('AIG20230000413616', '2', 'C0061', '500020023285');">
 												<dl>
-													<dt class="blind">1111간호조무사 자격 취득</dt>
+													<dt class="blind">간호조무사 자격 취득</dt>
 													<dd>
 														<div class="mark_info">
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1923,7 +1951,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">한국패션실용전문학교</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -1975,7 +2003,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -2027,7 +2055,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -2079,7 +2107,7 @@
 															<img src="../images/mark_excell.png" alt="우수 후련기관">
 															<img src="../images/mark_certifi5.png" alt="5년 인증">
 														</div>
-														<span class="desc">현간호학원</span>
+														<span class="desc"><span class="lineBg3s">현간호학원</span></span>
 														<span class="reg">충북 청주시 흥덕구</span>
 														<ul>
 															<li>
@@ -2215,12 +2243,11 @@
 			<div class="main_beginner_guide" id="beginner_guide_sec">
 				<div class="inner_guide">
 					<h2 class="h1_sb">고용24 이용가이드</h2>
-					<p class="main_explain_txt01 mt08">쉽고 간편하게 고용24 서비스를 이용해보세요</p>
 					<ul class="guide_list">
 						<li>
 							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p01';">
 								<dl>
-									<dt><span class="ico ico24_member_login"></span>회원가입 방법</dt>
+									<dt><span class="ico ico24_member_login"></span><span class="lineBg3s white">회원가입 방법</span></dt>
 									<dd>
 										<p>회원 유형 선택, 14세 이상 · 미만의 가입 방법을 알려드려요.</p>
 									</dd>
@@ -2230,8 +2257,7 @@
 						<li>
 							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p02';">
 								<dl>
-									<dt><span class="ico ico24_pencil"></span>구직 등록 방법
-									</dt>
+									<dt><span class="ico ico24_pencil"></span><span class="lineBg3s white">구직 등록 방법</span></dt>
 									<dd>
 										<p>보다 쉽고 간편해진 구직 서비스를 만나보세요.</p>
 									</dd>
@@ -2241,8 +2267,7 @@
 						<li>
 							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p03';">
 								<dl>
-									<dt><span class="ico ico_search2"></span>검색 방법
-									</dt>
+									<dt><span class="ico ico_search2"></span><span class="lineBg3s white">검색 방법</span></dt>
 									<dd>
 										<p>채용, 훈련, 제도 등 다양한 정보를 검색해 보세요.</p>
 									</dd>
@@ -2252,8 +2277,7 @@
 						<li>
 							<a href="https://www.work.go.kr/jobCare/introExp/jobCareIntroExp.do" target="_blank">
 								<dl>
-									<dt><span class="ico ico24_smail"></span>잡케어 활용 방법
-									</dt>
+									<dt><span class="ico ico24_smail"></span><span class="lineBg3s white">잡케어 활용 방법</span></dt>
 									<dd>
 										<p>진로 탐색부터 경력개발, 취업까지 한 번에 해결해 보세요.</p>
 									</dd>
@@ -2263,8 +2287,7 @@
 						<li>
 							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p05';">
 								<dl>
-									<dt><span class="ico ico24_ui_setting"></span>맞춤서비스 설정 방법(채용정보, 훈련정보)
-									</dt>
+									<dt><span class="ico ico24_ui_setting"></span><span class="lineBg3s white">맞춤서비스 설정 방법(채용정보, 훈련정보)</span></dt>
 									<dd>
 										<p>원하시는 조건을 설정하면 나에게 맞는 정보를 소개해 드려요.</p>
 									</dd>
@@ -2274,8 +2297,7 @@
 						<li>
 							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p06';">
 								<dl>
-									<dt><span class="ico ico24_calculator"></span>모의계산
-									</dt>
+									<dt><span class="ico ico24_calculator"></span><span class="lineBg3s white">모의계산</span></dt>
 									<dd>
 										<p>구직급여, 모성보호 수급 시 받을 수 있는 금액을 계산해 보세요.</p>
 									</dd>
@@ -2308,7 +2330,7 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item fixed"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division"> 
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2317,12 +2339,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100078.20240717152950002');">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</a>
+												<a href="#none"><span class="lineBg3s">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item fixed"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2332,12 +2354,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('01500701.20240717145958001');">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</a>
+												<a href="#none"><span class="lineBg3s">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item fixed"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2346,12 +2368,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100958.20240717131248001');">에어부산, 노선 확대에 따른 대규모 채용 진행</a>
+												<a href="#none"><span class="lineBg3s">에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.6">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2360,12 +2382,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
 											</h3>
 											<p class="date">2024-07-04</p>
 											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.8">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2375,12 +2397,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('79');">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</a>
+												<a href="#none"><span class="lineBg3s">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
 											</h3>
 											<p class="date">2024-07-15</p>
 											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2389,12 +2411,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
 											</h3>
 											<p class="date">2024-06-20</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2403,12 +2425,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
+												<a href="#none"><span class="lineBg3s">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
 											</h3>
 											<p class="date">2024-07-02</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.4">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2417,7 +2439,7 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
+												<a href="#none"><span class="lineBg3s">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
 											</h3>
 											<p class="date">2024-06-28</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
@@ -2426,8 +2448,8 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item fixed">
-											<div class="news_division">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
 												<div class="list_body">
 													<span class="ico ico_news"></span>
 													<span>뉴스</span>
@@ -2435,12 +2457,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100078.20240717152950002');">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</a>
+												<a href="#none"><span class="lineBg3s">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item fixed">
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2450,12 +2472,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('01500701.20240717145958001');">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</a>
+												<a href="#none"><span class="lineBg3s">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2464,12 +2486,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100958.20240717131248001');">에어부산, 노선 확대에 따른 대규모 채용 진행</a>
+												<a href="#none"><span class="lineBg3s">에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.6">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2478,12 +2500,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
 											</h3>
 											<p class="date">2024-07-04</p>
 											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.8">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2493,12 +2515,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('79');">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</a>
+												<a href="#none"><span class="lineBg3s">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
 											</h3>
 											<p class="date">2024-07-15</p>
 											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2507,12 +2529,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
 											</h3>
 											<p class="date">2024-06-20</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2521,12 +2543,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
+												<a href="#none"><span class="lineBg3s">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
 											</h3>
 											<p class="date">2024-07-02</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.4">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2535,7 +2557,7 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
+												<a href="#none"><span class="lineBg3s">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
 											</h3>
 											<p class="date">2024-06-28</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
@@ -2544,8 +2566,8 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item fixed">
-											<div class="news_division">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
 												<div class="list_body">
 													<span class="ico ico_news"></span>
 													<span>뉴스</span>
@@ -2553,12 +2575,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100078.20240717152950002');">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</a>
+												<a href="#none"><span class="lineBg3s">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item fixed">
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2568,12 +2590,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('01500701.20240717145958001');">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</a>
+												<a href="#none"><span class="lineBg3s">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item fixed">
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2582,12 +2604,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100958.20240717131248001');">에어부산, 노선 확대에 따른 대규모 채용 진행</a>
+												<a href="#none"><span class="lineBg3s">에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.6">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2596,12 +2618,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
 											</h3>
 											<p class="date">2024-07-04</p>
 											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.8">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2611,12 +2633,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('79');">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</a>
+												<a href="#none"><span class="lineBg3s">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
 											</h3>
 											<p class="date">2024-07-15</p>
 											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2625,12 +2647,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
 											</h3>
 											<p class="date">2024-06-20</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2639,12 +2661,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
+												<a href="#none"><span class="lineBg3s">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
 											</h3>
 											<p class="date">2024-07-02</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.4">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2653,7 +2675,7 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
+												<a href="#none"><span class="lineBg3s">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
 											</h3>
 											<p class="date">2024-06-28</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
@@ -2662,8 +2684,8 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="work24_news_article">
-										<div class="news_item fixed">
-											<div class="news_division">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
 												<div class="list_body">
 													<span class="ico ico_news"></span>
 													<span>뉴스</span>
@@ -2671,12 +2693,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100078.20240717152950002');">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</a>
+												<a href="#none"><span class="lineBg3s">반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
 										</div>
-										<div class="news_item fixed">
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2686,12 +2708,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('01500701.20240717145958001');">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</a>
+												<a href="#none"><span class="lineBg3s">동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
 										</div>
-										<div class="news_item fixed">
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_news"></span>
@@ -2700,12 +2722,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_empNewsDetailInfo('04100958.20240717131248001');">에어부산, 노선 확대에 따른 대규모 채용 진행</a>
+												<a href="#none"><span class="lineBg3s">에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
 											</h3>
 											<p class="date">2024-07-17</p>
 											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.6">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2714,12 +2736,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('72');">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
 											</h3>
 											<p class="date">2024-07-04</p>
 											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:1.8">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2729,12 +2751,12 @@
 											</div>
 					
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('79');">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</a>
+												<a href="#none"><span class="lineBg3s">대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
 											</h3>
 											<p class="date">2024-07-15</p>
 											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_notice"></span>
@@ -2743,12 +2765,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_bbsDetailInfo('62');">고객상담센터 이전에 따른 상담업무 일시중단 안내</a>
+												<a href="#none"><span class="lineBg3s">고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
 											</h3>
 											<p class="date">2024-06-20</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.2">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2757,12 +2779,12 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001633');">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</a>
+												<a href="#none"><span class="lineBg3s">[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
 											</h3>
 											<p class="date">2024-07-02</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
 										</div>
-										<div class="news_item">
+										<div class="news_item" style="--i:2.4">
 											<div class="news_division">
 												<div class="list_body">
 													<span class="ico ico_pds"></span>
@@ -2771,7 +2793,7 @@
 												<i class="icon"><span class="blind">게시물 고정</span></i>
 											</div>
 											<h3 class="news_title">
-												<a href="#none" onclick="fn_formDetailInfo('FM00001632');">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</a>
+												<a href="#none"><span class="lineBg3s">[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
 											</h3>
 											<p class="date">2024-06-28</p>
 											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
@@ -2788,6 +2810,22 @@
 				</div>
 
 				<script>
+					let option = {
+						threshold: 0.5 /* 보이는 영역 비율 0 ~ 1 */
+					}
+					let observer = new IntersectionObserver(entries => {
+						entries.forEach(entry => {
+							if(entry.isIntersecting) {
+								entry.target.classList.add('show');
+							} else {
+							}
+						});
+					}, option);
+					const boxElemList = document.querySelectorAll('#work24_news_sec .work24_news_article');
+					boxElemList.forEach(elem => observer.observe(elem));
+					
+					
+					
 					const newsSwiper = new Swiper(".news_swiper",{
 						pagination: {
 							el: ".news_swiper .swiper-pagination",
@@ -3031,4 +3069,5 @@
 			</div>
 		</footer>
 	</div>
+	<div class="dimmed" style="display: ;"></div>
 </html>
