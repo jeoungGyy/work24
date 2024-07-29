@@ -473,9 +473,9 @@ transform: rotateY(-180deg);
 #container .main_recruitment .company_list .logo img { width: initial;}
 #container .main_recruitment .company_list .label_box { height: 22px; margin-top: 4px;}
 #container .main_recruitment .company_list .label_box .label { height: 22px; font-size: 12px; line-height: 22px;}
-#container .main_recruitment .company_list .tit { overflow: hidden; display: block; height: initial; text-overflow: initial; line-height: 28px;}
+#container .main_recruitment .company_list .tit { overflow: hidden; display: block; height: initial; margin-top: 4px; line-height: 28px; white-space: nowrap; -webkit-line-clamp:initial;}
 #container .main_recruitment .company_list .recruit_info { margin-top: 4px;}
-#container .main_recruitment .company_list .info_list { margin-top: 16px;}
+#container .main_recruitment .company_list .info_list { margin-top: 12px;}
 #container .main_recruitment .company_list .info_list li ~ li { margin-top: 4px;}
 #container .main_recruitment .company_list .info { display: flex; justify-content: center; align-items: center; transition: all ease-out .2s;}
 #container .main_recruitment .company_list:hover { border-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
@@ -518,7 +518,7 @@ transform: rotateY(-180deg);
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { margin-top: 12px; letter-spacing: -0.5px; line-height: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p.string { padding-top: 12px;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p span { display: inline; background-size: 100% 100%;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p span { display: inline; font-weight: 600; background-size: 100% 100%;}
 #container .main_swiperFreqAccMenu_wrap { display: flex; justify-content: space-between; height: initial;}
 #container .main_swiperFreqAccMenu_control { height: initial;}
 #container .main_swiperFreqAccMenu_wrap .swiper-button-prev { left: 0; top: 54px; width: 32px; height: 32px; background: url(../images/ico32_arrow_left.svg) no-repeat;}

@@ -43,7 +43,7 @@
 		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/solution/netfunnel/netfunnel.js"></script><link rel="preconnect" href="https://fonts.gstatic.com"><link type="text/css" rel="stylesheet" href="/css?family=Noto+Sans+KR">
 		
 		<!-- 공통 퍼블리싱UI JS -->
-		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/ui/ui.js"></script>
+		<script type="text/javascript" src="../js/ui/ui.js"></script>
 		<!-- 공통 퍼블리싱UI JS -->
 		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/hp_common.js?ver=2023_12_28"></script>
 		<title>TEST 고용24(시범운영)_개인</title>
@@ -108,9 +108,11 @@
 					<div id="gnb">
 						<ul>
 							<li>
-								<a href="javascript:void(0);" class="active"><span>채용정보</span></a><!-- [고도화] active 클래스 추가시 활성화 -->
-								<ul>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')">일자리 찾기</a></li>
+								<a href="javascript:void(0);">채용정보</a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								<ul class="gnb2depth">
+								<li>
+									<a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')">일자리 찾기</a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								</li> 
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000016', '/a/b/2100/resumeMngMainPost.do', '', 'N', '')">구직신청</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000001836', '/a/f/1100/retrieveEmpEventListPost.do', '', 'N', '')">채용행사</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000000050', '/jobyoung/smallGiants/corpInfoSrchList.do?coGbCd=small', '', 'N', '')" title="새창 열림">강소기업</a></li>
@@ -118,7 +120,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>취업지원</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000054', '', '', 'N', '')">취업역량강화</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000084', '/r/d/1110/resumeSelfIntroGuide1Post.do', '', 'N', '')">취업가이드</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ua', 'EBG120000000001', '', '', 'N', '')">국민취업지원제도</a></li>
@@ -128,7 +130,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>실업급여</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000160', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', '', 'N', '')">수급자격</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000206', '/a/h/1100/retrieveEmpymnHopeCardInfoPost.do', '', 'N', '')">실업인정</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000265', '/a/m/1200/createPuElempAllwncViewPost.do', '', 'N', '')">취업촉진수당</a></li>
@@ -136,7 +138,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>직업 능력 개발</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', '', 'N', '')">국민내일배움카드</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000308', '/a/a/1100/trnnCrsInfPost.do', '', 'N', '')">훈련 찾기·신청</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000324', '/i/b/1100/selectCrqfcIssuReqstPost.do', '', 'N', '')">훈련 기관·강사</a></li>
@@ -144,7 +146,7 @@
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>출산 휴가·육아 휴직</span></a>
-								<ul>
+								<ul class="gnb2depth">
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000393', '/b/a/1100/openHPEIBA1100M02Post.do', '', 'N', '')">출산(전후)휴가</a></li>
 								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000418', '/b/b/1100/openHPEIBB1100M01Post.do', '', 'N', '')">육아휴직</a></li>
 								</ul>
@@ -699,7 +701,7 @@
 													</li>
 													<li>
 														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구</span>
+														<span class="obj_value">인천, 인천 미추홀구 인천, 인천 미추홀구</span>
 													</li>
 													<li>
 														<span class="obj_key">경력</span>
@@ -707,7 +709,7 @@
 													</li>
 													<li>
 														<span class="obj_key">자격증</span>
-														<span class="obj_value">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
 													</li>
 												</ul>
 				
@@ -743,7 +745,7 @@
 													</li>
 													<li>
 														<span class="obj_key">자격증</span>
-														<span class="obj_value">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
 													</li>
 												</ul>
 				
@@ -775,43 +777,7 @@
 													</li>
 													<li>
 														<span class="obj_key">자격증</span>
-														<span class="obj_value">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
-													</li>
-												</ul>
-				
-												<div class="box_hash_wrap">
-													<span class="btn_hash small fill type02 r30">#회계</span>
-													<span class="btn_hash small fill type02 r30">#경리</span>
-													<span class="btn_hash small fill type02 r30">#세무</span>
-													<span class="btn_hash small fill type02 r30">#재무</span>
-													<span class="btn_hash small fill type02 r30">#사무</span>
-												</div>
-											</dd>
-										</dl>
-									</div>
-									<div class="swiper-slide">
-										<dl class="profile_list">
-											<dt>
-												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
-												<span class="name"><span class="lineBg3s">최ㅇㅇ</span></span>
-											</dt>
-											<dd>
-												<ul>
-													<li>
-														<span class="obj_key">직종</span>
-														<span class="obj_value">회계 사무원</span>
-													</li>
-													<li>
-														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구</span>
-													</li>
-													<li>
-														<span class="obj_key">경력</span>
-														<span class="obj_value">9년 1개월</span>
-													</li>
-													<li>
-														<span class="obj_key">자격증</span>
-														<span class="obj_value">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
 													</li>
 												</ul>
 				
@@ -847,7 +813,43 @@
 													</li>
 													<li>
 														<span class="obj_key">자격증</span>
-														<span class="obj_value">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+													</li>
+												</ul>
+				
+												<div class="box_hash_wrap">
+													<span class="btn_hash small fill type02 r30">#회계</span>
+													<span class="btn_hash small fill type02 r30">#경리</span>
+													<span class="btn_hash small fill type02 r30">#세무</span>
+													<span class="btn_hash small fill type02 r30">#재무</span>
+													<span class="btn_hash small fill type02 r30">#사무</span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="swiper-slide">
+										<dl class="profile_list">
+											<dt>
+												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+												<span class="name"><span class="lineBg3s">최ㅇㅇ</span></span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="obj_key">직종</span>
+														<span class="obj_value">회계 사무원</span>
+													</li>
+													<li>
+														<span class="obj_key">지역</span>
+														<span class="obj_value">인천, 인천 미추홀구</span>
+													</li>
+													<li>
+														<span class="obj_key">경력</span>
+														<span class="obj_value">9년 1개월</span>
+													</li>
+													<li>
+														<span class="obj_key">자격증</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
 													</li>
 												</ul>
 				
@@ -882,6 +884,7 @@
 					const mainSwiper02 = new Swiper(".main_swiper02",{
 						slidesPerView: 4,
 						spaceBetween: 24,
+						noSwipingClass: 'box_hash_wrap',
 						pagination: {
 							el: ".main_swiper02 .swiper-pagination",
 							clickable: true,
@@ -1782,4 +1785,5 @@
 			</div>
 		</footer>
 	</div>
+	<div class="dimmed"></div>
 </html>

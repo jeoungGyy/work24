@@ -396,7 +396,7 @@ input[type="range"] {
 /* 헤더 유틸리티 */
 #header_top .header_lt { display: flex; justify-content: space-between; align-items: center; width: 1248px; margin: 0 auto;}
 #header_top .get_top { display: flex; align-items: center; height: 36px;}
-#header_top .get_top .icon { display: block; width: 44px; height: 16px; margin-right: 4px; background:url(../images/mainNew/img_logo_eg.png) no-repeat;}
+#header_top .get_top .icon { display: block; width: 44px; height: 16px; margin-right: 4px; background:url(../images/main_new/img_logo_eg.png) no-repeat;}
 #header_top .get_top .text { font-size: 14px; color: #555;}
 #header_top .header_info { display:flex;align-items:center; }
 #header_top .header_info li { display: flex; align-items: center; position: relative;}
@@ -409,7 +409,7 @@ input[type="range"] {
 #header_top .header_info li .btn_num.plus { background-image:url("../images/ico16_plus_dark.svg")}
 #header_top .header_info li .btn_num.minus { background-image:url("../images/ico16_minus_dark.svg")}
 #header_top .header_info li.line::after { content: ''; display: block; position: absolute; left: -8px; top: 50%; width: 1px; height: 12px; margin-top: -6px; background-color: #eee;}
-#header_top .header_info li.after .icons { width: 16px; height: 16px; margin-right: 8px; background:url(../images/mainNew/ico16_time.png) no-repeat;}
+#header_top .header_info li.after .icons { width: 16px; height: 16px; margin-right: 8px; background:url(../images/main_new/ico16_time.png) no-repeat;}
 #header_top .header_info li.after .btn_round { margin-left: 8px; color: #333 !important;}
 #header_top .header_info li.after .at_header_name_area { margin-left: 16px;}
 
