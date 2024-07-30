@@ -145,7 +145,7 @@
 				<!-- //로그인 전 -->
 
 				<!-- 로그인 후 -->
-				<div class="main_login_after">
+				<div class="main_login_after" style="display: none;">
 					<div class="tit_group">
 						<h3 class="t2_sb">나의 신청 현황</h3>
 					</div>
@@ -300,8 +300,7 @@
 				<script>
 					const freqAccMnu_swiper = new Swiper(".freqAccMnu_swiper", {
 						autoplay: false,
-						slidesPerView: "auto",
-						spaceBetween: 8,
+						slidesPerView: 1,
 						navigation: {
 							nextEl: ".freqAccMnu_swiper .swiper-button-next",
 							prevEl: ".freqAccMnu_swiper .swiper-button-prev",
@@ -648,7 +647,7 @@
 				<!-- //로그인 전 -->
 
 				<!-- 로그인 후 -->
-				<div>
+				<div style="display: none;">
 					<div class="tit_group">
 						<h3 class="t2_sb">일자리 추천</h3>
 						<button type="button" class="setting"><i class="icon"></i><span>설정</span></button>

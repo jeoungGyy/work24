@@ -476,20 +476,28 @@ input[type="range"] {
 .location_list > li > a {font-size: 14px}
 .sub_tl + .form_search_wrap {margin:0 0 0 200px;}
 .form_search_wrap .layer_search {position:absolute;left:0;top:58px;z-index:2;border-radius:16px;border:1px solid var(--col_gray);background-color:var(--col_white)}
-.form_search_wrap .layer_cate_search {width:118px;padding:16px;}
+.form_search_wrap .layer_cate_search { overflow: hidden; left: 9px;  padding:4px 4px 4px 0; border-color: #ddd;}
 .form_search_wrap .layer_auto_search {display:flex;left:118px;width:496px;}
 
-.form_search_wrap .layer_cate_search a {display:block;}
-.form_search_wrap .layer_cate_search a.active {font-weight:600;}
-.form_search_wrap .layer_cate_search a.active span {position:relative;padding-right:18px;background:url("../images/ico16_ui_checked03.svg") no-repeat right 0;}
+.form_search_wrap .layer_cate_search ul { overflow-x: hidden; overflow-y: auto; width:150px; height: 188px;}
+.form_search_wrap .layer_cate_search a {display:block; margin-right: -8px; padding: 4px 16px; line-height: 28px;}
+.form_search_wrap .layer_cate_search a.active,
+.form_search_wrap .layer_cate_search a:hover  {font-weight:600; text-decoration: underline; background-color: #F5F5F5;}
+.form_search_wrap .layer_cate_search a.active span,
+.form_search_wrap .layer_cate_search a.hover span { font-weight:600; text-decoration: underline; background-color: #F5F5F5;}
+.form_search_wrap .layer_cate_search ul::-webkit-scrollbar { margin-right: 5px; width: 4px;}
+.form_search_wrap .layer_cate_search ul::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px;}
+.form_search_wrap .layer_cate_search ul::-webkit-scrollbar-track { background-color: #fff;}
 
 .form_search_wrap .layer_search ul li {line-height:28px;}
 
-.form_search_wrap .layer_auto_search > ul {flex-grow:1;padding:16px;}
+.form_search_wrap .layer_auto_search > ul { flex-grow:1;padding:16px;}
 .form_search_wrap .layer_auto_search > div {flex-grow:1;padding:16px;}
 .form_search_wrap .layer_auto_search > .keyword + .service {border-left:1px solid var(--col_btn)}
 .form_search_wrap .layer_auto_search > ul > li {line-height:28px;}
 .form_search_wrap .layer_auto_search > ul > li + li {margin-top:4px;}
+
+
 
 /* 검색옵션 */
 [class^='btn'].btn_open {position:relative; padding:0 33px 0 16px !important; float:right;}

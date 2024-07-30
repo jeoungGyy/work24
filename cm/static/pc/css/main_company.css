@@ -299,15 +299,18 @@
 
 /* [고도화] */
 #wrap.company .lineBg3s {
-	background-image: linear-gradient(transparent 60%, rgba(77, 101, 225, .3) 40%);
+	background-image: linear-gradient(transparent 75%, rgba(77, 101, 225, .3) 25%);
 	background-repeat: no-repeat;
 	background-size: 0% 100%;
 	transition: background-size 0.2s
 }
-#wrap.company .lineBg3s.white { background-image: linear-gradient(transparent 60%, #3246D4 40%);}
+#wrap.company .lineBg3s.white { background-image: linear-gradient(transparent 75%, #3246D4 25%);}
 
 #wrap.company .my_app_status h3.t3_sb .highlight { color: #4D65E1;}
 #wrap.company #container .login_guide .btn { color: #fff; background-color: #4D65E1;}
+
+#wrap.company #container .recommend_keyword dd ul a:hover { background-color: #E3EEFF;}
+
 #wrap.company #container .my_app_status .status_list li .count { color: #4D65E1;}
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1.png) no-repeat;}
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2.png) no-repeat;}
@@ -330,9 +333,12 @@
 #wrap.company .main_recruit_information { overflow: initial; height: auto; margin-top: 32px; padding: 0!important;}
 #wrap.company .main_recruit_information_company { padding: 80px 0; background-color: #F5F5F5;}
 #wrap.company .main_recruit_information_company .h1_sb { font-size: 32px; font-weight: 700; letter-spacing: -1px; text-align: left;}
-#wrap.company .main_recruit_information_company .bgico2 { position: absolute; right: -114px; top: 20px; width: 247px; height: 276px; background: url(../images/bgico2.png) no-repeat;}
-#wrap.company .main_recruit_information_company .bgico3 { position: absolute; left: -140px; bottom: -81px; width: 387px; height: 243px; background: url(../images/bgico3.png) no-repeat;}
-#wrap.company .main_recruit_information_company .bgico4 { position: absolute; left: -200px; bottom: -2px; width: 226px; height: 92px; background: url(../images/bgico4.png) no-repeat;}
+#wrap.company  .main_recruit_information_company .parallax_pos { position: absolute;}
+#wrap.company  .main_recruit_information_company .parallax_pos--1 { right: -114px; top: 20px;}
+#wrap.company  .main_recruit_information_company .parallax_pos--2 { left: -200px; bottom: 22px;}
+#wrap.company .main_recruit_information_company .bgico2 { width: 247px; height: 276px; background: url(../images/bgico2.png) no-repeat;}
+#wrap.company .main_recruit_information_company .bgico3 { position: absolute; left: -140px; bottom: -80px; width: 387px; height: 243px; background: url(../images/bgico3.png) no-repeat;}
+#wrap.company .main_recruit_information_company .bgico4 {width: 226px; height: 92px; background: url(../images/bgico4.png) no-repeat;}
 #wrap.company .main_swiper02 { overflow: hidden; padding-bottom: 58px;}
 #wrap.company .main_swiper02_wrap { overflow: initial; position: relative; z-index: 2; width: 100%;}
 #wrap.company .main_swiper02_wrap .swiper-button-prev { left: -72px; top: 216px;}
