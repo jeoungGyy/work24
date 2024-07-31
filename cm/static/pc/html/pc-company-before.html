@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		
+		<link rel="icon" href="https://www.work24.go.kr/cm/static/images/work24_logo_ico.png"><!-- favicon -->
+		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/jquery-ui.min.css">
+		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/reset.css">
+		<link rel="stylesheet" href="../css/font.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/main_person.css">
+		<link rel="stylesheet" href="../css/main_company.css">
+		<link rel="stylesheet" href="../css/contents.css">
+		
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/ui/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery/jquery-3.6.3.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-ui-1.13.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-ui-1.13.2/jquery.ui.datepicker-ko.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/inputmask-5.0.8/jquery.inputmask.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-validation/jquery.validate.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-validation/localization/messages_ko.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/blockui/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jsrender/jsrender.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jsrender/jsviews.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/lodash/lodash.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/moment-2.29.4/moment.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/moment-2.29.4/locale/locales.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/templates/js/tmpl.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.iframe-transport.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-process.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-validate.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-ui.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-print/jQuery.print.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/spin/spin.js"></script><style type="text/css"></style>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/solution/netfunnel/netfunnel.js"></script><link rel="preconnect" href="https://fonts.gstatic.com"><link type="text/css" rel="stylesheet" href="/css?family=Noto+Sans+KR">
+		
+		<!-- 공통 퍼블리싱UI JS -->
+		<script type="text/javascript" src="../js/ui/ui.js"></script>
+		<script type="text/javascript" src="../js/gsap.min.js"></script>
+		<script type="text/javascript" src="../js/parallax.min.js"></script>
+		<script type="text/javascript" src="../js/lottie.min.js"></script>
+		<!-- 공통 퍼블리싱UI JS -->
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/hp_common.js?ver=2023_12_28"></script>
+		<title>TEST 고용24(시범운영)_개인</title>
+		
+	</head>
+	<body class="" style="">
+	
+	<div id="wrap" class="company">
+		<!-- skip navigation -->
+		<nav id="skipnav">
+			<a href="#none" onclick="fn_skipNavigator('cont_wrap_area');">본문 바로가기</a>
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#quick_menu">퀵메뉴 바로가기</a>
+			<a href="#job_recom_recruit_info_sec">채용정보와 일자리추천 바로가기</a>
+			<a href="#beginner_guide_sec">초보자 이용가이드 바로가기</a>
+			<a href="#work24_news_sec">고용24 소식 바로가기</a>
+		</nav>
+		<!-- //skip navigation -->
+
+		<!-- #HEADER -->
+		<header>
+			<!-- #header_top -->
+			<div id="header_top">
+				<div class="header_lt">
+					<div class="get_top">
+						<i class="icon"></i>
+						<span class="text">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+					</div>
+					<ul class="header_info">
+						<li class="after" style="display: none;">
+							<i class="icons"></i>
+							<span id="timeOut">29분39초</span>
+							<a href="javascript:void(0);" onclick="gfn_nowTimeAdd()" class="btn xxsmall btn_round type05">시간연장</a>
+							<span class="at_header_name_area">김고용님</span>
+							<a href="/cm/z/b/0210/lgut.do" class="btn xxsmall btn_round type05">로그아웃</a>
+							<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001287', '/z/z/1000/selectMyPageByPersonPost.do', 'EBM04');" class="btn xxsmall btn_round type05">마이페이지</a>
+						</li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do')">로그인</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '2', '/a/a/0110/openJoinPagePost.do')">회원가입</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'x', '/c/d/0180/retrieveSiteEasyHpcmPost.do')">이용안내</a></li>
+						<li class="line"><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001589', '/c/c/0120/selectUtzeInqrLstPost.do', 'EBM02', 'N', '')">질문과 답변</a></li>
+						<li class="line"><a href="http://as82.kr/keis" target="_blank">원격지원</a></li>
+					</ul>
+				</div>
+				<div class="header_top_area">
+					<ul class="header_type">
+						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM01')">개인</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM00')">기업</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //#header_top -->
+		
+			<!-- #header_bottom : hover시 extend 클래스 추가 -->
+			<div id="header_bottom" class="">
+				<div class="header_bottom_area">
+					<h1>
+						<a href="/cm"><span class="blind">고용24</span></a>
+					</h1>
+                    
+					<!-- gnb -->
+					<div id="gnb">
+						<ul>
+							<li>
+								<a href="javascript:void(0);" class="active"><span>채용정보</span></a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								<ul class="gnb2depth">
+								<li>
+									<a href="javascript:void(0);" class="active"><span>인재 찾기</span></a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								</li> 
+								<li><a href="javascript:void(0);"><span>구인신청</span></a></li>
+								<li><a href="javascript:void(0);"><span>채용공고 보기</span></a></li>
+								<li><a href="javascript:void(0);"><span>일경험신청</span></a></li>
+								<li><a href="javascript:void(0);"><span>외국인 고용</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>직업 능력 개발</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);"><span>근로자 직업훈련</span></a></li>
+								<li><a href="javascript:void(0);"><span>훈련기관 · 강사</span></a></li>
+								<li><a href="javascript:void(0);"><span>사업주훈련</span></a></li>
+								<li><a href="javascript:void(0);"><span>일학습병행훈련</span></a></li>
+								<li><a href="javascript:void(0);"><span>취업지원금</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>기업지원금</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);"><span>신규채용</span></a></li>
+								<li><a href="javascript:void(0);"><span>출산 · 육아</span></a></li>
+								<li><a href="javascript:void(0);"><span>유연근무</span></a></li>
+								<li><a href="javascript:void(0);"><span>고용유지</span></a></li>
+								<li><a href="javascript:void(0);"><span>산업 · 일자리전환</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>확인 및 신고</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);"><span>이직확인서</span></a></li>
+								<li><a href="javascript:void(0);"><span>출산전후휴가</span></a></li>
+								<li><a href="javascript:void(0);"><span>육아휴직</span></a></li>
+								<li><a href="javascript:void(0);"><span>대규모고용조정</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- //gnb -->
+		
+					<!-- utility -->
+					<ul class="header_util">
+						<li class="header_search" style="display: none;"><a href="#none"><span class="blind">검색</span></a></li>
+						<li class="header_category"><a href="javascript:void(0)" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0150/retrieveStmpPost.do')"><span class="blind">메뉴 전체보기</span></a></li>
+					</ul>
+					<!-- //utility -->
+				</div>
+			</div>
+			<!-- //#header_bottom -->
+		</header>
+
+		<section id="container">
+			<!-- 검색/로그인 -->
+			<div class="top_search_form">
+				<!-- 검색영역 -->
+				<div class="topsearch_wrap topsearch_wrap--flex">
+					<div class="search_group">
+						<div class="form_search_wrap">
+							<div class="main_search_area">
+								<div class="inner_search">
+									<div class="inner_select">
+										<button type="button" class="btn_cate_select" id="topQuerySelect" title="검색 카테고리창 열림">
+											<span>전체</span>
+											<i class="icon"></i>
+										</button>
+									</div>
+									
+				
+									<!-- 카테고리레이어 -->
+									<div class="layer_search layer_cate_search" style="display:none;">
+										<ul>
+											<li><a href="javascript:void(0);" class="active" data-value="all" data-title="전체"><span>전체</span></a></li>
+											<li><a href="javascript:void(0);" data-value="report" data-title="신고·신청"><span>신고·신청</span></a></li>
+											<li><a href="javascript:void(0);" data-value="policy_emp" data-title="정책"><span>정책</span></a></li>
+											<li><a href="javascript:void(0);" data-value="tb_workinfo" data-title="채용"><span>채용</span></a></li>
+											<li><a href="javascript:void(0);" data-value="tb_bizinfo" data-title="기업"><span>기업</span></a></li>
+											<li><a href="javascript:void(0);" data-value="training" data-title="훈련"><span>훈련</span></a></li>
+											<li><a href="javascript:void(0);" data-value="news" data-title="뉴스·자료"><span>뉴스·자료</span></a></li>
+											<li><a href="javascript:void(0);" data-value="jobCourse" data-title="직업·진로"><span>직업·진로</span></a></li>
+											<li><a href="javascript:void(0);" data-value="qual" data-title="자격"><span>자격</span></a></li>
+											<li><a href="javascript:void(0);" data-value="tb_resident" data-title="인재"><span>인재</span></a></li>
+											<li><a href="javascript:void(0);" data-value="etc" data-title="기타"><span>기타</span></a></li>
+										</ul>
+									</div>
+									<!-- //카테고리레이어 -->
+									<input type="text" placeholder="필요한 서비스를 찾아보세요" title="검색어 입력" id="topQuery" maxlength="150" class="ui-autocomplete-input" autocomplete="off">
+									<a href="javascript:void(0);" id="findSearchData" class="btn_main_search"><span class="blind">검색</span></a>
+								</div>
+							</div>
+							<!-- 자동완성레이어 -->
+							<div class="layer_auto_search_wrap" style="display:none">
+								<div class="layer_search layer_auto_search">
+									<ul class="keyword" id="keyword">
+									</ul>
+									<div class="service">
+										<p class="b1_sb">정책/서비스 바로가기</p>
+										<ul class="box_list_area" id="policyList">
+				
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- 자동완성레이어 -->
+						</div>
+
+						<!-- 추천검색어 -->
+						<dl class="recommend_keyword">
+							<dt>추천검색어</dt>
+							<dd>
+								<ul id="recommendArea">
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('실업급여')">실업급여</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('근로계약서')">근로계약서</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('육아휴직')">육아휴직</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('국민내일배움카드')">국민내일배움카드</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('일자리채움 청년지원금')">일자리채움 청년지원금</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('직업훈련')">직업훈련</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('일자리채움 청년지원금')">일자리채움 청년지원금</a></li>
+									<li><a href="javascript:void(0);" onclick="fn_popWordClick('직업훈련')">직업훈련</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //추천검색어 -->
+					</div>
+
+					<div class="login_group">
+						<!-- 로그인전 노출 -->
+						<div class="login_guide">
+							<p>고용24에 <span>로그인</span> 하시면 아래의 서비스를 이용할 수 있어요.</p>
+							<ul>
+								<li>
+									<span class="ico ico01"></span>
+									<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/d/b/0000/selectCvplRqutListPost.do');">내 신청 조회</a></span>
+								</li>
+								<li>
+									<span class="ico ico02"></span>
+									<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/d/a/0110/retrieveCrtfIssuRqutCrstLstPost.do');">증명서 발급</a></span>
+								</li>
+								<li>
+									<span class="ico ico03"></span>
+									<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/b/b/0410/selectBpRcvSvcListPost.do');">놓치고 있는 혜택 확인</a></span>
+								</li>
+								<li>
+									<span class="ico ico04"></span>
+									<span><a href="#none" onclick="fn_goPageUrl('/cm', 'EBG020000000495', 'https://www.work.go.kr/jobCare/introExp/jobCareIntroExp.do');">일자리, 교육훈련, 자격증 추천</a>
+									</span>
+								</li>
+							</ul>
+							<a href="#none" class="btn" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do');">로그인</a>
+					
+							<button type="button" class="btn_close"><span class="blind">닫기</span></button>
+						</div>
+						<!--// 로그인전 노출 -->
+					
+						<!-- 로그인 후 노출 -->
+						<div class="my_app_status" style="display: none;">
+							<h3 class="t3_sb">
+								<a href="#" class="highlight">김고용</a>
+								<span>님의 서비스 신청 현황</span>
+							</h3>
+							<div class="flex">
+								
+								
+							</div>
+							<ul class="status_list">
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0700')">
+										<div class="left">
+											<i class="icon icon--img1"></i>
+											<span class="lineBg3s">작성중</span>
+										</div>
+										<div class="right">
+											<span class="count">3</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0701')">
+										<div class="left">
+											<i class="icon icon--img2"></i>
+											<span class="lineBg3s">제출</span>
+										</div>
+										<div class="right">
+											<span class="count">11</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0703')">
+										<div class="left">
+											<i class="icon icon--img3"></i>
+											<span class="lineBg3s">처리중</span>
+										</div>
+										<div class="right">
+											<span class="count">0</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0705')">
+										<div class="left">
+											<i class="icon icon--img4"></i>
+											<span class="lineBg3s">보완</span>
+										</div>
+										<div class="right">
+											<span class="count">3</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0706')">
+										<div class="left">
+											<i class="icon icon--img5"></i>
+											<span class="lineBg3s">반려</span>
+										</div>
+										<div class="right">
+											<span class="count">0</span><span>건</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#none" onclick="fn_goCvplList('A0704')">
+										<div class="left">
+											<i class="icon icon--img6"></i>
+											<span class="lineBg3s">처리완료</span>
+										</div>
+										<div class="right">
+											<span class="count">0</span><span>건</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<button type="button" class="btn_mypage">
+								<span class="text">마이페이지 바로가기</span>
+							</button>
+						</div>
+						<!--// 로그인 후 노출 -->
+					</div>
+
+					<i class="bgico5"></i>
+
+					<script>
+						$('#header_bottom ul.header_util .header_search a').off('click').on('click', function(){
+							$("#topQuery").focus();
+						});
+					
+						$('#topQuerySelect').on('click', function(){
+							$(".layer_search.layer_cate_search").css("display", "");
+							$("#topQuerySelect").attr("title","검색 카테고리창 닫힘");
+							$("#topQuerySelect").find('.icon').addClass('active');
+						});
+					
+						$('.layer_search.layer_cate_search ul li a').on('click', function(){
+							$('.layer_search.layer_cate_search ul li a').each(function(){
+								$(this).removeClass('active');
+							});
+							$(this).addClass("active");
+							$("#topQuerySelect span").text($(this).data('title'));
+							$("#topQuerySearchArea").val($(this).data('value'));
+							$(".layer_search.layer_cate_search").css("display", "none");
+							$("#topQuerySelect").attr("title","검색 카테고리창 열림");
+							$("#topQuerySelect").find('.icon').removeClass('active');
+						});
+					</script>
+				</div>
+				<!-- //검색영역 -->
+			</div>
+			<!-- //검색/로그인 -->
+			
+			<!-- 자주찾는 서비스 -->
+			<div class="main_favorite">
+				<div class="main_section_wrap main_swiperFreqAccMenu_wrap">
+					<!-- Slider main container -->
+					<div class="main_swiperFreqAccMenu_control">
+						<h1>자주찾는<br>서비스</h1>
+					</div>
+					<div class="main_overflow">
+						<div class="swiper-button-prev" title="이전 배너"></div>
+						<div class="swiper-container main_swiperFreqAccMenu">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="lottie lottie0"></span></span>
+											<p class="string"><span class="lineBg3s">출산육아기 지원금</span></p>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="lottie lottie1"></span></span>
+											<p class="string"><span class="lineBg3s">고령자 고용 지원금</span></p>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="lottie lottie2"></span></span>
+											<p class="string"><span class="lineBg3s">이직확인서 신고</span></p>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="lottie lottie3"></span></span>
+											<p class="string"><span class="lineBg3s">구인신청관리</span></p>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="lottie lottie4"></span></span>
+											<p><span class="lineBg3s">(청년도약)<br>참여사업관리</span></p>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="famenu">
+										<a href="#none">
+											<span class="round"><span class="lottie lottie5"></span></span>
+											<p><span class="lineBg3s">국민내일배움카드<br>발급신청</span></p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next" title="다음 배너"></div>
+					</div>
+					<div class="swiper-pagination">1 / 1</div>
+
+					<i class="bgico1"></i>
+				</div>
+
+				<script>
+					const mainswiperFreqAccMenu = new Swiper(".main_swiperFreqAccMenu",{
+						slidesPerView: 6,
+						spaceBetween: 24,
+						pagination: {
+							el: ".main_swiperFreqAccMenu_wrap .swiper-pagination",
+							type: "fraction",
+						},
+						navigation: {
+							nextEl: ".main_swiperFreqAccMenu_wrap .swiper-button-next",
+							prevEl: ".main_swiperFreqAccMenu_wrap .swiper-button-prev",
+						},
+					});
+
+					$('.lottie').each(function(index, elm) {
+						console.log(index)
+						window['lottie'+index] = lottie.loadAnimation({
+							container: $(elm)[0],
+							renderer: 'svg',
+							loop: false,
+							autoplay: false,
+							path: '../images/main_new/lottie_corp'+index+'.json'
+						});
+						$('.lottie'+index).on({
+							'mouseenter': function() {
+								window['lottie'+index].play();
+							},
+							'mouseleave': function() {
+								window['lottie'+index].stop();
+							}
+						})
+					});
+				</script>
+			</div>
+			<!-- //자주찾는 서비스 -->
+		
+			<!-- 지원제도 -->
+			<div class="main_section_wrap main_swiper01_wrap main_support">
+				<div class="main_service_list_person">
+					<div class="al_center">
+						<h2 class="h1_sb">지원 제도</h2>
+					</div>
+					<p class="main_explain_txt01 mt08">
+						취업과 관련한 다양한 지원 제도를 소개해 드려요. 아래에서 궁금하신 주제를 클릭해 주세요.
+					</p>
+					<div class="main_tabs">
+						<div class="recomm_tab mt32">
+							<ul class="tablist" role="tablist">
+								<li role="presentation"><button type="button" role="tab" id="person"  aria-controls="개인" onclick="fn_showDiv()">개인</button></li>
+								<li role="presentation"><button type="button" role="tab" id="company" aria-selected="true" aria-controls="기업" onclick="fn_showDiv()">기업</button></li>
+							</ul>
+						</div>
+
+						<div role="tabpanel" id="panel1" class="person" style="display:none">
+							<div class="inner_service_list list_type02">
+								<a href="#" class="card_list">
+									<dl onclick="fn_goPolicyIntro('SC00000001', '')">
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">취업은 하고 싶은데, 어떻게 해야 할지 모르겠어요 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>기초 취업능력 키우기, 1:1 상담, 나에게 맞는 지원 추천 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">취업하기 위해 공부하거나 자격증을 따고 싶어요 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>취업과 이직에 도움이 되는 교육 / 훈련 받기</span>
+										</dd>
+									</dl>
+								</a>
+								
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s red">내게 맞는 일자리를 찾고 싶어요 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>일자리 추천, 다양한 일 경험, 취업지원금 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">출산/육아를 위해 일을 쉬거나 근무 시간을 줄여야 할 거 같아요 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>출산(유산, 사산 포함) 급여, 육아휴직, 육아기 근로시간 단축 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">최근에 어쩔 수 없이 퇴사했어요. 조만간 퇴사할 것 같아요 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>실업급여, 재취업 수당 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s red">나이는 좀 있지만, 다시 취업을 하고 싶습니다 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>경력직을 위한 경력설계 컨설팅, 공공 일자리, 취업 지원금, 취업 능력 키우기 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">전 장애가 있는데, 어떤 도움을 받을 수 있을까요? <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>장애인의 취업을 위한 단계별 통합 지원 프로그램, 교육/훈련 등 </span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">기타 제도 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>고용보험 등 고용 관련 기업의 의무와 알아두면 좋은 다양한 제도</span>
+										</dd>
+									</dl>
+								</a>
+							</div>
+						</div>
+						<div role="tabpanel" id="panel2" class="company">
+							<div class="inner_service_list list_type02">
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">채용 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>다양한 채용 지원금과 채용 서비스, 일 경험 프로그램 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">교육/훈련 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>채용 예정이거나 이미 근무 중인 직원의 직무능력 향상을 위한 지원</span>
+										</dd>
+									</dl>
+								</a>
+								
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s red">출산/육아 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>출산휴가, 육아휴직, 육아를 위한 근로시간 단축을 부여한 기업에 대한 지원</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">우연 근무 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>근로시간 단축, 원격 근무 등 유연하고 스마트하게 일하는 기업을 위한 지원 </span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">고용 유지 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>실어려운 회사사정에도 불구하고 직원의 고용유지를 위해 노력한 기업을 위한 지원</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s red">재취업 지원 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>직원의 재취업을 지원하는 제도 - 중장년 내일센터·생애경력설계·새출발크레딧 등</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s blue">장애인 고용 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>장애인을 채용했거나, 채용하기 위해 노력한 기업을 위한 지원</span>
+										</dd>
+									</dl>
+								</a>
+								<a href="#" class="card_list">
+									<dl>
+										<dt>
+											<b>
+												<span class="text lineBg3s green">외국인 고용 <span class="detail_view"></span></span>
+											</b>
+										</dt>
+										<dd>
+											<span>내국인 채용을 위해 노력했으나 채용하지 못한 기업(사업주)를 위한 고용허가제</span>
+										</dd>
+									</dl>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
+				</div>
+				<script>
+					function fn_showDiv() {
+						var $this = $(event.currentTarget);
+						$this.closest('.tablist').find('button').attr('aria-selected', '');
+						$this.attr('aria-selected', 'true');
+
+						var childDiv = $this.attr('id');
+						console.log(childDiv)
+						$('.'+childDiv).siblings('div[role=tabpanel]').hide();
+						$('.'+childDiv).show();
+					}
+				</script>
+			</div>
+			<!-- //지원제도 -->
+
+			<!-- 인재 정보 -->
+			<div class="main_recruit_information_company" id="#person_recom_recruit_info_sec">
+				<div class="main_section_wrap">
+					<h2 class="h1_sb">인재 정보</h2>
+					<p class="main_explain_txt01 mt08"><a href="#none" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do');">로그인</a>하시면 더욱 다양한 인재정보와 지원금 서비스를 받을 수 있습니다</p>
+				
+					<div class="main_recruit_information">
+						<!-- 배너 2 -->
+						<div class="main_swiper02_wrap">
+							<div class="swiper-container main_swiper02">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<dl class="profile_list">
+											<dt>
+												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+												<span class="name"><span>최ㅇㅇ</span></span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="obj_key">직종</span>
+														<span class="obj_value">회계 사무원</span>
+													</li>
+													<li>
+														<span class="obj_key">지역</span>
+														<span class="obj_value">인천, 인천 미추홀구 인천, 인천 미추홀구</span>
+													</li>
+													<li>
+														<span class="obj_key">경력</span>
+														<span class="obj_value">9년 1개월</span>
+													</li>
+													<li>
+														<span class="obj_key">자격증</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+													</li>
+												</ul>
+				
+												<div class="box_hash_wrap">
+													<span class="btn_hash small fill type02 r30">#회계</span>
+													<span class="btn_hash small fill type02 r30">#경리</span>
+													<span class="btn_hash small fill type02 r30">#세무</span>
+													<span class="btn_hash small fill type02 r30">#재무</span>
+													<span class="btn_hash small fill type02 r30">#사무</span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="swiper-slide">
+										<dl class="profile_list">
+											<dt>
+												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+												<span class="name"><span>최ㅇㅇ</span></span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="obj_key">직종</span>
+														<span class="obj_value">회계 사무원</span>
+													</li>
+													<li>
+														<span class="obj_key">지역</span>
+														<span class="obj_value">인천, 인천 미추홀구</span>
+													</li>
+													<li>
+														<span class="obj_key">경력</span>
+														<span class="obj_value">9년 1개월</span>
+													</li>
+													<li>
+														<span class="obj_key">자격증</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+													</li>
+												</ul>
+				
+												<div class="box_hash_wrap">
+													<span class="btn_hash small fill type02 r30">#회계</span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="swiper-slide">
+										<dl class="profile_list">
+											<dt>
+												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+												<span class="name"><span>최ㅇㅇ</span></span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="obj_key">직종</span>
+														<span class="obj_value">회계 사무원</span>
+													</li>
+													<li>
+														<span class="obj_key">지역</span>
+														<span class="obj_value">인천, 인천 미추홀구</span>
+													</li>
+													<li>
+														<span class="obj_key">경력</span>
+														<span class="obj_value">9년 1개월</span>
+													</li>
+													<li>
+														<span class="obj_key">자격증</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+													</li>
+												</ul>
+				
+												<div class="box_hash_wrap">
+													<span class="btn_hash small fill type02 r30">#회계</span>
+													<span class="btn_hash small fill type02 r30">#경리</span>
+													<span class="btn_hash small fill type02 r30">#세무</span>
+													<span class="btn_hash small fill type02 r30">#재무</span>
+													<span class="btn_hash small fill type02 r30">#사무</span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="swiper-slide">
+										<dl class="profile_list">
+											<dt>
+												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+												<span class="name"><span>최ㅇㅇ</span></span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="obj_key">직종</span>
+														<span class="obj_value">회계 사무원</span>
+													</li>
+													<li>
+														<span class="obj_key">지역</span>
+														<span class="obj_value">인천, 인천 미추홀구</span>
+													</li>
+													<li>
+														<span class="obj_key">경력</span>
+														<span class="obj_value">9년 1개월</span>
+													</li>
+													<li>
+														<span class="obj_key">자격증</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+													</li>
+												</ul>
+				
+												<div class="box_hash_wrap">
+													<span class="btn_hash small fill type02 r30">#회계</span>
+													<span class="btn_hash small fill type02 r30">#경리</span>
+													<span class="btn_hash small fill type02 r30">#세무</span>
+													<span class="btn_hash small fill type02 r30">#재무</span>
+													<span class="btn_hash small fill type02 r30">#사무</span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="swiper-slide">
+										<dl class="profile_list">
+											<dt>
+												<img src="../images/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+												<span class="name"><span>최ㅇㅇ</span></span>
+											</dt>
+											<dd>
+												<ul>
+													<li>
+														<span class="obj_key">직종</span>
+														<span class="obj_value">회계 사무원</span>
+													</li>
+													<li>
+														<span class="obj_key">지역</span>
+														<span class="obj_value">인천, 인천 미추홀구</span>
+													</li>
+													<li>
+														<span class="obj_key">경력</span>
+														<span class="obj_value">9년 1개월</span>
+													</li>
+													<li>
+														<span class="obj_key">자격증</span>
+														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+													</li>
+												</ul>
+				
+												<div class="box_hash_wrap">
+													<span class="btn_hash small fill type02 r30">#회계</span>
+													<span class="btn_hash small fill type02 r30">#경리</span>
+													<span class="btn_hash small fill type02 r30">#세무</span>
+													<span class="btn_hash small fill type02 r30">#재무</span>
+													<span class="btn_hash small fill type02 r30">#사무</span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+								<div class="swiper-button-next btn_right" title="다음 배너"></div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<!-- // 배너 2 -->
+					</div>
+
+					<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
+
+					<div class="parallax_pos parallax_pos--1">
+						<div id="scene0" class="scene_item">
+							<i class="bgico2" data-depth="-0.4"></i>
+						</div>
+					</div>
+					<i class="bgico3"></i>
+					<div class="parallax_pos parallax_pos--2">
+						<div id="scene1" class="scene_item">
+							<i class="bgico4" data-depth="-0.4"></i>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					const mainSwiper02 = new Swiper(".main_swiper02",{
+						slidesPerView: 4,
+						spaceBetween: 24,
+						noSwipingClass: 'box_hash_wrap',
+						pagination: {
+							el: ".main_swiper02 .swiper-pagination",
+							clickable: true,
+						},
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+					});
+
+					$(function() {
+						$('.scene_item').each(function(index, elm) {
+							var parallax = document.getElementById('scene'+index);
+							var parallaxInstance = new Parallax(parallax, {
+								relativeInput: true,
+								hoverOnly: true,
+								onReady: function() {
+									var duration = 1;
+									var from = {
+										ease: Linear.ease
+									};
+									var to = {
+									}
+									TweenLite.fromTo(duration, from, to);
+								}
+							});
+							parallaxInstance.friction(0.1, 0.1);
+						})
+					});
+				</script>
+			</div>
+			<!-- //인재 정보 -->
+
+			<!-- 중간 배너 -->
+			<div class="main_section_wrap main_swiper01_wrap main_bann">
+				<div class="swiper-container main_swiper01">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="https://www.work24.go.kr/cm/c/a/0100/selectBbttInfo.do?ntceStno=75&bbsClCd=kf9cT1sUygs8E64dnqWAxg%3D%3D&upprJobClCd=&jobClCd=&bbsUrl=%2Fc%2Fa%2F0100%2FselectBbttListPost.do" target="_blank">
+								<img src="https://www.work24.go.kr/cm/common/directStaticImg3ndView.do?encAthflSeq=frGYCIFT%2bp3nX8aXfI31lA%3d%3d&atchFsno=3" alt="고용24 서비스 모니터링단 모집">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.work24.go.kr/cm/c/b/0130/selectBbttInfo.do?ntceStno=21&amp;bbsClCd=%2BWhIYyX4MTPwl6gr4E19tQ%3D%3D" target="_blank">
+								<img src="https://www.work24.go.kr/cm/common/directStaticImg3ndView.do?encAthflSeq=KVyvzjlJLFSXoP%2bzIu%2bUlA%3d%3d&atchFsno=1" alt="AI일자리추천">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="https://www.2024datacontest.co.kr" target="_blank">
+								<img src="https://www.work24.go.kr/cm/common/directStaticImg3ndView.do?encAthflSeq=N1s0eAG5Znxkn5tl3ZM87w%3d%3d&atchFsno=1" alt="제3회 고용노동 공공데이터 활용 공모전">
+							</a>
+						</div>
+					</div>
+					
+					<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+					<div class="swiper-button-next btn_right" title="다음 배너"></div>
+			
+					<div class="pagination_container">
+						<div class="swiper-pagination"></div>
+						<button type="button" class="btn_main_banner pause"><span class="blind">pause</span></button>
+						<button type="button" class="btn_main_banner play" style="display:none"><span class="blind">play</span></button>
+					</div>
+				</div>
+
+				<script>
+					const mainSwiper01= new Swiper(".main_swiper01",{
+						pagination: {
+							el: ".main_swiper01 .swiper-pagination",
+							lickable: true,
+						},
+						navigation: {
+							nextEl: ".main_swiper01 .swiper-button-next",
+							prevEl: ".main_swiper01 .swiper-button-prev",
+						},
+					});
+
+					$(document).on('click', '.main_swiper01 .btn_main_banner', function() {
+						if ($(this).hasClass('pause')) {
+							mainSwiper01.autoplay.pause();
+							$(this).hide();
+							$('.btn_main_banner.play').show();
+						} else {
+							mainSwiper01.autoplay.start();
+							$(this).hide();
+							$('.btn_main_banner.pause').show();
+						}
+					});
+				</script>
+			</div>
+			<!-- //중간 배너 -->
+
+			<!-- 고용24 이용가이드-->
+			<div class="main_beginner_guide" id="beginner_guide_sec">
+				<div class="inner_guide">
+					<h2 class="h1_sb">고용24 이용가이드</h2>
+					<ul class="guide_list">
+						<li>
+							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p01';">
+								<dl>
+									<dt><span class="ico ico24_member_login"></span><span class="lineBg3s white">회원가입 방법</span></dt>
+									<dd>
+										<p>회원 유형 선택, 14세 이상 · 미만의 가입 방법을 알려드려요.</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p02';">
+								<dl>
+									<dt><span class="ico ico24_shield-tick"></span><span class="lineBg3s white">사업자등록증명원 발급안내</span></dt>
+									<dd>
+										<p>회원가입 시 필요한 대표자명, 개업연월일 확인 방법을 알려드려요.</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p03';">
+								<dl>
+									<dt><span class="ico ico24_jobfind_search"></span><span class="lineBg3s white">개인정보 열람 비밀번호 설정 방법</span></dt>
+									<dd>
+										<p>인재정보, 훈련생정보 등 중요한 개인정보보호 방법을 알려드려요.</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.work.go.kr/jobCare/introExp/jobCareIntroExp.do" target="_blank">
+								<dl>
+									<dt><span class="ico ico24_pencil"></span><span class="lineBg3s white">구인등록 방법</span></dt>
+									<dd>
+										<p>보다 쉽고 간편해진 구인신청 서비스를 만나보세요.</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p05';">
+								<dl>
+									<dt><span class="ico ico24_ui_setting"></span><span class="lineBg3s white">맞춤서비스 설정 방법(인재추천)</span></dt>
+									<dd>
+										<p>원하시는 조건을 설정하면 나에게 맞는 정보를 소개해 드려요.</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#none" onclick="location.href='/cm/c/d/0180/retrieveSiteEasyHpcm.do?tabIndex=tab-panel-01&amp;tabSubIndex=ul_p06';">
+								<dl>
+									<dt><span class="ico ico24_calculator"></span><span class="lineBg3s white">지원금 사전진단 및 모의계산</span></dt>
+									<dd>
+										<p>기업에 필요한 지원금을 확인하고 가능여부를 확인해 보세요.</p>
+									</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+
+					<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
+				</div>
+			</div>
+			<!-- //고용24 이용가이드-->
+
+			<!-- 고용24 소식 -->
+			<div class="main_section_wrap" id="work24_news_sec">
+				<div class="work24_news">
+					<h2 class="h1_sb">고용24 소식 </h2>
+			
+					<div class="control_work24_news">
+						<div class="recomm_tab">
+							<ul class="tablist" role="tablist">
+								<li role="presentation"><button type="button" role="tab" id="all" aria-selected="true" aria-controls="전체">전체</button></li>
+								<li role="presentation"><button type="button" role="tab" id="news" aria-controls="뉴스">뉴스</button></li>
+								<li role="presentation"><button type="button" role="tab" id="notice" aria-controls="공지사항">공지사항</button></li>
+								<li role="presentation"><button type="button" role="tab" id="pds" aria-controls="자료">서식자료실</button></li>
+							</ul>
+						</div>
+			
+						<div class="swiper-container news_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="work24_news_article">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
+										</div>
+										<div class="news_item" style="--i:1.6">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
+											</h3>
+											<p class="date">2024-07-04</p>
+											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
+										</div>
+										<div class="news_item" style="--i:1.8">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
+											</h3>
+											<p class="date">2024-07-15</p>
+											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
+											</h3>
+											<p class="date">2024-06-20</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
+											</h3>
+											<p class="date">2024-07-02</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.4">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
+											</h3>
+											<p class="date">2024-06-28</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="work24_news_article">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
+										</div>
+										<div class="news_item" style="--i:1.6">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
+											</h3>
+											<p class="date">2024-07-04</p>
+											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
+										</div>
+										<div class="news_item" style="--i:1.8">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
+											</h3>
+											<p class="date">2024-07-15</p>
+											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
+											</h3>
+											<p class="date">2024-06-20</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
+											</h3>
+											<p class="date">2024-07-02</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.4">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
+											</h3>
+											<p class="date">2024-06-28</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="work24_news_article">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
+										</div>
+										<div class="news_item" style="--i:1.6">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
+											</h3>
+											<p class="date">2024-07-04</p>
+											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
+										</div>
+										<div class="news_item" style="--i:1.8">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
+											</h3>
+											<p class="date">2024-07-15</p>
+											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
+											</h3>
+											<p class="date">2024-06-20</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
+											</h3>
+											<p class="date">2024-07-02</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.4">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
+											</h3>
+											<p class="date">2024-06-28</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="work24_news_article">
+										<div class="news_item fixed" style="--i:1"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division"> 
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>반도체·바이오·미래차 동력 '화성청년 취업역량강화 사업' 6개사 선정</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">[화성=뉴스핌] 박노훈 기자 = 경기 화성시는 관내 우수한 청년 인력자원을 반도체·바이오·미래차 등 3대 미래 전략사업 분야의 성장 동력으로 육성하기 위한 '화성청년 취업역량강화 사업' 참여기업 선...</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.2"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>동아대 경찰학과, ‘교수와 학생이 함께하는 진로 탐색 프로그램’ 실시</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">*사진설명- (1) 동아대 경찰학과 ‘교수와 학생이 함께하는 진로탐색 프로그램’ 참가자들이 중앙경찰학교에서 기념촬영을 하고 있다.동아대학교 경찰학과(학과장 허황)는 ‘교수와 학생이 함께하는</p>
+										</div>
+										<div class="news_item fixed" style="--i:1.4"> <!-- 고정 게시물에 fixed 클래스 추가해주세요. -->
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_news"></span>
+													<span>뉴스</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>에어부산, 노선 확대에 따른 대규모 채용 진행</span></a>
+											</h3>
+											<p class="date">2024-07-17</p>
+											<p class="news_article">에어부산이 코로나 펜데믹 이후 처음으로 필수 안전 인력에 대한 대규모 채용을 진행했다. 에어부산은 지난 15일 에어부산 사옥에서 80여명의 신입 직원들이 참석한 가운데 입사식을 진행했다고 17</p>
+										</div>
+										<div class="news_item" style="--i:1.6">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내</span></a>
+											</h3>
+											<p class="date">2024-07-04</p>
+											<p class="news_article">안녕하세요. 고용24 서비스 관리자입니다.고객상담센터(1577-7114) 이전으로 인한 전화연결 지연 안내 드립니다.고객상담센터 사무실 이전에 따른 상담인력 변동, 상담시스템 안정화 작업 등으로 상담 대기시간이 길어지거나 일부 서비스에 대한 응대가 지연될 수 있습니다.전화연결이 어려운 분은 고용24 홈페이지 고객센터-이용문의-질문답변 게시판을 이용해&nbsp; 주시기 바랍니다.고객 여러분의 양해를 부탁드립니다.감사합니다.&nbsp;</p>
+										</div>
+										<div class="news_item" style="--i:1.8">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+					
+											<h3 class="news_title">
+												<a href="#none"><span>대민포털 서비스 수정 및 개선 관련 시스템 작업 안내</span></a>
+											</h3>
+											<p class="date">2024-07-15</p>
+											<p class="news_article">안녕하세요. 고용24 홈페이지 담당자입니다.대민포털 서비스 수정 및 개선 관련 시스템 작업 안내드리오니참고하여 주시기 바랍니다.&nbsp;○ 작업시간: 매주 월, 수 19:00 ~ 22:00&nbsp;○ 작업내용: 대민포털 서비스 개선 등 시스템 작업&nbsp;○ 작업영향: 작업시간 내 일시적인 서비스 순단 및 오류 발생 가능&nbsp; &nbsp; ※ 작업 진행상황에 따라 일정이 변경될 수 있습니다.감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_notice"></span>
+													<span>공지</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>고객상담센터 이전에 따른 상담업무 일시중단 안내</span></a>
+											</h3>
+											<p class="date">2024-06-20</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.2">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 26의2] 육아기 단축업무 분담지원금 신청서식(고용창출장려금·고용안정장려금의 신청 및 지급에 관한 규정)</span></a>
+											</h3>
+											<p class="date">2024-07-02</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+										<div class="news_item" style="--i:2.4">
+											<div class="news_division">
+												<div class="list_body">
+													<span class="ico ico_pds"></span>
+													<span>자료</span>
+												</div>
+												<i class="icon"><span class="blind">게시물 고정</span></i>
+											</div>
+											<h3 class="news_title">
+												<a href="#none"><span>[별지 제26호의1 서식] 출산육아기 고용안정장려금 지급 신청서(육아기 단축업무 분담지원금)</span></a>
+											</h3>
+											<p class="date">2024-06-28</p>
+											<p class="news_article">안녕하세요. 고용24 시스템 담당자 입니다.한국고용정보원의 고객상담센터가 사무실을 이전함에 따라아래 일정 동안 상담 업무가 일시 중단됨을 알려드립니다.- 고객상담센터 사무실 이전 일정 -○ 업무중단 일시 :&nbsp;2024.6.28(금) 16:00~18:00○ 업무중단 번호 : 1577-7114(유료)고객상담 업무가 일시중단 되는 동안은 질문과답변 게시판을 통해 문의해주시기 바랍니다.질문과답변 게시판:&nbsp;&nbsp;https://www.work24.go.kr/cm/c/c/0120/selectUtzeInqrLst.do감사합니다.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+							<div class="swiper-button-next btn_right" title="다음 배너"></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					let option = {
+						threshold: 0.3 /* 보이는 영역 비율 0 ~ 1 */
+					}
+					let observer = new IntersectionObserver(entries => {
+						entries.forEach(entry => {
+							if(entry.isIntersecting) {
+								entry.target.classList.add('show');
+							} else {
+							}
+						});
+					}, option);
+					const boxElemList = document.querySelectorAll('#work24_news_sec .work24_news_article');
+					boxElemList.forEach(elem => observer.observe(elem));
+					
+					
+					
+					const newsSwiper = new Swiper(".news_swiper",{
+						pagination: {
+							el: ".news_swiper .swiper-pagination",
+							clickable: true,
+						},
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+						on: {
+							slideChange: function () {
+								$('.control_work24_news .tablist li button').attr('aria-selected', false);
+								$('.control_work24_news .tablist li').eq(newsSwiper.activeIndex).find('button').attr('aria-selected', true);
+							}
+						}
+					});
+
+					$(document).on('click', '.control_work24_news .tablist li button', function(e) {
+						e.preventDefault();
+						var _bunIndex = $(this).parent().index();
+						$('.control_work24_news .tablist li button').attr('aria-selected', false);
+						$(this).attr('aria-selected', true);
+						newsSwiper.slideTo(_bunIndex);
+					});
+				</script>
+			</div>
+			<!-- //고용24 소식 -->
+		</section>
+	
+		
+		
+		<!-- quick_menu -->
+		<div id="quick_menu" class="">
+			<div class="quick_tl"><span class="blind">quick menu</span></div>
+			<ul class="quick_menu_btn">
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/d/0190/retrieveInstSrchLstViewPost.do');">
+						<span class="quick_menu_txt">고용센터찾기</span>
+						<span class="quick_ico ico01"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/a/0130/selectBbttListPost.do');">
+						<span class="quick_menu_txt">자주하는 질문</span>
+						<span class="quick_ico ico02"></span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001691', '/c/d/0180/retrieveSiteEasyHpcmPost.do', 'EBM02', 'N', '')">
+						<span class="quick_menu_txt">이용안내</span>
+						<span class="quick_ico ico03"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/f/1100/selecPolicyListPost.do');">
+						<span class="quick_menu_txt">정책/제도</span>
+						<span class="quick_ico ico04"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'EBG020000001581', '/c/c/0120/selectUtzeInqrLstPost.do', 'EBM02', 'N');">
+						<span class="quick_menu_txt">고객센터</span>
+						<span class="quick_ico ico05"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/f/1200/selecSimulateCalcPost.do');">
+						<span class="quick_menu_txt">모의계산</span>
+						<span class="quick_ico ico06"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/wk', 'x', '/p/a/5110/retrievePopJobsSalary.do');">
+						<span class="quick_menu_txt">직종별 임금정보</span>
+						<span class="quick_ico ico07"></span>
+					</a>
+				</li>
+			</ul>
+			<!-- <div class="quick_chatbot">
+				<a href="#none" onclick="alert('서비스 준비중')"><span class="blind">챗봇</span></a>
+			</div>
+				-->
+		</div>
+		<!-- //quick_menu  -->
+		<!-- 좌하단 fixed btn -->
+		<div class="quick_top">
+			
+			<a href="#none" class="btn_quick_login">로그인</a>
+			
+			<div class="quick_login_guide">
+		
+			</div>
+			<!-- // quick_login_guide -->
+			<div class="quick_login_guide login_guide" style="display: none;">
+				<p>지금, 고용24에 <span>로그인</span> 하시면 다음과 같은 서비스를 받을 수 있습니다.
+					<a href="#none" class="btn medium r30 type01" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do');">로그인</a>
+				</p>
+				<ul>
+					<li>
+						<span class="ico ico01"></span>
+						<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/d/b/0000/selectCvplRqutListPost.do');">내 신청 조회</a></span>
+					</li>
+					<li>
+						<span class="ico ico02"></span>
+						<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/d/a/0110/retrieveCrtfIssuRqutCrstLstPost.do');">증명서 발급</a></span>
+					</li>
+					<li>
+						<span class="ico ico03"></span>
+						<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/b/b/0410/selectBpRcvSvcListPost.do');">놓치고 있는 혜택 확인</a></span>
+					</li>
+					<li>
+						<span class="ico ico04"></span>
+						
+							
+								<span><a href="#none" onclick="fn_goPageUrl('/cm', 'EBG020000000495', 'https://www.work.go.kr/jobCare/introExp/jobCareIntroExp.do');">일자리, 교육훈련, 자격증 추천</a></span>
+							
+							
+						
+					</li>
+				</ul>
+		
+				<button type="button" class="btn_close"><span class="blind">닫기</span></button>
+			</div>
+			<!-- // login_guide -->
+		
+			<a href="#none" class="btn_quick_top"><span class="blind">맨위로 가기</span></a>
+		</div>
+		<!-- //좌하단 fixed btn -->
+	
+	
+		<footer id="footer">
+			<div class="site">
+				<div class="area">
+					<button type="button" class="btnsite btn_family">
+						<span class="text">패밀리사이트</span>
+						<span class="icon"></span>
+					</button>
+					<button type="button" class="btnsite btn_related">
+						<span class="text">유관기관</span>
+						<span class="icon"></span>
+					</button>
+
+					<div class="site_list">
+						<div class="list list--family" style="display: none;">
+							<ul>
+								<li class="item"><a href="https://www.work.go.kr" target="_blank">워크넷</a></li>
+								<li class="item"><a href="https://www.hrd.go.kr" target="_blank">직업훈련포털</a></li>
+								<li class="item"><a href="https://www.eps.go.kr" target="_blank">외국인고용</a></li>
+								<li class="item"><a href="https://www.kua.go.kr" target="_blank">국민취업지원제도</a></li>
+								<li class="item"><a href="https://eis.work.go.kr" target="_blank">고용행정통계</a></li>
+								<li class="item"><a href="https://www.workplus.go.kr" target="_blank">고용복지센터</a></li>
+								<li class="item"><a href="https://www.worktogether.or.kr" target="_blank">장애인고용포털</a></li>
+								<li class="item"><a href="https://www.work.go.kr/cyberedu/main.do" target="_blank">사이버진로교육센터</a></li>
+								<li class="item"><a href="https://saeil.mogef.go.kr/hom/HOM_Main.do" target="_blank">여성새로일하기센터</a></li>
+								<li class="item"><a href="https://www.gasarang.go.kr/hpgsMain.do" target="_blank">가사랑</a></li>
+							</ul>
+						</div>
+						<div class="list list--related" style="display: none;">
+							<ul>
+								<li class="item"><a href="https://www.4insure.or.kr/ins4/ptl/Main.do" target="_blank">4대사회보험정보연계센터</a></li>
+								<li class="item"><a href="https://www.comwel.or.kr" target="_blank">근로복지공단</a></li>
+								<li class="item"><a href="https://www.hrdkorea.or.kr" target="_blank">한국산업인력공단</a></li>
+								<li class="item"><a href="https://ncs.go.kr" target="_blank">직무능력표준</a></li>
+								<li class="item"><a href="https://c.q-net.or.kr" target="_blank">CQ넷</a></li>
+								<li class="item"><a href="https://www.koreatech.ac.kr" target="_blank">한국기술교육대학교</a></li>
+								<li class="item"><a href="https://www.kopo.ac.kr" target="_blank">한국폴리텍대학</a></li>
+								<li class="item"><a href="https://www.hikorea.go.kr" target="_blank">하이코리아</a></li>
+								<li class="item"><a href="https://eps.hrdkorea.or.kr/h2/main/main.do" target="_blank">외국국적동포(H-2)취업교육홈페이지</a></li>
+								<li class="item"><a href="http://www.hugkorea.or.kr" target="_blank">외국인력상담센터</a></li>
+								<li class="item"><a href="https://www.kosha.or.kr" target="_blank">안전보건공단</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('.site .btnsite').on('click', function() {
+					var _btnIndex = $(this).index();
+					$('.site_list >div').slideUp(200);
+					if($('.site_list >div').eq(_btnIndex).is(':visible') === false) {
+						$('.site .btnsite').removeClass('active').removeAttr('title')
+						$(this).addClass('active').attr('title', '펼쳐짐')
+
+						$('.site_list >div').eq(_btnIndex).slideDown(200);
+					} else {
+						$('.site .btnsite').removeClass('active').removeAttr('title')
+					}
+				});
+			</script>
+
+			<div class="group">
+				<div class="area">
+					<div class="logos">
+						<a href="http://www.moel.go.kr" target="_blank"><img src="../images/footer_ci01.png" alt="고용노동부"></a>
+						<a href="https://www.keis.or.kr" target="_blank"><img src="../images/footer_ci02.png" alt="한국고용정보원"></a>
+
+						
+					</div>
+					<div class="flex">
+						<div class="flex_left">
+							<p>(27740) 충청북도 음성군 맹동면 태정로 6 한국고용정보원</p>
+							<p><strong>홈페이지 전산 이용 문의 1577-7114</strong> (유료, 한국고용정보원 고객상담센터, 평일 09시 ~ 18시)</p>
+							<p><strong>고용·노동 분야 제도 문의 국번없이 1350</strong> (유료, 고용노동부 고객상담센터, 평일 09시 ~ 18시)</p>
+							<p class="etc">
+								고용24는 <strong>통신판매중개자</strong>이며, 통신판매의 당사자가 아닙니다.<br>
+								상품(훈련), 상품(훈련)정보, 거래에 관한 <strong>의무와 책임은 판매자(훈련기관)</strong>에게 있습니다.
+							</p>
+						</div>
+						<div class="flex_right">
+							<div class="guide">
+								<a href="#" role="button">
+									<span>이용안내</span>
+									<i class="icon"></i>
+								</a>
+								<a href="#" role="button">
+									<span>원격지원</span>
+									<i class="icon"></i>
+								</a>
+							</div>
+							<div class="sns">
+								<a href="#"><img src="../images/img-youtube.svg" alt="유튜브"></a>
+								<a href="#"><img src="../images/img-instagram.svg" alt="인스타그램"></a>
+								<a href="#"><img src="../images/img-naverblog.svg" alt="블로그"></a>
+								<a href="#"><img src="../images/img-facebook.svg" alt="페이스북"></a>
+							</div>
+						</div>
+					</div>
+					<div class="control">
+						<div class="links">
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveUtzeStptPost.do')">이용약관</a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/selectBbttListPost.do')"><strong class="point_color02">개인정보처리방침</strong></a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveEmailAdrPrssPlcyPost.do')">이메일무단수집거부</a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveCpyrPolyPost.do')">저작권보호정책</a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/e/a/0110/selectOpenApiIntroPost.do')">오픈API 서비스</a>
+							<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000001790', '/s/a/1100/loginForm.do');">화상상담 관리자</a>
+							<a href="javascript:void(0)" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0150/retrieveStmpPost.do')">사이트맵</a>
+						</div>
+						<span class="copyright">© 2024 Ministry of Employment and Labor, Korea Employment Information Service. All rights reserved.</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="dimmed"></div>
+</html>

@@ -40,13 +40,13 @@
 .main_new .search_bar .search_submit { display: block; position: absolute; right: 20px; top: 8px; width: 1.5rem; height: 1.5rem; background: url(../images/main_new/ico_search.svg) no-repeat center; background-size: 1.1875rem;}
 
 .main_new .main_login { margin-top: 24px; border: 1px solid #62D491; border-radius: 8px;}
-.main_new .main_login .main_login_notice { padding: 24px 16px; text-align: center;}
-.main_new .main_login .main_login_notice .s1_r { font-size: 18px; font-weight: 600; color: #000;}
+.main_new .main_login .main_login_notice { padding: 26px 16px; text-align: center;}
+.main_new .main_login .main_login_notice .s1_r { font-size: 18px; font-weight: 600; color: #000; line-height: 27px;}
 .main_new .main_login .main_login_notice .s1_r .em_blue { font-weight: 600; color: #117935;}
 .main_new .main_login .main_login_notice .notice_expand { display: flex; justify-content: center; align-items: center; width: 100%; height: 40px; margin-top: 24px; background-color: #62D491; border-radius: 4px;}
 .main_new .main_login .main_login_notice .notice_expand span { font-weight: 600; color: #111;}
 .main_new .main_login_after { position: relative; padding: 20px 16px;}
-.main_new .main_login_after .mla_list { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 24px; gap: 20px 40px;}
+.main_new .main_login_after .mla_list { display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 28px; gap: 24px 40px;}
 .main_new .main_login_after .mla_list li { width: calc(50% - 20px);}
 .main_new .main_login_after .link { display: flex; justify-content: space-between; align-items: center; position: relative;}
 .main_new .main_login_after .link::after { content: ''; display: block; position: absolute; left: -20px; top: 50%; width: 1px; height: 16px; margin-top: -8px; background-color: #eee;}
