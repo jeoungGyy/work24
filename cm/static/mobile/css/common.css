@@ -882,7 +882,6 @@
   padding: 4.625rem 1.25rem 2.5rem;
   padding: 4.625rem 1.25rem calc(2.5rem + constant(safe-area-inset-bottom));
   padding: 4.625rem 1.25rem calc(2.5rem + env(safe-area-inset-bottom));
-  max-height: 50vh;
   position: fixed;
   bottom: 0;
   left: 0;

@@ -46,6 +46,7 @@
 		<script type="text/javascript" src="../js/ui/ui.js"></script>
 		<script type="text/javascript" src="../js/gsap.min.js"></script>
 		<script type="text/javascript" src="../js/parallax.min.js"></script>
+		<script type="text/javascript" src="../js/lottie.min.js"></script>
 		<!-- 공통 퍼블리싱UI JS -->
 		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/hp_common.js?ver=2023_12_28"></script>
 		<title>TEST 고용24(시범운영)_개인</title>
@@ -110,47 +111,47 @@
 					<div id="gnb">
 						<ul>
 							<li>
-								<a href="javascript:void(0);">채용정보</a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								<a href="javascript:void(0);" class="active"><span>채용정보</span></a> <!-- [고도화] active 클래스 추가시 활성화 -->
 								<ul class="gnb2depth">
 								<li>
-									<a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')">일자리 찾기</a> <!-- [고도화] active 클래스 추가시 활성화 -->
+									<a href="javascript:void(0);" class="active" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')"><span>일자리 찾기</span></a> <!-- [고도화] active 클래스 추가시 활성화 -->
 								</li> 
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000016', '/a/b/2100/resumeMngMainPost.do', '', 'N', '')">구직신청</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000001836', '/a/f/1100/retrieveEmpEventListPost.do', '', 'N', '')">채용행사</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000000050', '/jobyoung/smallGiants/corpInfoSrchList.do?coGbCd=small', '', 'N', '')" title="새창 열림">강소기업</a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000016', '/a/b/2100/resumeMngMainPost.do', '', 'N', '')"><span>구직신청</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000001836', '/a/f/1100/retrieveEmpEventListPost.do', '', 'N', '')"><span>채용행사</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000000050', '/jobyoung/smallGiants/corpInfoSrchList.do?coGbCd=small', '', 'N', '')" title="새창 열림"><span>강소기업</span></a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>취업지원</span></a>
 								<ul class="gnb2depth">
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000054', '', '', 'N', '')">취업역량강화</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000084', '/r/d/1110/resumeSelfIntroGuide1Post.do', '', 'N', '')">취업가이드</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ua', 'EBG120000000001', '', '', 'N', '')">국민취업지원제도</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000120', '/c/a/1110/ExperiPgmInfoView.do', '', 'N', '')">일 경험</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000134', '', '', 'N', '')">취업지원금</a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000054', '', '', 'N', '')"><span>취업역량강화</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000084', '/r/d/1110/resumeSelfIntroGuide1Post.do', '', 'N', '')"><span>취업가이드</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ua', 'EBG120000000001', '', '', 'N', '')"><span>국민취업지원제도</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000120', '/c/a/1110/ExperiPgmInfoView.do', '', 'N', '')"><span>일 경험</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000134', '', '', 'N', '')"><span>취업지원금</span></a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>실업급여</span></a>
 								<ul class="gnb2depth">
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000160', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', '', 'N', '')">수급자격</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000206', '/a/h/1100/retrieveEmpymnHopeCardInfoPost.do', '', 'N', '')">실업인정</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000265', '/a/m/1200/createPuElempAllwncViewPost.do', '', 'N', '')">취업촉진수당</a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000160', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', '', 'N', '')"><span>수급자격</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000206', '/a/h/1100/retrieveEmpymnHopeCardInfoPost.do', '', 'N', '')"><span>실업인정</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000265', '/a/m/1200/createPuElempAllwncViewPost.do', '', 'N', '')"><span>취업촉진수당</span></a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>직업 능력 개발</span></a>
 								<ul class="gnb2depth">
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', '', 'N', '')">국민내일배움카드</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000308', '/a/a/1100/trnnCrsInfPost.do', '', 'N', '')">훈련 찾기·신청</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000324', '/i/b/1100/selectCrqfcIssuReqstPost.do', '', 'N', '')">훈련 기관·강사</a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', '', 'N', '')"><span>국민내일배움카드</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000308', '/a/a/1100/trnnCrsInfPost.do', '', 'N', '')"><span>훈련 찾기·신청</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000324', '/i/b/1100/selectCrqfcIssuReqstPost.do', '', 'N', '')"><span>훈련 기관·강사</span></a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="javascript:void(0);"><span>출산 휴가·육아 휴직</span></a>
 								<ul class="gnb2depth">
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000393', '/b/a/1100/openHPEIBA1100M02Post.do', '', 'N', '')">출산(전후)휴가</a></li>
-								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000418', '/b/b/1100/openHPEIBB1100M01Post.do', '', 'N', '')">육아휴직</a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000393', '/b/a/1100/openHPEIBA1100M02Post.do', '', 'N', '')"><span>출산(전후)휴가</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000418', '/b/b/1100/openHPEIBB1100M01Post.do', '', 'N', '')"><span>육아휴직</span></a></li>
 								</ul>
 							</li>
 						</ul>
@@ -398,7 +399,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn1"></span></span>
+											<span class="round"><span class="lottie lottie0"></span></span>
 											<p><span class="lineBg3s">수급자격 신청자<br>온라인 교육</span></p>
 										</a>
 									</div>
@@ -406,7 +407,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn2"></span></span>
+											<span class="round"><span class="lottie lottie1"></span></span>
 											<p class="string"><span class="lineBg3s">실업인정 인터넷 신청</span></p>
 										</a>
 									</div>
@@ -414,7 +415,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn3"></span></span>
+											<span class="round"><span class="lottie lottie2"></span></span>
 											<p><span class="lineBg3s">온라인 취업특강<br>1차 실업인정 교육</span></p>
 										</a>
 									</div>
@@ -422,7 +423,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn4"></span></span>
+											<span class="round"><span class="lottie lottie3"></span></span>
 											<p class="string"><span class="lineBg3s">구직신청</span></p>
 										</a>
 									</div>
@@ -430,7 +431,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
+											<span class="round"><span class="lottie lottie4"></span></span>
 											<p><span class="lineBg3s">국민취업<br>구직촉진수당 신청</span></p>
 										</a>
 									</div>
@@ -438,7 +439,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn6"></span></span>
+											<span class="round"><span class="lottie lottie5"></span></span>
 											<p><span class="lineBg3s">국민내일배움카드<br>발급신청</span></p>
 										</a>
 									</div>
@@ -446,7 +447,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn5"></span></span>
+											<span class="round"><span class="lottie lottie0"></span></span>
 											<p class="string"><span class="lineBg3s">테스트1</span></p>
 										</a>
 									</div>
@@ -454,7 +455,7 @@
 								<div class="swiper-slide">
 									<div class="famenu">
 										<a href="#none">
-											<span class="round"><span class="ico ico60_main_fam_persn6"></span></span>
+											<span class="round"><span class="lottie lottie1"></span></span>
 											<p class="string"><span class="lineBg3s">테스트2</span></p>
 										</a>
 									</div>
@@ -480,6 +481,25 @@
 							prevEl: ".main_swiperFreqAccMenu_wrap .swiper-button-prev",
 						},
 					});
+
+					$('.lottie').each(function(index, elm) {
+						console.log(index)
+						window['lottie'+index] = lottie.loadAnimation({
+							container: $(elm)[0],
+							renderer: 'svg',
+							loop: false,
+							autoplay: false,
+							path: '../images/main_new/lottie_person'+index+'.json'
+						});
+						$('.lottie'+index).on({
+							'mouseenter': function() {
+								window['lottie'+index].play();
+							},
+							'mouseleave': function() {
+								window['lottie'+index].stop();
+							}
+						})
+					});
 				</script>
 			</div>
 			<!-- //자주찾는 서비스 -->
@@ -504,7 +524,7 @@
 						<div role="tabpanel" id="panel1" class="person">
 							<div class="inner_service_list list_type02">
 								<a href="#" class="card_list">
-									<dl onclick="fn_goPolicyIntro('SC00000001', '')">
+									<dl>
 										<dt>
 											<b>
 												<span class="text lineBg3s blue">취업은 하고 싶은데, 어떻게 해야 할지 모르겠어요 <span class="detail_view"></span></span>
@@ -552,7 +572,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -564,7 +584,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -576,7 +596,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -588,7 +608,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -653,7 +673,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -665,7 +685,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -677,7 +697,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>
@@ -689,7 +709,7 @@
 										</dd>
 									</dl>
 								</a>
-								<a href="#" class="card_list high_top">
+								<a href="#" class="card_list">
 									<dl>
 										<dt>
 											<b>

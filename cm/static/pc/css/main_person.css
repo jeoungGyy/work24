@@ -354,8 +354,6 @@
 #container .my_app_status .status_list li a:hover .left span { font-weight: 600; background-size: 100% 100%;}
 #container .swiper-button-disabled { display: none !important; }
 
-.high_top { position: relative; top: 0; transition: top ease-out .4s;}
-.high_top:hover { top: -20px;}
 
 
 
@@ -466,20 +464,21 @@
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .famenu ~ .famenu { margin-left: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a { display: block; text-align: center;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a .round { display: inline-flex; justify-content: center; align-items: center; width: 80px; height: 80px; margin: 0; background-color: #fff; border-radius: 50%; transition: background-color ease-out .2s;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico { display: block; width: 48px; height: 48px; margin: 0;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .lottie { display: block; width: 48px; height: 48px; margin: 0;}
+/* #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico { display: block; width: 48px; height: 48px; margin: 0;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico48_main_fam_persn1.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico48_main_fam_persn2.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn3 { background: url(../images/ico48_main_fam_persn3.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn4 { background: url(../images/ico48_main_fam_persn4.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn5 { background: url(../images/ico48_main_fam_persn5.png) no-repeat;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6.png) no-repeat;} */
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #62D491; box-shadow: 8px 8px 16px 0 rgba(0,0,0,.08);}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn1 { background: url(../images/ico48_main_fam_persn1_over.png) no-repeat;}
+/* #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn1 { background: url(../images/ico48_main_fam_persn1_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn2 { background: url(../images/ico48_main_fam_persn2_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn3 { background: url(../images/ico48_main_fam_persn3_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn4 { background: url(../images/ico48_main_fam_persn4_over.png) no-repeat;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn5 { background: url(../images/ico48_main_fam_persn5_over.png) no-repeat;}
-#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6_over.png) no-repeat;}
+#container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico48_main_fam_persn6_over.png) no-repeat;} */
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p { margin-top: 12px; letter-spacing: -0.5px; line-height: 24px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a p.string { padding-top: 12px;}
 #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover p span { display: inline; font-weight: 600; background-size: 100% 100%;}
