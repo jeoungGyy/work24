@@ -297,7 +297,10 @@
 
 
 
-/* [고도화] */
+/*
+	- [고도화] 메인 기업 신규 CSS
+*/
+
 #wrap.company .lineBg3s {
 	background-image: linear-gradient(transparent 75%, rgba(77, 101, 225, .3) 25%);
 	background-repeat: no-repeat;
@@ -308,25 +311,11 @@
 
 #wrap.company .my_app_status h3.t3_sb .highlight { color: #4D65E1;}
 #wrap.company #container .login_guide .btn { color: #fff; background-color: #4D65E1;}
-
 #wrap.company #container .recommend_keyword dd ul a:hover { background-color: #E3EEFF;}
-
 #wrap.company #container .my_app_status .status_list li .count { color: #4D65E1;}
-/* #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn3 { background: url(../images/ico60_main_fam_compny3.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn4 { background: url(../images/ico60_main_fam_compny4.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn5 { background: url(../images/ico60_main_fam_compny5.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide .ico.ico60_main_fam_persn6 { background: url(../images/ico60_main_fam_compny6.png) no-repeat;} */
 #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .round { background-color: #4D65E1;}
-/* #wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn1 { background: url(../images/ico60_main_fam_compny1_over.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn2 { background: url(../images/ico60_main_fam_compny2_over.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn3 { background: url(../images/ico60_main_fam_compny3_over.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn4 { background: url(../images/ico60_main_fam_compny4_over.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn5 { background: url(../images/ico60_main_fam_compny5_over.png) no-repeat;}
-#wrap.company #container .main_swiperFreqAccMenu .swiper-wrapper .swiper-slide a:hover .ico.ico60_main_fam_persn6 { background: url(../images/ico60_main_fam_compny6_over.png) no-repeat;} */
-#wrap.company #container .topsearch_wrap--flex .bgico6 { display: block; position: absolute; left: -335px; top: -50px; width: 480px; height: 354px; background: url(../images/bg_search_left.png) no-repeat;}
-#wrap.company #container .topsearch_wrap--flex .bgico7 { display: block; position: absolute; right: -335px; top: -50px; width: 480px; height: 354px; background: url(../images/bg_search_right.png) no-repeat;}
+#wrap.company #container .topsearch_wrap--flex .bgico6 { display: block; position: absolute; left: -335px; top: -50px; width: 480px; height: 354px; background: url(../images/main_new/bg_search_left.png) no-repeat;}
+#wrap.company #container .topsearch_wrap--flex .bgico7 { display: block; position: absolute; right: -335px; top: -50px; width: 480px; height: 354px; background: url(../images/main_new/bg_search_right.png) no-repeat;}
 #wrap.company #container .login_group { border-color: #4D65E1;}
 #wrap.company #container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] { color: #fff; border-color: #4D65E1; background-image: linear-gradient(to right, #fff 50%, #4D65E1 50%);}
 #wrap.company #container .main_explain_txt01 a { color: #4D65E1;}
@@ -336,9 +325,9 @@
 #wrap.company  .main_recruit_information_company .parallax_pos { position: absolute;}
 #wrap.company  .main_recruit_information_company .parallax_pos--1 { right: -114px; top: 20px;}
 #wrap.company  .main_recruit_information_company .parallax_pos--2 { left: -200px; bottom: 22px;}
-#wrap.company .main_recruit_information_company .bgico2 { width: 247px; height: 276px; background: url(../images/bgico2.png) no-repeat;}
-#wrap.company .main_recruit_information_company .bgico3 { position: absolute; left: -140px; bottom: -80px; width: 387px; height: 243px; background: url(../images/bgico3.png) no-repeat;}
-#wrap.company .main_recruit_information_company .bgico4 {width: 226px; height: 92px; background: url(../images/bgico4.png) no-repeat;}
+#wrap.company .main_recruit_information_company .bgico2 { width: 247px; height: 276px; background: url(../images/main_new/bgico2.png) no-repeat;}
+#wrap.company .main_recruit_information_company .bgico3 { position: absolute; left: -140px; bottom: -80px; width: 387px; height: 243px; background: url(../images/main_new/bgico3.png) no-repeat;}
+#wrap.company .main_recruit_information_company .bgico4 {width: 226px; height: 92px; background: url(../images/main_new/bgico4.png) no-repeat;}
 #wrap.company .main_swiper02 { overflow: hidden; padding-bottom: 58px;}
 #wrap.company .main_swiper02_wrap { overflow: initial; position: relative; z-index: 2; width: 100%;}
 #wrap.company .main_swiper02_wrap .swiper-button-prev { left: -72px; top: 216px;}
@@ -358,54 +347,11 @@
 #wrap.company #container .main_beginner_guide .guide_list li a:hover { color: #fff; background-color: #4D65E1;}
 #wrap.company #container .main_beginner_guide .guide_list li a:hover dt { color: #fff;}
 #wrap.company #container .main_beginner_guide .guide_list li a:hover dd p { color: #fff;}
-#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_member_login { background: url(../images/ico24_member_login_white.svg) no-repeat;}
-#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_shield-tick { background: url(../images/ico24_shield-tick_white.svg) no-repeat;}
-#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_jobfind_search { background: url(../images/ico24_jobfind_search_white.svg) no-repeat;}
-#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_pencil { background: url(../images/ico24_pencil_white.svg) no-repeat;}
-#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_ui_setting { background: url(../images/ico24_ui_setting_white.svg) no-repeat;}
-#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_calculator { background: url(../images/ico24_cal_normal_white.svg) no-repeat;}
+#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_member_login { background: url(../images/main_new/ico24_member_login_white.svg) no-repeat;}
+#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_shield-tick { background: url(../images/main_new/ico24_shield-tick_white.svg) no-repeat;}
+#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_jobfind_search { background: url(../images/main_new/ico24_jobfind_search_white.svg) no-repeat;}
+#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_pencil { background: url(../images/main_new/ico24_pencil_white.svg) no-repeat;}
+#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_ui_setting { background: url(../images/main_new/ico24_ui_setting_white.svg) no-repeat;}
+#wrap.company #container .main_beginner_guide .guide_list li a:hover .ico24_calculator { background: url(../images/main_new/ico24_cal_normal_white.svg) no-repeat;}
 #wrap.company #container .work24_news .news_item.fixed { border-color: #4D65E1; background-color: rgba(227, 238, 255, 0.15);}
 #wrap.company .work24_news_article .news_item:hover { border-color: #4D65E1; outline-color: #4D65E1;}
-#wrap.company 
-#wrap.company 
-#wrap.company 
-#wrap.company 
-#wrap.company 
-#wrap.company 
-#wrap.company 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

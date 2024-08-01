@@ -882,13 +882,13 @@
   padding: 4.625rem 1.25rem 2.5rem;
   padding: 4.625rem 1.25rem calc(2.5rem + constant(safe-area-inset-bottom));
   padding: 4.625rem 1.25rem calc(2.5rem + env(safe-area-inset-bottom));
+  max-height: 50vh;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 130;
   display: none;
 }
-.bottom_layer .title { font-size: 18px; font-weight: 600; line-height: 28px;}
 .bottom_layer .layer_close {
   width: 1.5rem;
   height: 1.5rem;
@@ -979,6 +979,9 @@
 .bottom_layer.full_type .tab_menu.middle li button {
   position: relative;
   z-index: 2;
+}
+.bottom_layer.footer_quick {
+  overflow-y: auto;
 }
 
 /* alert layer */
@@ -5012,3 +5015,45 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 .recommand_list .info.salary span{padding-left:24px;background: url("../images/ico_stats.svg") no-repeat 0 50%;}
 .recommand_list .info.calendar span{padding-left:24px;background: url("../images/ico24_calendar.svg") no-repeat 0 50%;}
 /*# sourceMappingURL=common.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+	- [고도화] common 신규 CSS
+*/
+
+.bottom_layer .title { font-size: 18px; font-weight: 600; line-height: 28px;}
+
+
+
+
+
+
+
+
+
+
+
+
