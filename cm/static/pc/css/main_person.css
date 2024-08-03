@@ -305,7 +305,7 @@
 	background-image: linear-gradient(transparent 75%, rgba(98, 212, 145, .5) 25%);
 	background-repeat: no-repeat;
 	background-size: 0% 100%;
-	transition: background-size 0.3s
+	transition: background-size 0.3s;
 }
 .lineBg3s.white { background-image: linear-gradient(transparent 75%, rgba(255, 255, 255, .5) 25%);}
 
@@ -367,8 +367,8 @@
 #container .recommend_keyword { display: flex; align-items: flex-start; margin-top: 24px;}
 #container .recommend_keyword dt { margin: 7px 0 0 24px; padding-left: 22px; font-weight: 600; color: #111; background: url(../images/main_new/ico16_search.svg) no-repeat;}
 #container .recommend_keyword dd { flex: 1; margin-left: 16px;}
-#container .recommend_keyword dd ul { justify-content: flex-start; flex-wrap: wrap; gap: 8px;}
-#container .recommend_keyword dd ul a { display: flex; justify-content: center; align-items: center; height: 32px; padding: 0 12px; font-size: 14px; border-radius: 16px; transition: background-color ease-out .2s;}
+#container .recommend_keyword dd ul { justify-content: flex-start; flex-wrap: wrap; margin: -8px 0 0 -8px; gap: initial;}
+#container .recommend_keyword dd ul a { display: flex; justify-content: center; align-items: center; height: 32px; margin: 8px 0 0 8px; padding: 0 12px; font-size: 14px; border-radius: 16px; transition: background-color ease-out .2s;}
 #container .recommend_keyword dd ul a:hover { background-color: rgba(98, 212, 145, 0.16);}
 #container .form_search_wrap .layer_search { top: 70px;}
 #container .main_swiper01_wrap .h1_sb { font-size: 32px; font-weight: 700; text-align: left; letter-spacing: -1px;}
@@ -378,11 +378,12 @@
 #container .mfs_more .icon { display: block; position: relative; top: 0; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat; transition: all ease-out .4s;}
 #container .mfs_more .icon::after { content: ''; display: block; position: absolute; right: 0; top: 32px; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 #container .mfs_more:hover .icon { top: -32px;}
-#container .main_service_list_person .inner_service_list.list_type02 .card_list { display: block; height: 168px; padding: 24px 20px; border: none; background-color: #E3EEFF; transition: all ease-out .2s;}
+#container .main_service_list_person .inner_service_list.list_type02 { gap: initial; margin: 0 0 0 -24px;}
+#container .main_service_list_person .inner_service_list.list_type02 .card_list { display: block; height: 168px; margin: 24px 0 0 24px; padding: 24px 20px; border: none; background-color: #E3EEFF; transition: all ease-out .2s;}
 #container .main_service_list_person .inner_service_list.list_type02 .card_list .text { font-size: 18px; font-weight: 600; color: #111;}
-#container .main_service_list_person .inner_service_list.list_type02 .card_list .lineBg3s.blue { background-image: linear-gradient(transparent 75%, #3246D4 25%);}
-#container .main_service_list_person .inner_service_list.list_type02 .card_list .lineBg3s.green { background-image: linear-gradient(transparent 75%, #0D8982 25%);}
-#container .main_service_list_person .inner_service_list.list_type02 .card_list .lineBg3s.red { background-image: linear-gradient(transparent 75%, #E94611 25%);}
+#container .main_service_list_person .inner_service_list.list_type02 .card_list .lineBg3s.blue { background-image: linear-gradient(transparent 75%, #3246D4 25%); transition: background-size 0s;}
+#container .main_service_list_person .inner_service_list.list_type02 .card_list .lineBg3s.green { background-image: linear-gradient(transparent 75%, #0D8982 25%); transition: background-size 0s;}
+#container .main_service_list_person .inner_service_list.list_type02 .card_list .lineBg3s.red { background-image: linear-gradient(transparent 75%, #E94611 25%); transition: background-size 0s;}
 #container .main_service_list_person .inner_service_list.list_type02 .card_list:hover dd * { transition: all ease-out .2s;}
 #container .main_service_list_person .inner_service_list.list_type02 .card_list:hover { background-color: #4D65E1; box-shadow: 8px 8px 16px rgba(0,0,0,.08);}
 #container .main_service_list_person .inner_service_list.list_type02 .card_list:hover .lineBg3s { color: #fff !important; background-size: 100% 100%;}
@@ -402,7 +403,7 @@
 #container .main_section_wrap .recomm_tab .tablist { justify-content: flex-start;}
 #container .main_section_wrap .recomm_tab .tablist li { margin: 0;}
 #container .main_section_wrap .recomm_tab .tablist li ~ li { margin-left: 8px;}
-#container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] { width: 101%; font-weight: 600; color: #111; border-color: #62D491; background-size: 200% 100%; transition: background-position 0.6s; background-position: -100% 0; background-image: linear-gradient(to right, #fff 50%, #62D491 50%);}
+#container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] { width: 100%; font-weight: 600; color: #111; border-color: #62D491; background-size: 200% 100%; transition: background-position 0.6s; background-position: -100% 0; background-image: linear-gradient(to right, #fff 50%, #62D491 50%);}
 #container .main_section_wrap .recomm_tab .tablist li .count { color: #117935;}
 #container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] .count { color: #111;}
 #container .information_group { background-color: #F5F5F5;}
@@ -488,6 +489,7 @@
 #container .main_beginner_guide .guide_list li a { padding: 24px 20px; background-color: #F5F5F5; border-radius: 8px; transition: all ease-out .2s;}
 #container .main_beginner_guide .guide_list li a dt { padding-left: 32px; font-size: 18px; color: #111; line-height: 28px;}
 #container .main_beginner_guide .guide_list li a dt .ico { left: 0;}
+#container .main_beginner_guide .guide_list li a dt .lineBg3s { left: 0; transition: background-size 0s}
 #container .main_beginner_guide .guide_list li a dd { margin-top: 8px;}
 #container .main_beginner_guide .guide_list li a .ico24_member_login { background: url(../images/main_new/ico24_member_login.svg) no-repeat;}
 #container .main_beginner_guide .guide_list li a .ico24_smail { background: url(../images/main_new/ico24_home_smile.svg) no-repeat;}

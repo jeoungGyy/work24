@@ -466,7 +466,6 @@
 					});
 
 					$('.lottie').each(function(index, elm) {
-						console.log(index)
 						window['lottie'+index] = lottie.loadAnimation({
 							container: $(elm)[0],
 							renderer: 'svg',
@@ -474,7 +473,7 @@
 							autoplay: false,
 							path: '../images/main_new/lottie_corp'+index+'.json'
 						});
-						$('.lottie'+index).on({
+						$('.lottie'+index).closest('a').on({
 							'mouseenter': function() {
 								window['lottie'+index].play();
 							},
@@ -717,16 +716,17 @@
 						$this.attr('aria-selected', 'true');
 
 						var childDiv = $this.attr('id');
-						console.log(childDiv)
 						$('.'+childDiv).siblings('div[role=tabpanel]').hide();
+						$this.closest('.after').find('.main_explain_txt01').hide();
 						$('.'+childDiv).show();
 					}
 				</script>
 			</div>
 			<!-- //지원제도 -->
 
-			<!-- 인재 정보 -->
+			<!-- 인재 정보 / 인재 추천 -->
 			<div class="main_recruit_information_company" id="#person_recom_recruit_info_sec">
+				<!-- 로그인 전 : 인재 정보 -->
 				<div class="main_section_wrap">
 					<h2 class="h1_sb">인재 정보</h2>
 					<p class="main_explain_txt01 mt08"><a href="#none" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do');">로그인</a>하시면 더욱 다양한 인재정보와 지원금 서비스를 받을 수 있습니다</p>
@@ -936,6 +936,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- 인재 정보 / 인재 추천 -->
 
 				<script>
 					const mainSwiper02 = new Swiper(".main_swiper02",{

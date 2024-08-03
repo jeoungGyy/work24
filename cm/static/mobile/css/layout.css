@@ -768,6 +768,7 @@ footer .quick_links {
 /*
 	- [고도화] Layou 신규 CSS
 */
+header .header_main_area .header_title_area h1 { all: unset;}
 
 header .header_main_area .header_title_area a img { vertical-align: top;}
 

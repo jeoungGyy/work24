@@ -483,7 +483,6 @@
 					});
 
 					$('.lottie').each(function(index, elm) {
-						console.log(index)
 						window['lottie'+index] = lottie.loadAnimation({
 							container: $(elm)[0],
 							renderer: 'svg',
@@ -491,7 +490,7 @@
 							autoplay: false,
 							path: '../images/main_new/lottie_person'+index+'.json'
 						});
-						$('.lottie'+index).on({
+						$('.lottie'+index).closest('a').on({
 							'mouseenter': function() {
 								window['lottie'+index].play();
 							},
@@ -734,8 +733,8 @@
 						$this.attr('aria-selected', 'true');
 
 						var childDiv = $this.attr('id');
-						console.log(childDiv)
 						$('.'+childDiv).siblings('div[role=tabpanel]').hide();
+						$this.closest('.after').find('.main_explain_txt01').hide();
 						$('.'+childDiv).show();
 					}
 				</script>
@@ -966,7 +965,7 @@
 								<span class="text">설정</span>
 							</button>
 						</div>
-						<p class="main_explain_txt01 mt08"><span class="em">김고용</span>님께 적합한 일자리를 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+						<p class="main_explain_txt01 mt08 recruit1 recruit2 "><span class="em">김고용</span>님께 적합한 일자리를 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
 							
 						<div class="recomm_tab mt32">
 							<ul class="tablist" role="tablist">
@@ -1606,7 +1605,7 @@
 							</button>
 						</div>
 						<div class="flex">
-							<p class="main_explain_txt01 mt08"><span class="em">김고용</span>님께 적합한 직업훈련을 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+							<p class="main_explain_txt01 mt08 jobs1 jobs2"><span class="em">김고용</span>님께 적합한 직업훈련을 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
 							
 						</div>
 				

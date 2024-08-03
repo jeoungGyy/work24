@@ -466,7 +466,6 @@
 					});
 
 					$('.lottie').each(function(index, elm) {
-						console.log(index)
 						window['lottie'+index] = lottie.loadAnimation({
 							container: $(elm)[0],
 							renderer: 'svg',
@@ -474,7 +473,7 @@
 							autoplay: false,
 							path: '../images/main_new/lottie_corp'+index+'.json'
 						});
-						$('.lottie'+index).on({
+						$('.lottie'+index).closest('a').on({
 							'mouseenter': function() {
 								window['lottie'+index].play();
 							},
@@ -717,212 +716,717 @@
 						$this.attr('aria-selected', 'true');
 
 						var childDiv = $this.attr('id');
-						console.log(childDiv)
 						$('.'+childDiv).siblings('div[role=tabpanel]').hide();
+						$this.closest('.after').find('.main_explain_txt01').hide();
 						$('.'+childDiv).show();
 					}
 				</script>
 			</div>
 			<!-- //지원제도 -->
 
-			<!-- 인재 정보 -->
+			<!-- 인재 정보 / 인재 추천 -->
 			<div class="main_recruit_information_company" id="#person_recom_recruit_info_sec">
 				<div class="main_section_wrap">
-					<h2 class="h1_sb">인재 정보</h2>
-					<p class="main_explain_txt01 mt08"><a href="#none" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do');">로그인</a>하시면 더욱 다양한 인재정보와 지원금 서비스를 받을 수 있습니다</p>
-				
-					<div class="main_recruit_information">
-						<!-- 배너 2 -->
-						<div class="main_swiper02_wrap">
-							<div class="swiper-container main_swiper02">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<dl class="profile_list">
-											<dt>
-												<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
-												<span class="name"><span>최ㅇㅇ</span></span>
-											</dt>
-											<dd>
-												<ul>
-													<li>
-														<span class="obj_key">직종</span>
-														<span class="obj_value">회계 사무원</span>
-													</li>
-													<li>
-														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구 인천, 인천 미추홀구</span>
-													</li>
-													<li>
-														<span class="obj_key">경력</span>
-														<span class="obj_value">9년 1개월</span>
-													</li>
-													<li>
-														<span class="obj_key">자격증</span>
-														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
-													</li>
-												</ul>
-				
-												<div class="box_hash_wrap">
-													<span class="btn_hash small fill type02 r30">#회계</span>
-													<span class="btn_hash small fill type02 r30">#경리</span>
-													<span class="btn_hash small fill type02 r30">#세무</span>
-													<span class="btn_hash small fill type02 r30">#재무</span>
-													<span class="btn_hash small fill type02 r30">#사무</span>
-												</div>
-											</dd>
-										</dl>
+					<!-- 로그인 전 : 인재 정보 -->
+					<div class="before" style="display: none;">
+						<h2 class="h1_sb">인재 정보</h2>
+						<p class="main_explain_txt01 mt08"><span class="em">한국고용정보원</span>님께 적합한 일자리를 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+					
+						<div class="main_recruit_information">
+							<div class="main_swiper02_wrap">
+								<div class="swiper-container main_swiper02">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">직종</span>
+															<span class="obj_value">회계 사무원</span>
+														</li>
+														<li>
+															<span class="obj_key">지역</span>
+															<span class="obj_value">인천, 인천 미추홀구 인천, 인천 미추홀구</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value">9년 1개월</span>
+														</li>
+														<li>
+															<span class="obj_key">자격증</span>
+															<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														</li>
+													</ul>
+					
+													<div class="box_hash_wrap">
+														<span class="btn_hash small fill type02 r30">#회계</span>
+														<span class="btn_hash small fill type02 r30">#경리</span>
+														<span class="btn_hash small fill type02 r30">#세무</span>
+														<span class="btn_hash small fill type02 r30">#재무</span>
+														<span class="btn_hash small fill type02 r30">#사무</span>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">직종</span>
+															<span class="obj_value">회계 사무원</span>
+														</li>
+														<li>
+															<span class="obj_key">지역</span>
+															<span class="obj_value">인천, 인천 미추홀구</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value">9년 1개월</span>
+														</li>
+														<li>
+															<span class="obj_key">자격증</span>
+															<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														</li>
+													</ul>
+					
+													<div class="box_hash_wrap">
+														<span class="btn_hash small fill type02 r30">#회계</span>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">직종</span>
+															<span class="obj_value">회계 사무원</span>
+														</li>
+														<li>
+															<span class="obj_key">지역</span>
+															<span class="obj_value">인천, 인천 미추홀구</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value">9년 1개월</span>
+														</li>
+														<li>
+															<span class="obj_key">자격증</span>
+															<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														</li>
+													</ul>
+					
+													<div class="box_hash_wrap">
+														<span class="btn_hash small fill type02 r30">#회계</span>
+														<span class="btn_hash small fill type02 r30">#경리</span>
+														<span class="btn_hash small fill type02 r30">#세무</span>
+														<span class="btn_hash small fill type02 r30">#재무</span>
+														<span class="btn_hash small fill type02 r30">#사무</span>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">직종</span>
+															<span class="obj_value">회계 사무원</span>
+														</li>
+														<li>
+															<span class="obj_key">지역</span>
+															<span class="obj_value">인천, 인천 미추홀구</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value">9년 1개월</span>
+														</li>
+														<li>
+															<span class="obj_key">자격증</span>
+															<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														</li>
+													</ul>
+					
+													<div class="box_hash_wrap">
+														<span class="btn_hash small fill type02 r30">#회계</span>
+														<span class="btn_hash small fill type02 r30">#경리</span>
+														<span class="btn_hash small fill type02 r30">#세무</span>
+														<span class="btn_hash small fill type02 r30">#재무</span>
+														<span class="btn_hash small fill type02 r30">#사무</span>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">직종</span>
+															<span class="obj_value">회계 사무원</span>
+														</li>
+														<li>
+															<span class="obj_key">지역</span>
+															<span class="obj_value">인천, 인천 미추홀구</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value">9년 1개월</span>
+														</li>
+														<li>
+															<span class="obj_key">자격증</span>
+															<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
+														</li>
+													</ul>
+					
+													<div class="box_hash_wrap">
+														<span class="btn_hash small fill type02 r30">#회계</span>
+														<span class="btn_hash small fill type02 r30">#경리</span>
+														<span class="btn_hash small fill type02 r30">#세무</span>
+														<span class="btn_hash small fill type02 r30">#재무</span>
+														<span class="btn_hash small fill type02 r30">#사무</span>
+													</div>
+												</dd>
+											</dl>
+										</div>
 									</div>
-									<div class="swiper-slide">
-										<dl class="profile_list">
-											<dt>
-												<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
-												<span class="name"><span>최ㅇㅇ</span></span>
-											</dt>
-											<dd>
-												<ul>
-													<li>
-														<span class="obj_key">직종</span>
-														<span class="obj_value">회계 사무원</span>
-													</li>
-													<li>
-														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구</span>
-													</li>
-													<li>
-														<span class="obj_key">경력</span>
-														<span class="obj_value">9년 1개월</span>
-													</li>
-													<li>
-														<span class="obj_key">자격증</span>
-														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
-													</li>
-												</ul>
-				
-												<div class="box_hash_wrap">
-													<span class="btn_hash small fill type02 r30">#회계</span>
-												</div>
-											</dd>
-										</dl>
-									</div>
-									<div class="swiper-slide">
-										<dl class="profile_list">
-											<dt>
-												<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
-												<span class="name"><span>최ㅇㅇ</span></span>
-											</dt>
-											<dd>
-												<ul>
-													<li>
-														<span class="obj_key">직종</span>
-														<span class="obj_value">회계 사무원</span>
-													</li>
-													<li>
-														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구</span>
-													</li>
-													<li>
-														<span class="obj_key">경력</span>
-														<span class="obj_value">9년 1개월</span>
-													</li>
-													<li>
-														<span class="obj_key">자격증</span>
-														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
-													</li>
-												</ul>
-				
-												<div class="box_hash_wrap">
-													<span class="btn_hash small fill type02 r30">#회계</span>
-													<span class="btn_hash small fill type02 r30">#경리</span>
-													<span class="btn_hash small fill type02 r30">#세무</span>
-													<span class="btn_hash small fill type02 r30">#재무</span>
-													<span class="btn_hash small fill type02 r30">#사무</span>
-												</div>
-											</dd>
-										</dl>
-									</div>
-									<div class="swiper-slide">
-										<dl class="profile_list">
-											<dt>
-												<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
-												<span class="name"><span>최ㅇㅇ</span></span>
-											</dt>
-											<dd>
-												<ul>
-													<li>
-														<span class="obj_key">직종</span>
-														<span class="obj_value">회계 사무원</span>
-													</li>
-													<li>
-														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구</span>
-													</li>
-													<li>
-														<span class="obj_key">경력</span>
-														<span class="obj_value">9년 1개월</span>
-													</li>
-													<li>
-														<span class="obj_key">자격증</span>
-														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
-													</li>
-												</ul>
-				
-												<div class="box_hash_wrap">
-													<span class="btn_hash small fill type02 r30">#회계</span>
-													<span class="btn_hash small fill type02 r30">#경리</span>
-													<span class="btn_hash small fill type02 r30">#세무</span>
-													<span class="btn_hash small fill type02 r30">#재무</span>
-													<span class="btn_hash small fill type02 r30">#사무</span>
-												</div>
-											</dd>
-										</dl>
-									</div>
-									<div class="swiper-slide">
-										<dl class="profile_list">
-											<dt>
-												<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
-												<span class="name"><span>최ㅇㅇ</span></span>
-											</dt>
-											<dd>
-												<ul>
-													<li>
-														<span class="obj_key">직종</span>
-														<span class="obj_value">회계 사무원</span>
-													</li>
-													<li>
-														<span class="obj_key">지역</span>
-														<span class="obj_value">인천, 인천 미추홀구</span>
-													</li>
-													<li>
-														<span class="obj_key">경력</span>
-														<span class="obj_value">9년 1개월</span>
-													</li>
-													<li>
-														<span class="obj_key">자격증</span>
-														<span class="obj_value line2">전산회계1급, 정보기술자격(ITQ)시험A급, 전산세무2급</span>
-													</li>
-												</ul>
-				
-												<div class="box_hash_wrap">
-													<span class="btn_hash small fill type02 r30">#회계</span>
-													<span class="btn_hash small fill type02 r30">#경리</span>
-													<span class="btn_hash small fill type02 r30">#세무</span>
-													<span class="btn_hash small fill type02 r30">#재무</span>
-													<span class="btn_hash small fill type02 r30">#사무</span>
-												</div>
-											</dd>
-										</dl>
-									</div>
-								</div>
 
-								<div class="swiper-button-prev btn_left" title="이전 배너"></div>
-								<div class="swiper-button-next btn_right" title="다음 배너"></div>
-								<div class="swiper-pagination"></div>
+									<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+									<div class="swiper-button-next btn_right" title="다음 배너"></div>
+									<div class="swiper-pagination"></div>
+								</div>
 							</div>
 						</div>
-						<!-- // 배너 2 -->
+						<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
 					</div>
+					<!-- //로그인 전 : 인재 정보 -->
 
-					<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
+					<!-- 로그인 후 : 인재 추천 -->
+					<div class="after">
+						<div class="h_body">
+							<h2 class="h1_sb">인재 추천</h2>
+							<button type="button" class="btn_setting">
+								<span class="icon"></span>
+								<span class="text">설정</span>
+							</button>
+						</div>
+						<p class="main_explain_txt01 mt08 recruit1"><span class="em">김고용</span>님께 적합한 일자리를 2가지 기준으로 추천해 드려요. 설정에서 구직신청서를 등록하시면 더 적합해요.</p>
+						<p class="main_explain_txt01 mt08 recruit2" style="display: none;"><span class="em">김고용</span>님께 적합한 인재를 2가지 기준으로 추천해 드려요. 구인신청을 하시면 A.I.가 해당 직무에 필요한 역량을 분석하여 인재를 추천해 드려요.</p>
+							
+						<div class="recomm_tab mt32">
+							<ul class="tablist" role="tablist">
+								<li><button type="button" role="tab" id="recruit1" aria-selected="true" aria-controls="일자리개인특성" onclick="fn_showDiv()">기업특성<span class="count">3</span></button></li>
+								<li><button type="button" role="tab" id="recruit2" aria-selected="false" aria-controls="일자리A.I.분석" onclick="fn_showDiv()">A.I.분석<span class="count">12</span></button></li>
+							</ul>
+						</div>
+
+						<div role="tabpanel" class="main_recruit_information recruit1">
+							<div class="main_swiper02_wrap">
+								<div class="swiper-container main_swiper02">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>최ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+									</div>
+
+									<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+									<div class="swiper-button-next btn_right" title="다음 배너"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+
+							<a href="#" class="mfs_more" onclick="fn_workMore();"><span>더보기</span><i class="icon"></i></a>
+						</div>
+
+						<div role="tabpanel" class="main_recruit_information recruit2" style="display: none;">
+							<div class="main_swiper02_wrap">
+								<div class="swiper-container main_swiper02">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>김ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>김ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>김ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>김ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+										<div class="swiper-slide">
+											<dl class="profile_list">
+												<dt>
+													<img src="../images/main_new/tmp_person01.png" width="80" height="80" alt="프로필 기본 사진">
+													<span class="name"><span>김ㅇㅇ</span></span>
+												</dt>
+												<dd>
+													<ul>
+														<li>
+															<span class="obj_key">희망지역</span>
+															<span class="obj_value">경기 시흥시, 인천</span>
+														</li>
+														<li>
+															<span class="obj_key">희망직종</span>
+															<span class="obj_value">장애인 생활 지도원</span>
+														</li>
+														<li>
+															<span class="obj_key">희망임금</span>
+															<span class="obj_value">월급 300만원 이상 (면접 후) 300만원 이상 (면접 후)</span>
+														</li>
+														<li>
+															<span class="obj_key">경력</span>
+															<span class="obj_value line2">13년 10개월</span>
+														</li>
+													</ul>
+					
+													<div class="add">
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--call"></i>
+																<span>연락처</span>
+															</span>
+															<span class="af">공개</span>
+														</div>
+														<div class="add_group">
+															<span class="be">
+																<i class="icon icon--email"></i>
+																<span>입사제한</span>
+															</span>
+															<span class="af">SMS, 이메일 가능</span>
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</div>
+									</div>
+
+									<div class="swiper-button-prev btn_left" title="이전 배너"></div>
+									<div class="swiper-button-next btn_right" title="다음 배너"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+
+							<a href="#" class="mfs_more" onclick="fn_workMore();"><span>구인 신청하기</span><i class="icon"></i></a>
+						</div>
+
+						
+					</div>
+					<!-- //로그인 후 : 인재 추천 -->
+
 
 					<div class="parallax_pos parallax_pos--1">
 						<div id="scene0" class="scene_item">
@@ -973,7 +1477,7 @@
 					});
 				</script>
 			</div>
-			<!-- //인재 정보 -->
+			<!-- //인재 정보 / 인재 추천 -->
 
 			<!-- 중간 배너 -->
 			<div class="main_section_wrap main_swiper01_wrap main_bann">

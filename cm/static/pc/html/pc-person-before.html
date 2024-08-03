@@ -483,7 +483,6 @@
 					});
 
 					$('.lottie').each(function(index, elm) {
-						console.log(index)
 						window['lottie'+index] = lottie.loadAnimation({
 							container: $(elm)[0],
 							renderer: 'svg',
@@ -491,7 +490,7 @@
 							autoplay: false,
 							path: '../images/main_new/lottie_person'+index+'.json'
 						});
-						$('.lottie'+index).on({
+						$('.lottie'+index).closest('a').on({
 							'mouseenter': function() {
 								window['lottie'+index].play();
 							},
@@ -734,8 +733,8 @@
 						$this.attr('aria-selected', 'true');
 
 						var childDiv = $this.attr('id');
-						console.log(childDiv)
 						$('.'+childDiv).siblings('div[role=tabpanel]').hide();
+						$this.closest('.after').find('.main_explain_txt01').hide();
 						$('.'+childDiv).show();
 					}
 				</script>
