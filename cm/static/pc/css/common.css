@@ -2921,7 +2921,7 @@ input.error_chk_fun[type="checkbox"]:checked:after {content: none;}
 #header_bottom .header_bottom_area h1 a, h1.logoh1 a { display:block;margin-top:22px;background:url("../images/h1_ci.png") no-repeat;width:106px;height:32px; }
 #header_bottom .header_bottom_area h1.temp a, h1.logoh1.temp a {background:url("../images/h1_ci_temp.png") no-repeat;width:200px;height:48px;}
 #wrap #header_bottom .header_bottom_area h1 { width: 136px;}
-#wrap #header_bottom .header_bottom_area h1 a { width: 136px; height: 48px; margin-top: 15px; background: url(../images/h1_ci.png) no-repeat;}
+#wrap #header_bottom .header_bottom_area h1 a { width: 136px; height: 48px; margin-top: 15px; background: url(../images/main_new/h1_ci.png) no-repeat;}
 
 #gnb { display:flex; flex: 1; justify-content: center;}
 #gnb > ul { display:flex;justify-content:flex-start;}

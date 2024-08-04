@@ -176,7 +176,7 @@
 							<div class="main_search_area">
 								<div class="inner_search">
 									<div class="inner_select">
-										<button type="button" class="btn_cate_select" id="topQuerySelect" title="검색 카테고리창 열림">
+										<button type="button" class="btn_cate_select" id="topQuerySelect" title="검색 카테고리창 닫힘">
 											<span>전체</span>
 											<i class="icon"></i>
 										</button>
@@ -362,7 +362,7 @@
 					
 						$('#topQuerySelect').on('click', function(){
 							$(".layer_search.layer_cate_search").css("display", "");
-							$("#topQuerySelect").attr("title","검색 카테고리창 닫힘");
+							$("#topQuerySelect").attr("title","검색 카테고리창 열림");
 							$("#topQuerySelect").find('.icon').addClass('active');
 						});
 					
@@ -374,7 +374,7 @@
 							$("#topQuerySelect span").text($(this).data('title'));
 							$("#topQuerySearchArea").val($(this).data('value'));
 							$(".layer_search.layer_cate_search").css("display", "none");
-							$("#topQuerySelect").attr("title","검색 카테고리창 열림");
+							$("#topQuerySelect").attr("title","검색 카테고리창 닫힘");
 							$("#topQuerySelect").find('.icon').removeClass('active');
 						});
 					</script>
@@ -2344,10 +2344,10 @@
 								</a>
 							</div>
 							<div class="sns">
-								<a href="#"><img src="../images/main_new/img-youtube.svg" alt="유튜브"></a>
-								<a href="#"><img src="../images/main_new/img-instagram.svg" alt="인스타그램"></a>
-								<a href="#"><img src="../images/main_new/img-naverblog.svg" alt="블로그"></a>
-								<a href="#"><img src="../images/main_new/img-facebook.svg" alt="페이스북"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-youtube.svg" alt="유튜브"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-instagram.svg" alt="인스타그램"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-naverblog.svg" alt="블로그"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-facebook.svg" alt="페이스북"></a>
 							</div>
 						</div>
 					</div>
