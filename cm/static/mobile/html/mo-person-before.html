@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/css/jquery-ui.min.css">
         
         
-        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" href="../css/font.css"> <!-- [고도화] 폰트때문에 사용 기존 CSS 사용해주세요. -->
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/reset.css">
-        <link rel="stylesheet" href="../css/layout.css">
-        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/layout.css"> <!-- [고도화] 교체해 주세요. -->
+        <link rel="stylesheet" href="../css/common.css"> <!-- [고도화] 교체해 주세요. -->
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_a.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_b.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_c.css">
@@ -24,8 +24,8 @@
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_f.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/contents_g.css">
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/css/swiper-bundle.min.css">
-		<!-- <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/main_p.css"> 기존 메인 CSS 제거 -->
-        <link rel="stylesheet" href="../css/main_p_new.css"> <!--  및 신규 추가  -->
+		<!-- <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/main_p.css"> [고도화] 기존 메인 CSS 제거해주세요. -->
+        <link rel="stylesheet" href="../css/main_p_new.css"> <!-- [고도화] 메인 신규CSS 추가해주세요. -->
         <link rel="stylesheet" href="https://m.work24.go.kr/cm/static/mobile/css/rem.css">
 
 
@@ -288,9 +288,11 @@
 							</div>
 						</div>
 
-						<div class="swiper-button-prev" title="이전 배너"></div>
-						<div class="swiper-button-next" title="다음 배너"></div>
-						<div class="swiper-pagination">1 / 1</div>
+						<div class="swiper-button-group mt26">
+							<div class="swiper-button-prev" title="이전 배너"></div>
+							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-next" title="다음 배너"></div>
+						</div>
 					</div>
 				</div>
 				<i class="bgico1" aria-hidden="true"></i>
@@ -410,9 +412,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-button-prev" title="이전 배너"></div>
-							<div class="swiper-button-next" title="다음 배너"></div>
-							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-group mt26">
+								<div class="swiper-button-prev" title="이전 배너"></div>
+								<div class="swiper-pagination">1 / 1</div>
+								<div class="swiper-button-next" title="다음 배너"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -502,9 +506,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-button-prev" title="이전 배너"></div>
-							<div class="swiper-button-next" title="다음 배너"></div>
-							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-group mt26">
+								<div class="swiper-button-prev" title="이전 배너"></div>
+								<div class="swiper-pagination">1 / 1</div>
+								<div class="swiper-button-next" title="다음 배너"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -533,8 +539,8 @@
 						observer : true,
 						observeParents : true,
 						navigation: {
-							nextEl: ".service_swiper > .swiper-button-next",
-							prevEl: ".service_swiper > .swiper-button-prev",
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
 						}, 
 						pagination: {
 							el: ".swiper-pagination",
@@ -552,7 +558,7 @@
 			</div>
 			<!-- //지원 제도 -->
 
-			<!-- 채용정보 -->
+			<!-- 채용정보 / 일자리 추천 -->
 			<div class="main_employment_information">
 				<!-- 로그인 전 -->
 				<div>
@@ -634,9 +640,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-button-prev" title="이전 배너"></div>
-							<div class="swiper-button-next" title="다음 배너"></div>
-							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-group mt26">
+								<div class="swiper-button-prev" title="이전 배너"></div>
+								<div class="swiper-pagination">1 / 1</div>
+								<div class="swiper-button-next" title="다음 배너"></div>
+							</div>
 						</div>
 					</div>
 					<i class="bgico4" aria-hidden="true"></i>
@@ -742,9 +750,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-button-prev" title="이전 배너"></div>
-							<div class="swiper-button-next" title="다음 배너"></div>
-							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-group mt26">
+								<div class="swiper-button-prev" title="이전 배너"></div>
+								<div class="swiper-pagination">1 / 1</div>
+								<div class="swiper-button-next" title="다음 배너"></div>
+							</div>
 						</div>
 					</div>
 					<div id="aiReDiv" class="employment_swiper_wrap" style="display: none;">
@@ -797,15 +807,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-button-prev" title="이전 배너"></div>
-							<div class="swiper-button-next" title="다음 배너"></div>
-							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-group mt26">
+								<div class="swiper-button-prev" title="이전 배너"></div>
+								<div class="swiper-pagination">1 / 1</div>
+								<div class="swiper-button-next" title="다음 배너"></div>
+							</div>
 						</div>
 					</div>
 					<i class="bgico4" aria-hidden="true"></i>
 					<i class="bgico5" aria-hidden="true"></i>
 					<i class="bgico6" aria-hidden="true"></i>
-					<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
 				</div>
 				<!-- //로그인 후 -->
 
@@ -820,8 +831,8 @@
 						observer : true,
 						observeParents : true,
 						navigation: {
-							nextEl: ".employment_swiper > .swiper-button-next",
-							prevEl: ".employment_swiper > .swiper-button-prev",
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
 						}, 
 						pagination: {
 							el: ".swiper-pagination",
@@ -864,7 +875,7 @@
 					}
 				</script>
 			</div>
-			<!-- //채용정보 -->
+			<!-- //채용정보 / 일자리 추천 -->
 			
 			<!-- 정책추천 -->
 			<div class="main_employment" style="display: none;">
@@ -971,9 +982,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-button-prev" title="이전 배너"></div>
-						<div class="swiper-button-next" title="다음 배너"></div>
-						<div class="swiper-pagination">1 / 1</div>
+						<div class="swiper-button-group mt26">
+							<div class="swiper-button-prev" title="이전 배너"></div>
+							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-next" title="다음 배너"></div>
+						</div>
 					</div>
 				</div>
 				<a href="#" class="mfs_more" onclick="fn_moreFixPolicy()"><span>더보기</span><i class="icon"></i></a>
@@ -989,8 +1002,8 @@
 						observer : true,
 						observeParents : true,
 						navigation: {
-							nextEl: ".poly_swiper > .swiper-button-next",
-							prevEl: ".poly_swiper > .swiper-button-prev",
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
 						}, 
 						pagination: {
 							el: ".swiper-pagination",
@@ -1159,9 +1172,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-button-prev" title="이전 배너"></div>
-						<div class="swiper-button-next" title="다음 배너"></div>
-						<div class="swiper-pagination">1 / 1</div>
+						<div class="swiper-button-group mt26">
+							<div class="swiper-button-prev" title="이전 배너"></div>
+							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-next" title="다음 배너"></div>
+						</div>
 					</div>
 				</div>
 				<div class="jobTrReq_swiper_wrap" id="jobs2Div" style="display:none">
@@ -1297,9 +1312,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-button-prev" title="이전 배너"></div>
-						<div class="swiper-button-next" title="다음 배너"></div>
-						<div class="swiper-pagination">1 / 1</div>
+						<div class="swiper-button-group mt26">
+							<div class="swiper-button-prev" title="이전 배너"></div>
+							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-next" title="다음 배너"></div>
+						</div>
 					</div>
 				</div>
 
@@ -1318,8 +1335,8 @@
 						observer : true,
 						observeParents : true,
 						navigation: {
-							nextEl: ".jobTrReq_swiper > .swiper-button-next",
-							prevEl: ".jobTrReq_swiper > .swiper-button-prev",
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
 						}, 
 						pagination: {
 							el: ".swiper-pagination",

@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@import url('main_person.css');
+@import url('main_company.css');
+
 /* join */
 .join_container_wrap {position:relative}
 .join_container_wrap:before, .join_container_wrap:after {content:'';display:block;position:absolute;z-index:-1}

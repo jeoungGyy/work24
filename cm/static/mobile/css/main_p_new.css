@@ -63,7 +63,7 @@
 .main_new .main_login_after .mla_list li .text { display: block; margin-top: 8px; font-size: 14px;}
 .main_new .main_login_after .mfs_more { right: 13px; top: 26px;}
 
-.main_new .main_swiperFreqAccMenu { position: relative; margin: 40px -20px 0; padding: 40px 20px 88px; background-color: #F8F8F8;}
+.main_new .main_swiperFreqAccMenu { position: relative; margin: 40px -20px 0; padding: 40px 20px; background-color: #F8F8F8;}
 .main_new .main_swiperFreqAccMenu .bgico1 { display: block; position: absolute; right: 0; top: 15px; width: 107px; height: 125px; background: url(../images/main_new/ico_bgico1.svg) no-repeat;}
 .main_new .main_swiperFreqAccMenu .bgico2 { display: block; position: absolute; left: 24px; bottom: 0; width: 58px; height: 53px; background: url(../images/main_new/ico_bgico2.svg) no-repeat;}
 .main_new .main_swiperFreqAccMenu .bgico3 { display: block; position: absolute; left: 0; bottom: 0; width: 77px; height: 30px; background: url(../images/main_new/ico_bgico3.svg) no-repeat;}
@@ -85,9 +85,8 @@
 .main_new .freqAccMnu_swiper_wrap .ico60_main_fam_persn6 { background: url(../images/main_new/ico60_main_fam_persn6.svg) no-repeat;}
 .main_new .freqAccMnu_swiper_wrap .ico60_main_fam_persn7 { background: url(../images/main_new/ico60_main_fam_persn7.svg) no-repeat;}
 .main_new .freqAccMnu_swiper_wrap .ico60_main_fam_persn8 { background: url(../images/main_new/ico60_main_fam_persn8.svg) no-repeat;}
-.main_new .main_swiperFreqAccMenu--style { padding-bottom: 40px;}
 
-.main_new .main_favorite_service { position: relative; padding: 40px 0 87px;}
+.main_new .main_favorite_service { position: relative; padding: 40px 0;}
 .main_new .main_favorite_service .swiper-slide a { display: block; padding: 24px 20px; border-radius: 8px;}
 .main_new .main_favorite_service .swiper-slide a.blue { background-color: #E3EEFF;}
 .main_new .main_favorite_service .swiper-slide a.green { background-color: #E8FCF0;}
@@ -98,7 +97,7 @@
 .main_new .main_favorite_service .swiper-wrapper { display: flex; align-items: center;}
 .main_new .main_favorite_service .swiper-slide { width: 100%;}
 
-.main_new .main_employment_information { position: relative; margin: 0 -20px; padding: 40px 20px 87px; background-color: #F8F8F8;}
+.main_new .main_employment_information { position: relative; margin: 0 -20px; padding: 40px 20px; background-color: #F8F8F8;}
 .main_new .main_employment_information .mei_text { margin-top: 8px;}
 .main_new .main_employment_information .mei_text .link_txt { font-weight: 600; color: #117935;}
 .main_new .main_employment_information .mei_text .link_txt.noUnderline { text-decoration: none;}
@@ -124,7 +123,7 @@
 .main_new .main_employment_information .bgico6 { display: block; position: absolute; left: 0; top: 340px; width: 51px; height: 48px; background: url(../images/main_new/ico_bgico6.svg) no-repeat;}
 .main_new .main_employment_information .mfs_more { right: 20px;}
 
-.main_new .main_employment { position: relative; padding: 40px 0 88px;}
+.main_new .main_employment { position: relative; padding: 40px 0;}
 .main_new .main_employment .poly_swiper_wrap { position: relative;}
 .main_new .main_employment .swiper-container { margin-top: 24px; padding: 0 12px;}
 .main_new .main_employment .swiper-slide { width: 100%;}
@@ -141,7 +140,7 @@
 .main_new .main_employment .salary .btn_more span { font-weight: 600; color: #111;}
 .main_new .main_employment .salary .btn_more .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 
-.main_new .main_information { position: relative; margin: 0 -20px; padding: 40px 20px 84px; background-color: #F8F8F8;}
+.main_new .main_information { position: relative; margin: 0 -20px; padding: 40px 20px; background-color: #F8F8F8;}
 .main_new .main_information .link_txt { font-weight: 600; color: #117935; text-decoration: none;}
 .main_new .main_information .swiper-slide { width: 100%;}
 .main_new .main_information >a { display: block;}
@@ -204,10 +203,11 @@
 .main_new .main_work24_news .list li a.fixed .list_body .icon { display: block;}
 .main_new .main_work24_news .list li ~ li { margin-top: 8px;}
 
-
-
-
-
+.main_new .swiper-button-group { display: flex; justify-content: center; align-items: center;}
+.main_new .swiper-button-group.mt26 { margin-top: 26px;}
+.main_new .swiper-button-next, 
+.main_new .swiper-button-prev { position: initial; margin: 0;}
+.main_new .swiper-pagination { position: initial; margin: 0;}
 
 
 
@@ -232,7 +232,7 @@
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn5 { background: url(../images/main_new/ico60_main_fam_coporation5.svg) no-repeat;}
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn6 { background: url(../images/main_new/ico60_main_fam_coporation6.svg) no-repeat;}
 
-.main_new.coporation .main_talent { position: relative; margin: 0 -20px; padding: 40px 20px 80px; background-color: #F8F8F8;}
+.main_new.coporation .main_talent { position: relative; margin: 0 -20px; padding: 40px 20px; background-color: #F8F8F8;}
 .main_new.coporation .main_talent .link_txt { font-weight: 600;}
 .main_new.coporation .main_talent .bgico4 { display: block; position: absolute; right: 0; top: 92px; width: 92px; height: 153px; background: url(../images/main_new/ico_bgico4.svg) no-repeat;}
 .main_new.coporation .main_talent .bgico5 { display: block; position: absolute; left: 0; bottom: 0; width: 137px; height: 160px; background: url(../images/main_new/ico_bgico5.svg) no-repeat;}
