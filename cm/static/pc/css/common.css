@@ -2906,9 +2906,11 @@ input.error_chk_fun[type="checkbox"]:checked:after {content: none;}
 #gnb > ul > li ul li a:focus { color:var(--col_blue)}
 #gnb > ul > li >a { display: flex; align-items: center; height: 76px; padding: 0 44px; font-size: 20px; font-weight: 600;}
 #gnb > ul > li >a span { display: flex; align-items: center; position: relative; height: 100%;}
+#gnb > ul > li >a.active span::after,
 #gnb > ul > li >a span::after { content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background-color: #117935; transition: width ease-out .2s;}
 #gnb > ul > li >a.active span,
 #gnb > ul > li >a:hover span { color: #117935;}
+#gnb > ul > li >a.active span::after,
 #gnb > ul > li >a:hover span::after { width: 100%;}
 #gnb > ul > li ul li a.active span,
 #gnb > ul > li ul li a:hover span { font-weight: 600; color: #117935; background-size: 100% 100%;}

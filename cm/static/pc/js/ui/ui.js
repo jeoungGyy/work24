@@ -436,6 +436,7 @@ $(function(){
 	$("#gnb >ul >li >a").on({
 		mouseover : function(){
 			$(this).addClass("active");
+			
 		},
 		mouseleave : function(){
 			$(this).removeClass('active');
@@ -445,19 +446,11 @@ $(function(){
 		mouseover : function(){
 			$('.dimmed').addClass("active");
 			$(this).siblings('a').addClass("active");
+			$(this).closest('a').addClass("active");
 		},
 		mouseleave : function(){
 			$('.dimmed').removeClass("active");
 			$(this).siblings('a').removeClass('active');
-		}
-	});
-
-
-	$("#gnb >ul >li >a").on({
-		mouseover : function(){
-			$(this).addClass("active");
-		},
-		mouseleave : function(){
 		}
 	});
 

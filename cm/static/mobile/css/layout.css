@@ -908,27 +908,27 @@ footer .footer_address .colpyright { margin: 24px 0 28px; font-size: 14px; color
   margin-top: 8px;
   font-size: 12px; line-height: 14px;
 }
-.bottom_bar > ul > li > a.bottom_bar_job_center i { background: url(../images/main_new/ico24_menu_system.svg) no-repeat;}
-.bottom_bar > ul > li > a.bottom_bar_btn_search i { background: url(../images/main_new/ico24_menu_search.svg) no-repeat;}
-.bottom_bar > ul > li > a.bottom_bar_home i { background: url(../images/main_new/ico24_menu_home.svg) no-repeat;}
-.bottom_bar > ul > li > a.bottom_bar_chatbot i { background: url(../images/main_new/ico24_menu_guide.svg) no-repeat;}
-.bottom_bar > ul > li > a.bottom_bar_customer_center i { background: url(../images/main_new/ico24_menu_login.svg) no-repeat;}
-.bottom_bar > ul > li > a.bottom_bar_attendance i { background: url(../images/main_new/ico24_menu_attendance.svg) no-repeat;}
-.bottom_bar > ul > li > a.bottom_bar_my i { background: url(../images/main_new/ico24_menu_my.svg) no-repeat;}
+.bottom_bar > ul > li > a.bottom_bar_job_center i { background: url(../images/main_new/ico24_menu_system.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.bottom_bar_btn_search i { background: url(../images/main_new/ico24_menu_search.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.bottom_bar_home i { background: url(../images/main_new/ico24_menu_home.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.bottom_bar_chatbot i { background: url(../images/main_new/ico24_menu_guide.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.bottom_bar_customer_center i { background: url(../images/main_new/ico24_menu_login.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.bottom_bar_attendance i { background: url(../images/main_new/ico24_menu_attendance.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.bottom_bar_my i { background: url(../images/main_new/ico24_menu_my.svg) no-repeat !important;}
 
-.bottom_bar > ul > li > a.active.bottom_bar_job_center i { background: url(../images/main_new/ico24_menu_system_active.svg) no-repeat;}
-.bottom_bar > ul > li > a.active.bottom_bar_btn_search i { background: url(../images/main_new/ico24_menu_search_active.svg) no-repeat;}
-.bottom_bar > ul > li > a.active.bottom_bar_home i { background: url(../images/main_new/ico24_menu_home_active.svg) no-repeat;}
-.bottom_bar > ul > li > a.active.bottom_bar_chatbot i { background: url(../images/main_new/ico24_menu_guide_active.svg) no-repeat;}
-.bottom_bar > ul > li > a.active.bottom_bar_customer_center i { background: url(../images/main_new/ico24_menu_login_active.svg) no-repeat;}
-.bottom_bar > ul > li > a.active.bottom_bar_attendance i { background: url(../images/main_new/ico24_menu_attendance_active.svg) no-repeat;}
-.bottom_bar > ul > li > a.active.bottom_bar_my i { background: url(../images/main_new/ico24_menu_my_active.svg) no-repeat;}
+.bottom_bar > ul > li > a.active.bottom_bar_job_center i { background: url(../images/main_new/ico24_menu_system_active.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.active.bottom_bar_btn_search i { background: url(../images/main_new/ico24_menu_search_active.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.active.bottom_bar_home i { background: url(../images/main_new/ico24_menu_home_active.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.active.bottom_bar_chatbot i { background: url(../images/main_new/ico24_menu_guide_active.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.active.bottom_bar_customer_center i { background: url(../images/main_new/ico24_menu_login_active.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.active.bottom_bar_attendance i { background: url(../images/main_new/ico24_menu_attendance_active.svg) no-repeat !important;}
+.bottom_bar > ul > li > a.active.bottom_bar_my i { background: url(../images/main_new/ico24_menu_my_active.svg) no-repeat !important;}
 
-.bottom_bar.company > ul > li > a.active.bottom_bar_job_center i { background: url(../images/main_new/ico24_menu_system_active_company.svg) no-repeat;}
-.bottom_bar.company > ul > li > a.active.bottom_bar_btn_search i { background: url(../images/main_new/ico24_menu_search_active_company.svg) no-repeat;}
-.bottom_bar.company > ul > li > a.active.bottom_bar_home i { background: url(../images/main_new/ico24_menu_home_active_company.svg) no-repeat;}
-.bottom_bar.company > ul > li > a.active.bottom_bar_chatbot i { background: url(../images/main_new/ico24_menu_guide_active_company.svg) no-repeat;}
-.bottom_bar.company > ul > li > a.active.bottom_bar_customer_center i { background: url(../images/main_new/ico24_menu_login_active_company.svg) no-repeat;}
+.bottom_bar.company > ul > li > a.active.bottom_bar_job_center i { background: url(../images/main_new/ico24_menu_system_active_company.svg) no-repeat !important;}
+.bottom_bar.company > ul > li > a.active.bottom_bar_btn_search i { background: url(../images/main_new/ico24_menu_search_active_company.svg) no-repeat !important;}
+.bottom_bar.company > ul > li > a.active.bottom_bar_home i { background: url(../images/main_new/ico24_menu_home_active_company.svg) no-repeat !important;}
+.bottom_bar.company > ul > li > a.active.bottom_bar_chatbot i { background: url(../images/main_new/ico24_menu_guide_active_company.svg) no-repeat !important;}
+.bottom_bar.company > ul > li > a.active.bottom_bar_customer_center i { background: url(../images/main_new/ico24_menu_login_active_company.svg) no-repeat !important;}
 
 
 
