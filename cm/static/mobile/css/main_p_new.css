@@ -114,7 +114,7 @@
 .main_new .main_employment_information .cl_body { margin-top: 4px;}
 .main_new .main_employment_information .cl_logo { display: flex; justify-content: center; align-items: center; width: 198px; height: 120px; margin: 0 auto;}
 .main_new .main_employment_information .cl_logo img { max-width: 100%; height: auto;}
-.main_new .main_employment_information .cl_tag { display: inline-flex; justify-content: center; align-items: center; height: 30px; padding: 0 8px; font-size: 14px; color: #fff; border-radius: 4px;}
+.main_new .main_employment_information .cl_tag { display: inline-flex; justify-content: center; align-items: center; height: 22px; padding: 0 8px; font-size: 12px; color: #fff; border-radius: 4px;}
 .main_new .main_employment_information .cl_tag--blue { background-color: #19B3BD;}
 .main_new .main_employment_information .cl_tit { margin-top: 8px; font-size: 18px; font-weight: 600; color: #111; line-height: 28px;}
 .main_new .main_employment_information .cl_sub { margin-top: 8px;}
