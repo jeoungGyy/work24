@@ -125,7 +125,7 @@
 .main_new .main_employment_information .cl_bottom { display: flex; justify-content: center; align-items: center; height: 56px; margin: 24px -16px 0; border-top: 1px solid #ddd;}
 .main_new .main_employment_information .cl_bottom .icon { display: block; width: 24px; height: 24px; margin-top: -1px; background: url(../images/main_new/ico24_calendar.svg) no-repeat;}
 .main_new .main_employment_information .cl_bottom span { display: block; margin-left: 4px; color: #111;}
-.main_new .main_employment_information .bgico4 { display: block; position: absolute; right: 0; top: 92px; width: 92px; height: 153px; background: url(../images/main_new/ico_bgico4.svg) no-repeat;}
+.main_new .main_employment_information .bgico4 { display: block; position: absolute; right: 0; top: 130px; width: 92px; height: 153px; background: url(../images/main_new/ico_bgico4.svg) no-repeat;}
 .main_new .main_employment_information .bgico5 { display: block; position: absolute; left: 0; bottom: 0; width: 137px; height: 160px; background: url(../images/main_new/ico_bgico5.svg) no-repeat;}
 .main_new .main_employment_information .bgico6 { display: block; position: absolute; left: 0; top: 340px; width: 51px; height: 48px; background: url(../images/main_new/ico_bgico6.svg) no-repeat;}
 .main_new .main_employment_information .mfs_more { right: 20px;}
