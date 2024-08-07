@@ -226,12 +226,16 @@
 
 /* 기업 */
 .main_new.coporation .main_login { border-color: #4D65E1;}
+.main_new.coporation .mfs_tab button.active .tab_text { color: #fff;}
 .main_new.coporation .main_login .main_login_notice .s1_r .em_blue { color: #4D65E1;}
 .main_new.coporation .main_login .main_login_notice .notice_expand { background-color: #4D65E1;}
 .main_new.coporation .main_login .main_login_notice .notice_expand span { color: #fff;}
 .main_new.coporation .main_login_after .mla_list li .round .num { color: #fff; background-color: #4D65E1;}
 .main_new.coporation .mfs_tab button.active { color: #fff; border-color: #4D65E1; background-color: #4D65E1;}
 .main_new.coporation .main_login_after .right .count { color: #4D65E1;}
+
+.main_new.coporation .main_employment_information .mei_text .link_txt { color: #4D65E1;}
+.main_new.coporation .mfs_tab button .tab_text { color: #4D65E1;}
 
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn1::after { background: url(../images/main_new/ico44_main_fam_coporation1.svg) no-repeat;}
 .main_new.coporation .freqAccMnu_swiper_wrap .ico60_main_fam_persn2::after { background: url(../images/main_new/ico44_main_fam_coporation2.svg) no-repeat;}
@@ -245,6 +249,16 @@
 .main_new.coporation .main_talent .bgico4 { display: block; position: absolute; right: 0; top: 92px; width: 92px; height: 153px; background: url(../images/main_new/ico_bgico4.svg) no-repeat;}
 .main_new.coporation .main_talent .bgico5 { display: block; position: absolute; left: 0; bottom: 0; width: 137px; height: 160px; background: url(../images/main_new/ico_bgico5.svg) no-repeat;}
 .main_new.coporation .main_talent .bgico6 { display: block; position: absolute; left: 0; top: 340px; width: 51px; height: 48px; background: url(../images/main_new/ico_bgico6.svg) no-repeat;}
+.main_new.coporation .main_talent .add { margin: 24px -16px -32px; padding: 16px 20px; border-top: 1px solid #eee; border-radius: 0 0 8px 8px;}
+.main_new.coporation .main_talent .add .icon { display: block; width: 16px; height: 16px; margin-right: 8px; border-radius: 0 0 8px 8px;}
+.main_new.coporation .main_talent .add .icon--call { background: url(../images/main_new/ico16_call.svg) no-repeat;}
+.main_new.coporation .main_talent .add .icon--email { background: url(../images/main_new/ico16_email.svg) no-repeat;}
+.main_new.coporation .main_talent .add .add_group { display: flex; align-items: center;}
+.main_new.coporation .main_talent .add .add_group ~ .add_group { margin-top: 4px;}
+.main_new.coporation .main_talent .add .add_group .be { display: flex; align-items: center; width: 92px;}
+.main_new.coporation .main_talent .add .add_group .be span { color: #111; line-height: 28px;}
+.main_new.coporation .main_talent .add .add_group .af { line-height: 28px; color: #111;}
+
 .main_new.coporation .talent_swiper_wrap { position: relative; z-index: 2; margin-top: 24px; padding: 0 12px;}
 .main_new.coporation .talent_swiper_wrap .swiper-slide { width: 100%; padding: 32px 16px; background-color: #fff; border-radius: 8px; box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, .08);}
 .main_new.coporation .talent_swiper_wrap .talent_img { overflow: hidden; display: block; width: 80px; height: 80px; margin: 0 auto; border-radius: 50%;}
