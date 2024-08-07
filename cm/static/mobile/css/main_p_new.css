@@ -75,7 +75,7 @@
 .main_new .freqAccMnu_swiper_wrap .swiper-slide { display: flex; flex-wrap: wrap; justify-content: center;}
 .main_new .freqAccMnu_swiper_wrap .famenu { width: calc(100% / 3); margin-top: 24px;}
 .main_new .freqAccMnu_swiper_wrap a { display: block; height: 100%; text-align: center;}
-.main_new .freqAccMnu_swiper_wrap a p { display: flex; justify-content: center; align-items: center; height: calc(100% - 60px - 8px); margin-top: 8px; font-size: 14px; color: #111; letter-spacing: -1px;}
+.main_new .freqAccMnu_swiper_wrap a p { display: flex; justify-content: center; align-items: center; height: calc(100% - 60px - 8px); margin-top: 8px; font-size: 14px; color: #111; letter-spacing: -1px; line-height: 1.3rem;}
 .main_new .freqAccMnu_swiper_wrap a .ico { display: flex; justify-content: center; align-items: center; width: 72px; height: 72px; margin: 0 auto; background-color: #fff; border-radius: 50%;}
 .main_new .freqAccMnu_swiper_wrap a .ico::after { content: ''; display: block; width: 44px; height: 44px; background-size: 100% auto;}
 .main_new .freqAccMnu_swiper_wrap .ico60_main_fam_persn1::after { background: url(../images/main_new/ico44_main_fam_persn1.svg) no-repeat;}
@@ -255,3 +255,6 @@
 .main_new.coporation .talent_swiper_wrap .talent_tag span::before { content: '#';}
 
 .main_new.coporation .main_work24_news .list li a.fixed { background-color: rgba(227, 238, 255, 0.15); border-color: #4D65E1;}
+.main_new.coporation .ico_n_issue { background: url(../images/main_new/ico_24_issue.svg) no-repeat;}
+.main_new.coporation .ico_n_password { background: url(../images/main_new/ico24_password.svg) no-repeat;}
+

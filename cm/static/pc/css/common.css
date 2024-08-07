@@ -2901,9 +2901,9 @@ input.error_chk_fun[type="checkbox"]:checked:after {content: none;}
 #gnb > ul > li ul {display:none;position:relative;z-index:1; height: calc(100% - 76px); margin: 0; padding: 21px 0px 25px 42px;}
 #gnb > ul > li ul li {  text-align:left;width:100%;line-height:28px;font-size:16px;color:var(--col_p);}
 #gnb > ul > li ul li a { display: block; position: relative; padding: 6px 0; line-height: 22px;}
-#gnb > ul > li ul li a span { padding-bottom: 3px; background-image: linear-gradient(transparent 90%, #117935 10%); background-repeat: no-repeat; background-size: 0% 100%; transition: background-size 0.2s;}
+#gnb > ul > li ul li a span { padding-bottom: 3px; background-image: linear-gradient(transparent 90%, #117935 10%); background-repeat: no-repeat; background-size: 0% 100%;}
 #gnb > ul > li ul li a:hover,
-#gnb > ul > li ul li a:focus { color:var(--col_blue)}
+#gnb > ul > li ul li a:focus { color:var(--col_blue);}
 #gnb > ul > li >a { display: flex; align-items: center; height: 76px; padding: 0 44px; font-size: 20px; font-weight: 600;}
 #gnb > ul > li >a span { display: flex; align-items: center; position: relative; height: 100%;}
 #gnb > ul > li >a.active span::after,
