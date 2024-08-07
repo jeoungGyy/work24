@@ -403,18 +403,13 @@
 #container .main_section_wrap .recomm_tab .tablist { justify-content: flex-start;}
 #container .main_section_wrap .recomm_tab .tablist li { margin: 0;}
 #container .main_section_wrap .recomm_tab .tablist li ~ li { margin-left: 8px;}
-#container .main_section_wrap .recomm_tab .tablist li button.bgGreen { width: 100%; font-weight: 600; color: #111; background-size: 200% 100%; transition: background-position 0.6s;}
-#container .main_section_wrap .recomm_tab .tablist li button.bgGreen[aria-selected="true"] { border-color: #62D491; background-image: linear-gradient(to right, #fff 50%, #62D491 50%); background-position: -100% 0;}
+#container .main_section_wrap .recomm_tab .tablist li button { width: 100%; font-weight: 600; color: #111; background-size: 200% 100%; transition: background-position 0.6s;}
+#container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"]  { border-color: #62D491; background-image: linear-gradient(to right, #fff 50%, #62D491 50%); background-position: -100% 0;}
+#container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] .count { color: #111;}
 #container .main_section_wrap .recomm_tab .tablist li button.bgBlue { width: 100%; font-weight: 600; color: #111; background-size: 200% 100%; transition: background-position 0.6s;} 
 #container .main_section_wrap .recomm_tab .tablist li button.bgBlue[aria-selected="true"] { color: #fff; border-color: #4D65E1; background-image: linear-gradient(to right, #fff 50%, #4D65E1 50%); background-position: -100% 0;}
-
-
-
-
-
-
 #container .main_section_wrap .recomm_tab .tablist li .count { color: #117935;}
-#container .main_section_wrap .recomm_tab .tablist li button[aria-selected="true"] .count { color: #fff;}
+
 #container .information_group { background-color: #F5F5F5;}
 #container .main_informationMenu .swiper-wrapper,
 #container .main_informationMenu2 .swiper-wrapper { z-index: 2;}
@@ -597,3 +592,6 @@
 #container .training .btn_right { right: -62px; top: calc(50% + 35px); border: none;}
 
 #container .iconArrow { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
+
+
+
