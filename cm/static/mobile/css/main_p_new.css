@@ -32,7 +32,7 @@
 
 .main_new .tab_body { display: flex; justify-content: space-between; align-items: center; margin-top: 24px;}
 .main_new .tab_body .mfs_tab { margin-top: 0;}
-.main_new .tab_body a { display: flex; align-items: center;}
+.main_new .tab_body a { display: flex; align-items: center; position: relative; z-index: 10;}
 .main_new .tab_body a span { font-weight: 600;}
 .main_new .tab_body a .icon { display: block; width: 16px; height: 16px; margin-left: 4px; background: url(../images/main_new/ico16_arrow_right.svg) no-repeat;}
 
