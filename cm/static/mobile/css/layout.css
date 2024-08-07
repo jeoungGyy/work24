@@ -719,55 +719,6 @@ footer .footer_address .address p {
 	- [고도화] Layou 신규 CSS
 */
 
-header .header_main_area .header_title_area a img { vertical-align: top;}
-
-header .header_main_area .header_title_area .header_division {
-  display: flex;
-  margin-left: 8px;
-  border: 1px solid #eee;
-  background-color: #F5F5F5;
-  border-radius: 1.875rem;
-}
-header .header_main_area .header_title_area .header_division > li > a {
-  display: flex; justify-content: center; align-items: center;
-  width: initial;
-  height: 32px;
-  padding: 0 12px;
-  text-align: center;
-}
-
-header .header_main_area .header_util_area > ul > li.header_btn_all_menu { display: flex; align-items: center;}
-header .header_main_area .header_util_area > ul > li.header_btn_all_menu > button {
-  width: 24px;
-  height: 32px;
-  background: url(../images/main_new/ico24_category_mo.svg);
-  background-size: contain;
-}
-
-/* footer */
-footer {
-  padding-bottom: constant(safe-area-inset-bottom);
-  padding-bottom: env(safe-area-inset-bottom);
-  background-color: #F8F8F8;
-}
-footer.is_bottom {
-  padding-bottom: 5.75rem;
-  padding-bottom: calc(5.75rem + constant(safe-area-inset-bottom));
-  padding-bottom: calc(5.75rem + env(safe-area-inset-bottom));
-}
-footer .quick_links {
-  background-color: #fff;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
-
-
-
-
-/*
-	- [고도화] Layou 신규 CSS
-*/
 header .header_main_area .header_title_area h1 { all: unset;}
 
 header .header_main_area .header_title_area a img { vertical-align: top;}
@@ -781,6 +732,7 @@ header .header_main_area .header_title_area .header_division {
 }
 header .header_main_area .header_title_area .header_division > li > a {
   display: flex; justify-content: center; align-items: center;
+  width: initial;
   height: 32px;
   padding: 0 12px;
   text-align: center;
@@ -859,7 +811,7 @@ footer .footer_address .logos {
 }
 footer .footer_address .logos img { margin-right: 16px;}
 footer .footer_address .colpyright { margin: 24px 0 28px; font-size: 14px; color: #555;}
-.footer_info_list { margin-top: 16px;}
+.footer_info_list { margin-top: 16px; text-align: left;}
 .footer_info_list .tit { color: #4D65E1;}
 .footer_info_list .list { display: flex; flex-wrap: wrap; margin: 0 0 0 -20px;}
 .footer_info_list .list .item {
