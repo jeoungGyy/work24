@@ -5046,8 +5046,9 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 
 .bottom_layer .title { font-size: 18px; font-weight: 600; line-height: 28px;}
 
-.quick_top { position:fixed;right:2px;bottom:61px;z-index:10}
-.quick_top a.btn_quick_top { display:block;width:66px;height:72px;background:url("../images/main_new/btn_quick_top.svg") no-repeat;}
+.quick_top { position:fixed;right:12px;bottom:82px;z-index:10}
+.quick_top a.btn_quick_top { display: flex; justify-content: center; align-items: center; width:40px;height:40px; background-color: #fff; border-radius: 50%; box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.08);}
+.quick_top a.btn_quick_top::after { content: ''; display: block; width: 24px; height: 24px; background:url("../images/main_new/btn_quick_top.svg") no-repeat;}
 .quick_top a.btn_quick_login{display: flex; width: 60px; height: 60px; margin-bottom: 24px; border-radius: 50%;color: var(--col_body); background-color: var(--col_green); font-weight: 600;}
 .company .quick_top a.btn_quick_login {color: var(--col_white); background-color: var(--col_blue);}
 
