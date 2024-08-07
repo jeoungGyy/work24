@@ -320,6 +320,8 @@
 #container .login_guide p { font-size: 20px; letter-spacing: -0.5px;}
 #container .login_guide ul { display: flex; flex-wrap: wrap; margin-top: 9px;}
 #container .login_guide ul li { width: 50%; margin: 16px 0 0;}
+#container .login_guide ul li a .lineBg3s { transition: initial;}
+#container .login_guide ul li a:hover .lineBg3s { background-size: 100% 100%;}
 #container .login_guide .ico { width: 24px; height: 24px;}
 #container .login_guide .ico.ico01 { background: url(https://www.work24.go.kr/cm/static/images/ico24_login_guide01.svg) no-repeat;}
 #container .login_guide .ico.ico02 { background: url(https://www.work24.go.kr/cm/static/images/ico24_login_guide02.svg) no-repeat;}
