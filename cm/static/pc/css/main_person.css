@@ -539,7 +539,7 @@
 #container .work24_news .btn_left { left: -62px; top: calc(50% - 20px); border: none;}
 #container .work24_news .btn_right { right: -62px; top: calc(50% - 20px); border: none;}
 #container .news_swiper { overflow: hidden; padding-bottom: 35px;}
-#container .swiper_policy { overflow: hidden; padding: 0 2px 55px;}
+#container .swiper_policy { overflow: hidden; padding: 0 2px 2px;}
 #container .main_policy_recomm { position: relative; margin: 80px 0;}
 #container .main_policy_recomm .h1_sb { font-size: 32px; font-weight: 700; letter-spacing: -1px;}
 #container .main_policy_recomm .mfs_more { top: 28px;}
@@ -561,6 +561,7 @@
 #container .main_policy_recomm .inner_service_list:hover .detail_view .iocn { filter: invert(22%) sepia(90%) saturate(6937%) hue-rotate(151deg) brightness(91%) contrast(87%);}
 #container .main_policy_recomm .swiper-button-prev { left: -62px; top: 50%; border: none;}
 #container .main_policy_recomm .swiper-button-next { right: -62px; top: 50%; border: none;}
+#container .main_policy_recomm .swiper-pagination { position: initial; left: initial; transform: initial; margin-top: 32px;}
 
 /* 직업훈련 추천 */
 #container .grayBg { background-color: #F5F5F5;}

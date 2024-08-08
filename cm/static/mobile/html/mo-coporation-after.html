@@ -994,7 +994,153 @@
 					}
 				</script>
 			</div>
-			<!-- //인재추천 -->
+			<!-- //인재 정보 / 인재추천 -->
+
+			<!-- 정책추천 -->
+			<div class="main_employment">
+				<div class="tit_group">
+					<div class="flex_box">
+						<h3 class="t2_sb">정책 추천</h3>
+					</div>
+				</div>
+	
+				<div class="poly_swiper_wrap">
+					<div class="swiper-container poly_swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="company_list">
+									<div class="tit">육아휴직급여 육아휴직급여 육아휴직급여 육아휴직급여 육아휴직급여</div>
+									<p class="tit_desc">
+										퇴사 후 다시 취업하기 위해 노력하는 사람을 위한 급여
+									</p>
+									<div class="poly_list">
+										<ul>
+											<li>
+												<span class="title">지원대상</span>
+												<span class="sub">15세이상 65세 미만(재학생) 15세이상 65세 미만(재학생)</span>
+											</li>
+											<li>
+												<span class="title">지원종류</span>
+												<span class="sub">지원금</span>
+											</li>
+											<li>
+												<span class="title">지원상황</span>
+												<span class="sub">출산 · 육아</span>
+											</li>
+											<li>
+												<span class="title">신청방법</span>
+												<span class="sub">고용24 또는 고용센터 방문 고용24 또는 고용센터 방문</span>
+											</li>
+										</ul>
+									</div>
+									<div class="salary">
+										<button type="button" class="btn_more" onclick="fn_goPolicyIntro('SC00000047', 'SI00000356')"><span>자세히보기</span><i class="icon"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="company_list">
+									<div class="tit">구직자 취업지원 서비스 </div>
+									<p class="tit_desc">
+										일자리 추천, 동행 면접 등
+									</p>
+									<div class="poly_list">
+										<ul>
+											<li>
+												<span class="title">지원대상</span>
+												<span class="sub">15세이상 65세 미만(재학생)</span>
+											</li>
+											<li>
+												<span class="title">지원종류</span>
+												<span class="sub">지원금</span>
+											</li>
+											<li>
+												<span class="title">지원상황</span>
+												<span class="sub">출산 · 육아</span>
+											</li>
+											<li>
+												<span class="title">신청방법</span>
+												<span class="sub">고용24 또는 고용센터 방문</span>
+											</li>
+										</ul>
+									</div>
+									<div class="salary">
+										<button type="button" class="btn_more" onclick="fn_goPolicyIntro('SC00000047', 'SI00000356')"><span>자세히보기</span><i class="icon"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="company_list">
+									<div class="tit">구직자 취업지원 서비스 </div>
+									<p class="tit_desc">
+										일자리 추천, 동행 면접 등
+									</p>
+									<div class="poly_list">
+										<ul>
+											<li>
+												<span class="title">지원대상</span>
+												<span class="sub">15세이상 65세 미만(재학생)</span>
+											</li>
+											<li>
+												<span class="title">지원종류</span>
+												<span class="sub">지원금</span>
+											</li>
+											<li>
+												<span class="title">지원상황</span>
+												<span class="sub">출산 · 육아</span>
+											</li>
+											<li>
+												<span class="title">신청방법</span>
+												<span class="sub">고용24 또는 고용센터 방문</span>
+											</li>
+										</ul>
+									</div>
+									<div class="salary">
+										<button type="button" class="btn_more" onclick="fn_goPolicyIntro('SC00000047', 'SI00000356')"><span>자세히보기</span><i class="icon"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-group mt26">
+							<div class="swiper-button-prev" title="이전 배너"></div>
+							<div class="swiper-pagination">1 / 1</div>
+							<div class="swiper-button-next" title="다음 배너"></div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="mfs_more" onclick="fn_moreFixPolicy()"><span>더보기</span><i class="icon"></i></a>
+
+				<script>
+					const polySwiper = new Swiper(".poly_swiper", {
+						autoplay: false, 
+						centeredSlides: true, 
+						effect: 'coverflow',
+						grabCursor: true,
+						centeredSlides: true,
+						slidesPerView: 'auto',
+						observer : true,
+						observeParents : true,
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						}, 
+						pagination: {
+							el: ".swiper-pagination",
+							type: "fraction",
+						},
+						coverflowEffect: {
+							rotate: 0,
+							stretch: -68,
+							depth: 350,
+							modifier: 1,
+							slideShadows: false,
+						},
+					});
+				</script>
+			</div>
+			<!-- //정책추천 -->
+
+			<hr class="divider">
 
 			<!-- 중간배너 -->
 			<div class="main_swiper01_wrap">
@@ -1108,6 +1254,8 @@
 				<a href="#" class="mfs_more"><span>더보기</span><i class="icon"></i></a>
 			</div>
 			<!-- //고용24 이용가이드 -->
+
+			<hr class="divider">
 
 			<!-- 고용24 소식 -->
 			<div class="main_work24_news">

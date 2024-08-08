@@ -362,6 +362,12 @@
 #wrap.company .main_recruit_information .profile_list:hover .lineBg3s { background-size: 100% 100%;}
 #wrap.company .main_recruit_information .profile_list:hover dd .add { left: 0; right: 0; padding: 16px 20px; background-color: rgba(227, 238, 255, 0.4);}
 
+#wrap.company .main_policy_recomm { padding-bottom: 80px;}
+#wrap.company .main_policy_recomm .inner_service_list:hover .detail_view { background-color: rgba(227, 238, 255, 0.4);}
+#wrap.company .main_policy_recomm .inner_service_list:hover dl { border-color: #4D65E1; outline: 2px solid #4D65E1;}
+#wrap.company .main_policy_recomm .inner_service_list:hover .detail_view .text { color: #4D65E1;}
+#wrap.company .main_policy_recomm .inner_service_list:hover .detail_view .iocn { filter: invert(46%) sepia(87%) saturate(4586%) hue-rotate(220deg) brightness(94%) contrast(88%);}
+
 
 #wrap.company .main_recruit_information .profile_list .box_hash_wrap { overflow-x: auto; flex-wrap: initial; position: absolute; left: 20px; right: 20px; bottom: 32px; margin-top: 0; padding-bottom: 3px; white-space: nowrap;}
 #wrap.company .main_recruit_information .profile_list .box_hash_wrap::-webkit-scrollbar { height: 6px;}
