@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import url('main_person.css');
 @import url('main_company.css');
+@import url('main_person.css');
 
 /* join */
 .join_container_wrap {position:relative}
@@ -108,6 +108,7 @@
 .btn_ico.lock:before {background-image:url("../images/ico24_finance_lock.svg")}
 .btn_ico.ico_login:before,
 .ico24_member_login {background-image:url("../images/ico24_member_login.svg")}
+.btn_ico2 {line-height:0px;padding-left:0px;padding-top:0px;padding-bottom:0px;padding-right:0px;}
 
 .box_form_login {max-width:680px;margin:80px auto 0;padding:40px 60px 56px;border:1px solid var(--col_btn);border-radius:8px}
 .box_form_login + .box_btn_wrap {max-width:680px;margin:40px auto 0}
