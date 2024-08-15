@@ -5055,6 +5055,100 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 .contents .swiper-button-disabled { opacity: 0 !important;}
 
 
+/* 로그인 CSS 수정 */
+.login--style .ico24_finance_joint { background: url(../images/login_new/ico24_join2.svg) no-repeat;}
+.login--style .tab_menu { margin-top: 24px;}
+.login--style .tab_menu > ul { padding-right: 0;}
+.login--style .tab_menu > ul > li button { padding: 11px 24px;}
+.login--style .certification_type li a { height: 64px !important; border: none; background-color: #F5F5F5;}
+.login--style .certification_type li a .txt { font-weight: 600;}
+.login--style .certification_type li a.link-easy .ico24_finance_certification { width: 40px;}
+.login--style .certification_type li a.link-easy .txt { width: 103px; margin-left: 0;}
+.login--style .certification_type li .ico_logo { display: flex; flex-wrap: wrap; flex: 1; margin: -4px 0 0 -4px;}
+.login--style .certification_type li .ico_logo i { display: block; width: 20px; height: 20px; margin: 4px 0 0 4px;}
+.login--style .certification_type li .ico_logo i.ico_kakao { background: url(../images/login_new/logo80_80_kakao.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_kb { background: url(../images/login_new/logo80_80_kb.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_payco { background: url(../images/login_new/logo80_80_payco.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_pass { background: url(../images/login_new/logo80_80_pass.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_samsungpass { background: url(../images/login_new/logo80_80_samsungpass.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_naver { background: url(../images/login_new/logo80_80_naver.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_shinhan { background: url(../images/login_new/logo80_80_shinhan.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_toss { background: url(../images/login_new/logo80_80_toss.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_banksalad { background: url(../images/login_new/logo80_80_banksalad.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_hana { background: url(../images/login_new/logo80_80_hana.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li .ico_logo i.ico_nh { background: url(../images/login_new/logo80_80_nh.png) no-repeat; background-size: 20px;}
+.login--style .certification_type.h70 li { height: initial;}
+.login--style .certification_type.h70 li a { height: initial;}
+.login--style .certification_type li { margin-top: 0;}
+.login--style .certification_type li ~ li { margin-top: 8px;}
+.login--style .mt_sm { margin-top: 24px !important;}
+.login--style .certification_type_h4 { margin-top: 16px; font-size: 14px; line-height: 24px;}
+.login--style .certification_type--style { margin-top: 8px;}
+.login--style .border_box { padding:  20px 16px 16px;}
+.login--style .border_box.mt_default--style { margin-top: 8px;}
+.login--style .list_style.line li { padding-left: 0;}
+.login--style .list_style.line li::before { display: none;}
+.login--style .list_style.line li b { display: block; position: relative; margin-bottom: 4px; padding-left: 16px; font-size: 14px; font-weight: 600;}
+.login--style .list_style.line li b::before { content: ""; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #555; display: inline-block; position: absolute; top: 6px; left: 3px;}
+.login--style .list_style.line li strong { color: #EE2E62;}
+.login--style .list_style.line li:not(:last-child) { padding-bottom: 16px;}
+.login--style .list_style.line li:not(:last-child) + li { margin-top: 16px;}
+.login--style .list_style.blet--style { margin-left: 3px;}
+.login--style .list_style.blet--style li { padding-left: 12px;}
+.login--style .list_style.blet--style li ~ li { margin-top: 8px;}
+.login--style .list_style.blet--style li a { font-size: 14px;}
+.login--style .divider { margin-bottom: 12px;}
+.login--style .divider:not(:last-child)::after { display: none;}
+.login--style .box_bot_txt { position: relative; padding: 26px 16px 20px; border-radius: 8px;}
+.login--style .box_bot_txt.green { background-color: #E8FCF0;}
+.login--style .box_bot_txt.blue { background-color: #F3F8FF;}
+.login--style .box_bot_txt .box_bot_desc { margin-top: 12px; font-size: 14px; line-height: 24px;}
+.login--style .box_bot_txt .join_info { margin-top: 16px;}
+.login--style .box_bot_txt .s1_sb { font-size: 14px; font-weight: 600; line-height: 24px;}
+.login--style .box_bot_txt .list li { position: relative; padding-left: 16px; font-size: 14px; color: #555; line-height: 24px;}
+.login--style .box_bot_txt .list li ~ li { margin-top: 4px;}
+.login--style .box_bot_txt .list li::before { content: ""; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #555; display: inline-block; position: absolute; top: 9px; left: 3px;}
+.login--style .box_bot_txt .btn { display: flex; justify-content: center; align-items: center; height: 40px; margin-top: 24px; border: 1px solid #ddd; background-color: #fff; border-radius: 4px;}
+.login--style .box_bot_txt .btn span { font-size: 16px; font-weight: 600; color: #333;}
+.login--style .box_bot_txt .img_after { position: absolute; right: 9px; bottom: 84px;}
+.login--style .certification_type + .certification_type { margin-top: 8px;}
+
+.login--style .tab_radio { margin-top: 24px !important;}
+.login--style .tab_radio .radio_area label::after { display: none;}
+.login--style .tab_radio .radio_area label::before { width: 22px; height: 22px;}
+.login--style .tab_radio .radio_area input:checked + label::after  {   display: block; content: ""; width: 12px; height: 12px; background: #fff; border-radius: 50%; position: absolute; top: 5px; left: 5px;}
+.login--style .tab_radio_content { margin-top: 24px;}
+.login--style .tab_radio_content .required::after { display: none;}
+.login--style .tab_radio_content .mt_mini { margin-top: 0 !important;}
+.login--style .tab_radio_content .input_btn.btn_ico .id_form { gap: 0; width: 100%;}
+.login--style .tab_radio_content .id_form > span { width: 21px;}
+.login--style .tab_radio_content label { color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

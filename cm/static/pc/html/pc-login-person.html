@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		
+		<link rel="icon" href="https://www.work24.go.kr/cm/static/images/work24_logo_ico.png"><!-- favicon -->
+		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/jquery-ui.min.css">
+		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="https://www.work24.go.kr/cm/static/css/reset.css">
+		<link rel="stylesheet" href="../css/font.css"> <!-- [고도화] 폰트때문에 사용 기존 CSS 사용해주세요. -->
+		<link rel="stylesheet" href="../css/common.css"> <!-- [고도화] 교체해 주세요. -->
+		<link rel="stylesheet" href="../css/contents.css"> <!-- [고도화] 교체해 주세요. -->
+		
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/ui/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery/jquery-3.6.3.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-ui-1.13.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-ui-1.13.2/jquery.ui.datepicker-ko.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/inputmask-5.0.8/jquery.inputmask.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-validation/jquery.validate.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-validation/localization/messages_ko.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/blockui/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jsrender/jsrender.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jsrender/jsviews.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/lodash/lodash.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/moment-2.29.4/moment.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/moment-2.29.4/locale/locales.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/templates/js/tmpl.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.iframe-transport.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-process.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-validate.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/file-upload/js/jquery.fileupload-ui.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/jquery-print/jQuery.print.min.js"></script>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/external/spin/spin.js"></script><style type="text/css"></style>
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/solution/netfunnel/netfunnel.js"></script><link rel="preconnect" href="https://fonts.gstatic.com"><link type="text/css" rel="stylesheet" href="/css?family=Noto+Sans+KR">
+		
+		<!-- 공통 퍼블리싱UI JS -->
+		<script type="text/javascript" src="../js/ui/ui.js"></script> <!-- [고도화] 교체해 주세요. -->
+		<script type="text/javascript" src="../js/gsap.min.js"></script> <!-- [고도화] 추가해주세요. -->
+		<script type="text/javascript" src="../js/parallax.min.js"></script> <!-- [고도화] 추가해주세요. -->
+		<script type="text/javascript" src="../js/lottie.min.js"></script> <!-- [고도화] 추가해주세요. -->
+		<!-- 공통 퍼블리싱UI JS -->
+		<script type="text/javascript" src="https://www.work24.go.kr/cm/static/js/hp_common.js?ver=2023_12_28"></script>
+		<title>TEST 고용24(시범운영)_개인</title>
+
+
+		<style>
+			.box_notice_wrap .tit:before { background: url(https://m.work24.go.kr/cm/static/images/ico24_loudspeaker.svg);}
+		</style>
+	</head>
+	<body class="" style="">
+	
+	<div id="wrap" class="person">
+		<!-- skip navigation -->
+		<nav id="skipnav">
+			<a href="#none" onclick="fn_skipNavigator('cont_wrap_area');">본문 바로가기</a>
+			<a href="#gnb">주메뉴 바로가기</a>
+			<a href="#quick_menu">퀵메뉴 바로가기</a>
+			<a href="#job_recom_recruit_info_sec">채용정보와 일자리추천 바로가기</a>
+			<a href="#beginner_guide_sec">초보자 이용가이드 바로가기</a>
+			<a href="#work24_news_sec">고용24 소식 바로가기</a>
+		</nav>
+		<!-- //skip navigation -->
+
+		<!-- #HEADER -->
+		<header>
+			<!-- #header_top -->
+			<div id="header_top">
+				<div class="header_lt">
+					<div class="get_top">
+						<i class="icon"></i>
+						<span class="text">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+					</div>
+					<ul class="header_info">
+						<li class="after" style="display: none;">
+							<i class="icons"></i>
+							<span id="timeOut">29분39초</span>
+							<a href="javascript:void(0);" onclick="gfn_nowTimeAdd()" class="btn xxsmall btn_round type05">시간연장</a>
+							<span class="at_header_name_area">김고용님</span>
+							<a href="/cm/z/b/0210/lgut.do" class="btn xxsmall btn_round type05">로그아웃</a>
+							<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001287', '/z/z/1000/selectMyPageByPersonPost.do', 'EBM04');" class="btn xxsmall btn_round type05">마이페이지</a>
+						</li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do')">로그인</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', '2', '/a/a/0110/openJoinPagePost.do')">회원가입</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'x', '/c/d/0180/retrieveSiteEasyHpcmPost.do')">이용안내</a></li>
+						<li class="line"><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001589', '/c/c/0120/selectUtzeInqrLstPost.do', 'EBM02', 'N', '')">질문과 답변</a></li>
+						<li class="line"><a href="http://as82.kr/keis" target="_blank">원격지원</a></li>
+					</ul>
+				</div>
+				<div class="header_top_area">
+					<ul class="header_type">
+						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM01')">개인</a></li>
+						<li><a href="javascript:void(0);" onclick="fn_click_header_top_area('EBM00')">기업</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //#header_top -->
+		
+			<!-- #header_bottom : hover시 extend 클래스 추가 -->
+			<div id="header_bottom" class="">
+				<div class="header_bottom_area">
+					<h1>
+						<a href="/cm"><span class="blind">고용24</span></a>
+					</h1>
+                    
+					<!-- gnb -->
+					<div id="gnb">
+						<ul>
+							<li>
+								<a href="javascript:void(0);"><span>채용정보</span></a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								<ul class="gnb2depth">
+								<li>
+									<a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000002', '/a/b/1200/retriveDtlEmpSrchListPost.do', '', 'N', '')"><span>일자리 찾기</span></a> <!-- [고도화] active 클래스 추가시 활성화 -->
+								</li> 
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000016', '/a/b/2100/resumeMngMainPost.do', '', 'N', '')"><span>구직신청</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000001836', '/a/f/1100/retrieveEmpEventListPost.do', '', 'N', '')"><span>채용행사</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000000050', '/jobyoung/smallGiants/corpInfoSrchList.do?coGbCd=small', '', 'N', '')" title="새창 열림"><span>강소기업</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>취업지원</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000054', '', '', 'N', '')"><span>취업역량강화</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000084', '/r/d/1110/resumeSelfIntroGuide1Post.do', '', 'N', '')"><span>취업가이드</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ua', 'EBG120000000001', '', '', 'N', '')"><span>국민취업지원제도</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000120', '/c/a/1110/ExperiPgmInfoView.do', '', 'N', '')"><span>일 경험</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/wk', 'EBG020000000134', '', '', 'N', '')"><span>취업지원금</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>실업급여</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000160', '/a/b/1100/retrievePuIncqualClmntOnlineViewPost.do', '', 'N', '')"><span>수급자격</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000206', '/a/h/1100/retrieveEmpymnHopeCardInfoPost.do', '', 'N', '')"><span>실업인정</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000265', '/a/m/1200/createPuElempAllwncViewPost.do', '', 'N', '')"><span>취업촉진수당</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>직업 능력 개발</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000295', '/h/a/1100/selectIssueRequestPost.do', '', 'N', '')"><span>국민내일배움카드</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000308', '/a/a/1100/trnnCrsInfPost.do', '', 'N', '')"><span>훈련 찾기·신청</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/hr', 'EBG020000000324', '/i/b/1100/selectCrqfcIssuReqstPost.do', '', 'N', '')"><span>훈련 기관·강사</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><span>출산 휴가·육아 휴직</span></a>
+								<ul class="gnb2depth">
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000393', '/b/a/1100/openHPEIBA1100M02Post.do', '', 'N', '')"><span>출산(전후)휴가</span></a></li>
+								<li><a href="javascript:void(0);" onclick="fn_goPageUrl('/ei', 'EBG020000000418', '/b/b/1100/openHPEIBB1100M01Post.do', '', 'N', '')"><span>육아휴직</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- //gnb -->
+		
+					<!-- utility -->
+					<ul class="header_util">
+						<li class="header_search" style="display: none;"><a href="#none"><span class="blind">검색</span></a></li>
+						<li class="header_category"><a href="javascript:void(0)" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0150/retrieveStmpPost.do')"><span class="blind">메뉴 전체보기</span></a></li>
+					</ul>
+					<!-- //utility -->
+				</div>
+			</div>
+			<!-- //#header_bottom -->
+		</header>
+
+
+		<section id="container">
+			
+			<!-- location -->
+			<div class="location">
+				<ul class="location_cont form_search_wrap">
+					<li class="home">
+						<a href="/cm/main.do">홈</a>
+					</li>
+					<li>
+						<button type="button" class="btn_downgrill" title="1번째 카테고리 선택하기" onclick="fn_locationDiv(1)"><span>로그인</span></button>
+						<div class="layer_search" style="display:none" id="loc_1"> <!-- [고도화] layer_cate_search 삭제 -->
+							<ul class="location_list">
+								<li><a href="#none" onclick="fn_goNaviPageUrl('EBG020000001563', '/cm', '');" class="active"><span>로그인</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button type="button" class="btn_downgrill" title="2번째 카테고리 선택하기" onclick="fn_locationDiv(2)"><span>로그인</span></button>
+						<div class="layer_search" style="display:none" id="loc_2"> <!-- [고도화] layer_cate_search 삭제 -->
+			                <ul class="location_list">
+								<li><a href="#none" onclick="fn_goNaviPageUrl('EBG020000001564', '/cm', '/z/b/0210/openLginPagePost.do');" class="active"><span>로그인</span></a></li>
+								<li><a href="#none" onclick="fn_goNaviPageUrl('EBG020000001569', '/cm', '/z/b/0220/openIdFindPagePost.do');"><span>아이디/비밀번호 찾기</span></a></li>
+			                </ul>
+			            </div>
+					</li>
+					<li>
+						<a href="#none">로그인</a>
+					</li>
+				</ul>
+				<div class="lct_area">
+					<a href="#none" class="lct_btn_print"><span class="blind">프린트하기</span></a>
+				</div>
+			</div>
+			<!-- // location -->
+			<script type="text/javascript">
+				//메뉴 다운그릴 처리
+				function fn_locationDiv(param) {
+					for(var i=1; i < 4; i++) {
+						if(i == param){
+							continue;
+						} else {
+							$("#loc_"+i).hide();
+						}
+					}
+				
+					$("#loc_"+param).toggle();
+				
+					return false;
+				}
+			</script>
+			
+
+			<div id="contents">
+				<div class="cont_wrap">
+			
+					<!-- 간편인증 영역 설정 -->
+					<div class="cont_wrap_area login--style"> <!-- [고도화] login--style 넣어주세요. -->
+					
+						<!-- title -->
+						<div class="sub_tl">
+							<h2 class="h2_sb">로그인 방식을 선택해 주세요</h2>
+						</div>
+						<!-- // title -->
+					
+						<div class="box_notice_wrap mb08 mt10">
+							<p class="tit">안내</p>
+							<ul class="box_list_area">
+								<li class="txt_list">인증서는 가까운 은행, 우체국, 증권사에서 인터넷뱅킹, 증권거래용 인증서를 발급받으신 후 이용해 주세요.</li>
+								<li class="txt_list">
+									보건복지분야 공동인증서는 고용노동부 등 12개 기관에서 제한적으로 사용가능 한 인증서로, 개인/법인 사업장 회원 대상 무료로 제공해요.<br>
+									인증서안내 바로가기 : <a href="nhis.or.kr/nhis/etc/wbhazd01500m01.do" target="_blank">nhis.or.kr/nhis/etc/wbhazd01500m01.do</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //notice -->
+					
+					
+					
+						<!-- 커스텀 버튼 영역  -->
+						<div class="box_table_hd" style="display: none;">
+							<p></p>
+							<div class="section_right">
+								<a href="https://www.nhis.or.kr/nhis/etc/wbhazd01500m01.do" target="_blank" class="btn medium type01 btn_share blue mt16"><span>보건복지분야 공동인증서 안내 바로가기</span></a>
+							</div>
+						</div>
+						<!-- E :안내 영역 -->
+
+						<div class="tab_wrap line_type">
+							<ul class="tab_title">
+								<li aria-controls="tab-panel01" class="active"><button type="button" id="btnArea01" key="tab-panel01" role="tab" aria-selected="true"><span>회원(개인)</span></button></li> <!-- D: 활성화시 class[active] add -->
+								<li aria-controls="tab-panel02" ><button type="button" role="tab" id="btnArea02" key="tab-panel02" aria-selected="true"><span>회원(기업)</span></button></li>
+							</ul>
+							<div class="tab_cont">
+								<div id="tab-panel01" class="box_tab-contents active" role="tabpanel"> <!-- D: 활성화시 class[active] add -->
+									<div class="box_join_person">
+										<form id="indvLginForm" action="/cm/z/b/0210/openLginPage.do" method="POST" novalidate="novalidate">
+										<input type="hidden" id="indvLginTyCd" name="indvLginTyCd">
+										<input type="hidden" id="indvMberTyCd" name="indvMberTyCd">
+										<input type="hidden" id="indvSignMsg" name="indvSignMsg">
+										<input type="hidden" id="indvVidMsg" name="indvVidMsg">
+										<input type="hidden" id="ci" name="ci">
+										<input type="hidden" id="indvCrfcMnCd" name="indvCrfcMnCd">
+						
+										<input type="hidden" id="refSite" name="refSite" value="">
+										<input type="hidden" id="refUrl" name="ssoRedirectUrl" value="">
+										<input type="hidden" id="sysSe" name="sysSe" value="">
+										<input type="hidden" id="concTyCd" name="concTyCd" value="">
+						
+						
+										<div class="box_btn_wrap certification_btn_group type3 row2 active_2"><!-- 23/12/04 퍼블: active_2 추가 -->
+											
+											<!-- [고도화] 로그인 수정 -->
+											<a href="javascript:void(0);" id="btnIndvRgstBnkCrt" class="link-bnk">
+												<dl class="cert_list">
+													<dt>
+														<div class="btn big type02" ><span class="btn_ico certificate">금융인증서</span></div>
+													</dt> <!-- D: 선택시 class[active] -->
+													<dd>
+														<div class="cert_info">
+															<ul>
+																<li class="b1_r">간편비밀번호(PIN)·패턴·지문등을 이용하여 로그인 해 보세요.</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</a>
+											<a href="javascript:void(0);" id="btnIndvRgstCmnCrt" class="link-cmn">
+												<dl class="cert_list">
+													<dt>
+														<div class="btn big type02" ><span class="btn_ico certificate" title="새창 열림">공동인증서</span></div>
+													</dt> <!-- D: 선택시 class[active] -->
+													<dd>
+														<div class="cert_info">
+															<ul>
+																<li class="b1_r">공동인증서를 등록해주셔야 이용이 가능해요.</li>
+																<li class="b1_r">처음 로그인 하는 경우, 다른 인증 수단을 선택해 주세요.</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</a>
+											<a href="javascript:void(0);" id="btnIndvEasyCrt" class="link-easy">
+												<dl class="cert_list">
+													<dt><div class="btn big type02" ><span class="btn_ico authentication" title="새창 열림">간편인증</span></div></dt>
+													<dd>
+														<div class="cert_info">
+															<ul>
+																<li class="b1_r">
+																	민간인증서를 이용하여 로그인 해 보세요.
+																	<span class="certification_box">
+																		<span class="btn kakao"><span class="blind">카카오톡으로 인증</span></span>
+																		<span class="btn kb_bank"><span class="blind">KB국민은행으로 인증</span></span>
+																		<span class="btn payco"><span class="blind">페이코로 인증</span></span>
+																		<span class="btn pass"><span class="blind">통신사패스 인증</span></span>
+																		<span class="btn samsung_pass"><span class="blind">삼성패스로 인증</span></span>
+																		<span class="btn naver"><span class="blind">네이버로 인증</span></span>
+																		<span class="btn shinhan_bank"><span class="blind">신한은행으로 인증</span></span>
+																		<span class="btn toss"><span class="blind">토스로 인증</span></span>
+																		<span class="btn banksalad"><span class="blind">뱅크샐러드 인증</span></span>
+																		<span class="btn hana_bank"><span class="blind">하나은행 인증</span></span>
+																		<span class="btn nh"><span class="blind">농협</span></span>
+				
+																	</span>
+																</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</a>
+											<a href="javascript:void(0);" id="btnIndvIpinCrt" class="link-ipin">
+												<dl class="cert_list">
+													<dt><div class="btn big type02" ><span class="btn_ico ipin" title="새창 열림">아이핀인증</span></div></dt>
+													<dd>
+														<div class="cert_info">
+															<ul>
+																<li class="b1_r">본인 아이핀정보로 인증 후 로그인 할 수 있습니다.</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</a>
+											<a href="javascript:void(0);" id="btnIdPopup" class="link-id">
+												<dl class="cert_list">
+													<dt><div class="btn big type02 full_open" open-full-pop="pop_cert_id"><span class="btn_ico lock">아이디/비밀번호</span></div></dt>
+													<dd>
+														<div class="cert_info">
+															<ul>
+																<li class="b1_r"><span class="point_color">고용24 민원신청 시 추가 본인 인증이 필요</span>하며, 아이디/비밀번호 로그인은<br> 직업훈련 출석 확인 등 모바일 서비스에서만 사용 가능해요.</li>
+															</ul>
+														</div>
+													</dd>
+												</dl>
+											</a>
+											<!-- //[고도화] 로그인 수정 -->
+										</div>
+					
+										<input type="hidden" id="seedKey" name="seedKey" value="4423ca067aebcec552bc9c0c62994a5e52372c7a68974537bad03e7ab1da3ea0922b16c6eef0f98d9855c72ade00d84a77f8fda533be436bf29706f5209083b83c52f5285a807aba16b4d2971de55d32e120be88e8e4dffa1a46c630721f612b2a545f3af7022567b1bf0a90857c84ea464248369ed0ab650b135f85ea50310903f5aad630f7ee71f45bf5fa2c8434bb84327fe9c5892962ec09cb1333d9b3b2f0844fa973aee79c4aa15246d824ec8eb234c42f9b62f771f9a1dc87c4891fe74a381c93fce862b9a913c53804b904775cf92e06b0ee0295a61a4864ee90324e4e3c4a436f39135d8d537244aed5fa1c288d33ba88362d335f0805a7ad586770"><input type="hidden" id="initTime" name="initTime" value="201466350209401641089086691996195768026"><input type="hidden" id="keyIndex_pwd" name="keyIndex_pwd" value="164dd41e6b9a0ba105fa4a8460093c0e4e5b33fdd7c80ff51dff2bcb844c7a64049a83d979be0c11e2093747ab29bf425f210730daf5c8709bd6dbb9a998f4f035ab41fee89a6cd39ae280ad2adc96278853bc269a1d302de682450493daa8e516248528adde6203add6d7f775a9e30211e9bb6c7676ea9cb7d5857c1fe381cfe8aafdd4ab8972da36dfe220944ccb8fd6783ee6145557b3da23f25d0eac2a9e5e50cce2bfc5f6bcf52c35825f6fc4928ed1c872afd880425a0de26bb06205732307fbac20e13352ae694f87d6e9b626dbbfb2904ce0642fd5400a4c3a9fd74c58bb3b9859643bb371b0d3e781e467cd31b403ba85a3f9d34be301438a0bfe7d"><input type="hidden" id="keyboardType_pwd" name="keyboardType_pwd" value="qwerty"><input type="hidden" id="fieldType_pwd" name="fieldType_pwd" value="password"><input type="hidden" id="transkeyUuid" name="transkeyUuid" value="069a846436e57d481a30e95dc571010afe7f8c5430f6d4e1e26722e32a407c96"><input type="hidden" id="transkey_pwd" name="transkey_pwd" value=""><input type="hidden" id="transkey_HM_pwd" name="transkey_HM_pwd" value=""><input type="hidden" id="Tk_pwd_checkbox_value" name="Tk_pwd_checkbox_value" value="e2e"></form>
+									</div>
+
+									<!-- [고도화] 회원가입 수정 및 위치 이동 -->
+									<div class="box_bot_txt green">
+										<div class="join_info_wrap">
+											<img src="../images/login_new/img_box_text.png" class="img_before" alt="고용24 회원가입">
+											<div class="ico_txt person">
+												<p class="box_bot_desc">아직 고용24 회원이 아니신가요? 회원가입 하고 고용정보망의 온라인 서비스를 편리하게 이용해 보세요.</p>
+												<div class="join_info">
+													<p class="s1_sb">개인회원 주요 서비스 안내</p>
+													<ul class="list">
+														<li class="s1_r">내 신청 조회</li>
+														<li class="s1_r">증명서 발급</li>
+														<li class="s1_r">일자리, 교육훈련, 자격증 추천</li>
+													</ul>
+												</div>
+												<button type="button" class="btn medium type01" id="btnIndvJoin"><span>회원가입 하기</span></button>
+											</div>
+											<img src="../images/login_new/img_join_chat.png" class="img_after" alt="">
+										</div>
+									</div>
+									<!-- //[고도화] 회원가입 수정 및 위치 이동 -->
+								</div>
+					
+								<div id="tab-panel02" class="box_tab-contents" role="tabpanel" hidden="true"> <!-- D: 활성화시 class[active] add -->
+					
+									<form id="entrLginForm" action="/cm/z/b/0210/openLginPage.do" method="POST" novalidate="novalidate">
+									<input type="hidden" id="brno" name="brno" value="">
+									<input type="hidden" id="entrCrtIdnoHsvl" name="entrCrtIdnoHsvl">
+									<input type="hidden" id="entrSignMsg" name="entrSignMsg">
+									<input type="hidden" id="entrVidMsg" name="entrVidMsg">
+									<input type="hidden" id="agetSsn" name="agetSsn" value="">
+									<input type="hidden" id="entrMberTyCd" name="entrMberTyCd" value="BE904">
+									<input type="hidden" id="entrCrfcMnCd" name="entrCrfcMnCd" value="">
+									<input type="hidden" id="refSite" name="refSite" value="">
+									<input type="hidden" id="refUrl" name="ssoRedirectUrl" value="">
+									<input type="hidden" id="sysSe" name="sysSe" value="">
+									<input type="hidden" id="ssn1" name="ssn1" value="">
+									<input type="hidden" id="ssn2" name="ssn2" value="">
+									<input type="hidden" id="concTyCd" name="concTyCd" value="">
+					
+									<div class="box_join_person">
+										<div class="box_form_login certification_btn_group  type4">
+											
+											<!-- [고도화] 기업 로그인 태그 수정 -->
+											<div class="group">
+												<div class="left">
+													<div class="box_value_chk">
+														<div class="box_radio-group">
+															<span>
+																<input type="radio" id="rdoEntrTy1" name="rdoEntrTy" value="BE904" checked="">
+																<label for="rdoEntrTy1">일반사업자</label>
+															</span>
+															
+															<span>
+																<input type="radio" id="rdoEntrTy2" name="rdoEntrTy" value="BE902">
+																<label for="rdoEntrTy2">사무대행기관</label>
+															</span>
+															<span>
+																<input type="radio" id="rdoEntrTy3" name="rdoEntrTy" value="BE9ZZ">
+																<label for="rdoEntrTy3">대리인</label>
+															</span>
+														</div>
+
+														
+														<ul class="box_form_table type2">
+															<!-- 일반사업자 -->
+															<li id="liNormal">
+																<div class="text_al">
+																	<h4>기업회원 로그인입니다.</h4>
+																	<p>일반사업자/사무대행기관/대리인 선택 후<br> 우측의 인증서로 로그인해 주세요.</p>
+																</div>
+															</li>
+															<!-- //일반사업자 -->
+									 
+															<!-- 사무대행기관 -->
+															<li id="liBplcManageNo" style="display:none">
+																<div class="flex_al">
+																	<p class="list_tit c_number"><label for="bplcManageNo">대상사업장관리번호<span class="essential"><i class="blind">필수</i></span></label></p>
+																	<div class="list_txt">
+																		<div class="box_table_group">
+																			<div class="cell">
+																				<span class="box_ipt">
+																					<input type="text" class="input_txt big" id="bplcManageNo" name="bplcManageNo" maxlength="11" onkeyup="input_limit_string(this,'/d');" placeholder="11자리 입력" title="사업장관리번호를 입력해 주세요.">
+																					<button type="reset" class="ico16_delete"><span class="blind">삭제</span></button>
+																				</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li id="liAgetSsn" style="display:none">
+																<div class="flex_al">
+																	<p class="list_tit c_number"><label for="agetBrde">대리인 주민등록번호<span class="essential"><i class="blind">필수</i></span></label></p>
+																	<div class="list_txt">
+																		<div class="box_table_group">
+									
+																			<div class="box_table_group box_email_area">
+																				<div class="cell"> <!-- D: error 일경우 class[error] add -->
+																					<span class="box_ipt">
+																						<input type="text" class="input_txt big" id="agetBrde" name="agetBrde" value="" maxlength="6" onkeyup="input_limit_string(this,'/d');" placeholder="앞자리 입력" title="생년월일을 입력해 주세요.">
+																						<button type="reset" class="ico16_delete"><span class="blind">삭제</span></button>
+																					</span>
+																				</div>
+																				<span class="txt_date-line">-</span>
+																				<div class="cell"> <!-- D: error 일경우 class[error] add -->
+																					<div class="cell_wrap">
+																						<span class="box_ipt">
+																							<input type="password" class="input_txt big" id="agetSsnSco" name="agetSsnSco" value="" maxlength="7" placeholder="뒷자리 입력" title="주민등록 뒷자리를 입력해 주세요" data-enc="on" data-tk-kbdtype="qwerty">
+																							<button type="reset" class="ico16_delete"><span class="blind">삭제</span></button>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+									
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<!-- //사무대행기관 -->
+									
+															<!-- 대리인 -->
+															<li id="liAgetSecu" style="display:none">
+																<div class="box_chk-group w100 flex_js_r ">
+																	<span>
+																		<input type="checkbox" name="agetSecu" id="agetSecu" autocomplete="off">
+																		<label for="agetSecu">키보드보안 적용</label>
+																	</span>
+																</div>
+															</li>
+									
+															<li id="liIsoaNo" style="display:none">
+																<div class="flex_al">
+																	<p class="list_tit c_number">사무대행기관번호<span class="essential"><i class="blind">필수</i></span></p>
+																	<div class="list_txt">
+																		<div class="box_table_group">
+																			<div class="cell">
+																				<span class="box_ipt">
+																					<input type="text" class="input_txt big" id="isoaNo" name="isoaNo" maxlength="10" placeholder="10자리 입력" title="사무대행기관번호를 입력해 주세요.">
+																					<button type="reset" class="ico16_delete"><span class="blind">삭제</span></button>
+																				</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<!-- //대리인 -->
+														</ul>
+													</div>
+												</div>
+
+												<!-- S: radio 버튼 클릭 시 contents -->
+												<div class="right">
+													<a href="javascript:void(0);" id="btnEntrCrt" name="btnEntrCrt" class="link-cmn">
+														<dl class="cert_list">
+															<dt>
+																<div class="btn big type02" ><span class="btn_ico certificate" title="새창 열림">공동인증서</span></div>
+															</dt> <!-- D: 선택시 class[active] -->
+															<dd>
+																<div class="cert_info">
+																	<ul>
+																		<li class="b1_r">사업자용 인증서를 사용해 주세요. <span class="point_color">*대표자 개인 인증서 사용 불가</span></li>
+																	</ul>
+																</div>
+															</dd>
+														</dl>
+													</a>
+													<a href="javascript:void(0);" id="btnEntrFinanCrt" name="btnEntrFinanCrt" class="link-bnk">
+														<dl class="cert_list">
+															<dt>
+																<div class="btn big type02" ><span class="btn_ico certificate">사업자용 금융인증서</span></div>
+															</dt> <!-- D: 선택시 class[active] -->
+															<dd>
+																<div class="cert_info">
+																	<ul>
+																		<li class="b1_r">사업자용 인증서를 사용해 주세요. </li>
+																	</ul>
+																</div>
+															</dd>
+														</dl>
+													</a>
+													<a href="javascript:void(0);" id="btnEntrEasyCrt" name="btnEntrEasyCrt" class="link-easy" style="display:none">
+														<dl class="cert_list">
+															<dt><div class="btn big type02" ><span class="btn_ico authentication" title="새창 열림">간편인증</span></div></dt>
+															<dd>
+																<div class="cert_info">
+																	<ul>
+																		<li class="b1_r">
+																			민간인증서를 이용하여 로그인 해 보세요.
+																			<span class="certification_box">
+																				<span class="btn kakao"><span class="blind">카카오톡으로 인증</span></span>
+																				<span class="btn kb_bank"><span class="blind">KB국민은행으로 인증</span></span>
+																				<span class="btn payco"><span class="blind">페이코로 인증</span></span>
+																				<span class="btn pass"><span class="blind">통신사패스 인증</span></span>
+																				<span class="btn samsung_pass"><span class="blind">삼성패스로 인증</span></span>
+																				<span class="btn naver"><span class="blind">네이버로 인증</span></span>
+																				<span class="btn shinhan_bank"><span class="blind">신한은행으로 인증</span></span>
+																				<span class="btn toss"><span class="blind">토스로 인증</span></span>
+																				<span class="btn banksalad"><span class="blind">뱅크샐러드 인증</span></span>
+																				<span class="btn hana_bank"><span class="blind">하나은행 인증</span></span>
+																				<span class="btn nh"><span class="blind">농협</span></span>
+						
+																			</span>
+																		</li>
+																	</ul>
+																</div>
+															</dd>
+														</dl>
+													</a>
+												</div>
+												<!-- E: radio 버튼 클릭 시 contents -->
+											</div>
+											<!-- //[고도화] 기업 로그인 태그 수정 -->
+											
+											
+											<!-- [고도화][기존 스크립트] 수정부분 있습니다. -->
+											<script>
+												/*기업회원 유형 선택 이벤트*/
+												$("input[name='rdoEntrTy']:radio").change(function() {
+													fn_setEntrLoginArea(this);
+												});
+
+												/*기업회원 유형별 로그인 영역 설정*/
+												this.fn_setEntrLoginArea = function(obj){
+
+												$("#entrMberTyCd").val(obj.value);
+
+												if(obj.value == 'BE904'){//일반사업자
+													$('#liNormal').css('display', 'block');
+													$('#liBplcManageNo').css('display', 'none');
+													$('#liIsoaNo').css('display', 'none');
+													$('#btnEntrEasyCrt').css('display', 'none');
+													$('#liAgetSsn').css('display', 'none');
+													$('#liAgetSecu').css('display', 'none');
+
+												}else if(obj.value == 'BE902'){ //사무대행기관
+													$('#liNormal').css('display', 'none');
+													$('#liBplcManageNo').css('display', 'block');
+													$('#liIsoaNo').css('display', 'block');
+													$('#btnEntrEasyCrt').css('display', 'none');
+													$('#liAgetSsn').css('display', 'none');
+													$('#liAgetSecu').css('display', 'none');
+												}else { //대리인
+													$('#liNormal').css('display', 'none');
+													$('#liBplcManageNo').css('display', 'block');
+													$('#liIsoaNo').css('display', 'none');
+													$('#btnEntrEasyCrt').css('display', 'flex'); /* 수정 */
+													$('#liAgetSsn').css('display', 'block');
+													$('#liAgetSecu').css('display', 'block');
+												}
+												};
+											</script>
+											<!-- //[고도화][기존 스크립트] - 수정부분 있습니다. -->
+
+											<!-- [고도화][삭제용] ui.js에 있음 - 기능작동이 안되서 여기에 작성 -->
+											<script>
+												$('.tab_title li').on('click', function () {
+													var onTab = $(this).attr('aria-controls');
+
+													$(this).parent('.tab_title').children('li').removeClass('active').children('button').attr('aria-selected', false);
+													$(this).parent('.tab_title').siblings('.tab_cont').children('.box_tab-contents').removeClass('active').attr({
+														'hidden': true
+														//, 'tabindex': -1
+													});
+													$(this).addClass('active').children('button').attr('aria-selected', true);
+													$('#' + onTab).addClass('active').attr({
+														'hidden': false
+														//, 'tabindex': 0
+													});
+												});
+											</script>
+											<!-- //[고도화][삭제용] ui.js에 있음 - 기능작동이 안되서 여기에 작성 -->
+											
+										</div>
+									</div>
+									<input type="hidden" id="keyIndex_agetSsnSco" name="keyIndex_agetSsnSco" value="74895c857da64479f51579b60dd57946b2822cd745b74df2248e069ffb8be1025c73c9249c2b41231e81d4231ff2e63151c10387fb6e7d4e809d27354f76c6bf91351ac723a52926fed0cb227479234aa7c90c4f84aacd2171c424ea88bc41e5cc959b6a986619c5d5cf9fd1ef6b3071c79509a6e2b1863a6bb9bbfcd41d2280166e860645b5fd8ca3fc649607c9ecb9fd3baf569de89b4efe5f07a386ea52eeb649496c86deaf05bd1fc213d22ab269edcc464604a6a67bcaac4c32daab0c48502a8d2559a6e108105fc503cd6458f1160b78e43a29f87643674dee76df2e62d1cdb8621e886aa300110fa17ffdf84f9c34ab9aa64b55c02fb51f42c5228d83"><input type="hidden" id="keyboardType_agetSsnSco" name="keyboardType_agetSsnSco" value="qwerty"><input type="hidden" id="fieldType_agetSsnSco" name="fieldType_agetSsnSco" value="password"><input type="hidden" id="transkeyUuid" name="transkeyUuid" value="069a846436e57d481a30e95dc571010afe7f8c5430f6d4e1e26722e32a407c96"><input type="hidden" id="transkey_agetSsnSco" name="transkey_agetSsnSco" value=""><input type="hidden" id="transkey_HM_agetSsnSco" name="transkey_HM_agetSsnSco" value=""></form>
+
+									<!-- [고도화] 회원가입 수정 및 위치 이동 -->
+									<div class="box_bot_txt blue">
+										<div class="join_info_wrap">
+											<img src="../images/login_new/img_box_text.png" class="img_before" alt="고용24 회원가입">
+											<div class="ico_txt person">
+												<p class="box_bot_desc">아직 고용24 회원이 아니신가요? 회원가입 하고 고용정보망의 온라인 서비스를 편리하게 이용해 보세요.</p>
+												<div class="join_info">
+													<p class="s1_sb">기업회원 주요 서비스 안내</p>
+													<ul class="list">
+														<li class="s1_r">신청 현황 조회</li>
+														<li class="s1_r">증명서 발급</li>
+														<li class="s1_r">지원금 사전 심사</li>
+													</ul>
+												</div>
+												<button type="button" class="btn medium type01" id="btnIndvJoin"><span>회원가입 하기</span></button>
+											</div>
+											<img src="../images/login_new/img_join_chat.png" class="img_after" alt="">
+										</div>
+									</div>
+									<!-- //[고도화] 회원가입 수정 및 위치 이동 -->
+								</div>
+							</div>
+						</div>
+
+					
+						<!-- 이중비밀번호 여부 체크 여부 컬럼 -->
+						<form id="lginMainForm" action="/cm/z/b/0210/openLginPage.do" method="POST">
+						<input id="pwdCfrmYn" name="pwdCfrmYn" type="hidden" value="N">
+						<input id="forwardUrl" name="forwardUrl" type="hidden" value="/cm/main.do">
+						<input id="keySecuYn" name="keySecuYn" type="hidden" value="">
+						<input id="curPageNo" name="curPageNo" type="hidden" value="00">
+						<input id="appendUrl" name="appendUrl" type="hidden" value="">
+						<input type="hidden" id="refSite" name="refSite" value="">
+						<input type="hidden" id="refUrl" name="refUrl" value="">
+						</form>
+					
+						<!-- 디지털원패스 form -->
+						<form id="onepassForm" name="onepassForm" method="POST">
+							<input type="hidden" id="serviceType" name="serviceType" value="LOGIN">
+							<input type="hidden" id="returnFun" name="returnFun">
+						</form>
+					
+					
+						<!-- 실명인증 form -->
+						<form id="rlnmCrfcForm" name="rlnmCrfcForm" method="POST">
+							<input type="hidden" id="indvMberPnm" name="indvMberPnm">
+							<input type="hidden" id="mberBrde" name="mberBrde">
+							<input style="display:none" type="password" id="mberScoSsn" name="mberScoSsn">
+					
+					<!--
+							<input type="hidden" id="redirectUrl" name="redirectUrl" />
+							<input type="hidden" id="failRedirectUrl" name="failRedirectUrl" />
+							<input style="display:none" type="checkbox" name="secuPwdYn" id="secuPwdYn" />
+							-->
+						</form>
+					
+					</div>
+			
+				</div>
+			</div>
+		</section>
+	
+		
+		
+		<!-- quick_menu -->
+		<div id="quick_menu" class="">
+			<div class="quick_tl"><span class="blind">quick menu</span></div>
+			<ul class="quick_menu_btn">
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/d/0190/retrieveInstSrchLstViewPost.do');">
+						<span class="quick_menu_txt">고용센터찾기</span>
+						<span class="quick_ico ico01"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/a/0130/selectBbttListPost.do');">
+						<span class="quick_menu_txt">자주하는 질문</span>
+						<span class="quick_ico ico02"></span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="fn_goPageUrl('/cm', 'EBG020000001691', '/c/d/0180/retrieveSiteEasyHpcmPost.do', 'EBM02', 'N', '')">
+						<span class="quick_menu_txt">이용안내</span>
+						<span class="quick_ico ico03"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/f/1100/selecPolicyListPost.do');">
+						<span class="quick_menu_txt">정책/제도</span>
+						<span class="quick_ico ico04"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'EBG020000001581', '/c/c/0120/selectUtzeInqrLstPost.do', 'EBM02', 'N');">
+						<span class="quick_menu_txt">고객센터</span>
+						<span class="quick_ico ico05"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/cm', 'x', '/c/f/1200/selecSimulateCalcPost.do');">
+						<span class="quick_menu_txt">모의계산</span>
+						<span class="quick_ico ico06"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" onclick="fn_goPageUrl('/wk', 'x', '/p/a/5110/retrievePopJobsSalary.do');">
+						<span class="quick_menu_txt">직종별 임금정보</span>
+						<span class="quick_ico ico07"></span>
+					</a>
+				</li>
+			</ul>
+			<!-- <div class="quick_chatbot">
+				<a href="#none" onclick="alert('서비스 준비중')"><span class="blind">챗봇</span></a>
+			</div>
+				-->
+		</div>
+		<!-- //quick_menu  -->
+		<!-- 좌하단 fixed btn -->
+		<div class="quick_top">
+			
+			<a href="#none" class="btn_quick_login">로그인</a>
+			
+			<div class="quick_login_guide">
+		
+			</div>
+			<!-- // quick_login_guide -->
+			<div class="quick_login_guide login_guide" style="display: none;">
+				<p>지금, 고용24에 <span>로그인</span> 하시면 다음과 같은 서비스를 받을 수 있습니다.
+					<a href="#none" class="btn medium r30 type01" onclick="fn_goPageUrl('/cm', '1', '/z/b/0210/openLginPagePost.do');">로그인</a>
+				</p>
+				<ul>
+					<li>
+						<span class="ico ico01"></span>
+						<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/d/b/0000/selectCvplRqutListPost.do');">내 신청 조회</a></span>
+					</li>
+					<li>
+						<span class="ico ico02"></span>
+						<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/d/a/0110/retrieveCrtfIssuRqutCrstLstPost.do');">증명서 발급</a></span>
+					</li>
+					<li>
+						<span class="ico ico03"></span>
+						<span><a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/b/b/0410/selectBpRcvSvcListPost.do');">놓치고 있는 혜택 확인</a></span>
+					</li>
+					<li>
+						<span class="ico ico04"></span>
+						
+							
+								<span><a href="#none" onclick="fn_goPageUrl('/cm', 'EBG020000000495', 'https://www.work.go.kr/jobCare/introExp/jobCareIntroExp.do');">일자리, 교육훈련, 자격증 추천</a></span>
+							
+							
+						
+					</li>
+				</ul>
+		
+				<button type="button" class="btn_close"><span class="blind">닫기</span></button>
+			</div>
+			<!-- // login_guide -->
+		
+			<a href="#none" class="btn_quick_top"><span class="blind">맨위로 가기</span></a>
+		</div>
+		<!-- //좌하단 fixed btn -->
+	
+	
+		<footer id="footer">
+			<div class="site">
+				<div class="area">
+					<button type="button" class="btnsite btn_family">
+						<span class="text">패밀리사이트</span>
+						<span class="icon"></span>
+					</button>
+					<button type="button" class="btnsite btn_related">
+						<span class="text">유관기관</span>
+						<span class="icon"></span>
+					</button>
+
+					<div class="site_list">
+						<div class="list list--family" style="display: none;">
+							<ul>
+								<li class="item"><a href="https://www.work.go.kr" target="_blank">워크넷</a></li>
+								<li class="item"><a href="https://www.hrd.go.kr" target="_blank">직업훈련포털</a></li>
+								<li class="item"><a href="https://www.eps.go.kr" target="_blank">외국인고용</a></li>
+								<li class="item"><a href="https://www.kua.go.kr" target="_blank">국민취업지원제도</a></li>
+								<li class="item"><a href="https://eis.work.go.kr" target="_blank">고용행정통계</a></li>
+								<li class="item"><a href="https://www.workplus.go.kr" target="_blank">고용복지센터</a></li>
+								<li class="item"><a href="https://www.worktogether.or.kr" target="_blank">장애인고용포털</a></li>
+								<li class="item"><a href="https://www.work.go.kr/cyberedu/main.do" target="_blank">사이버진로교육센터</a></li>
+								<li class="item"><a href="https://saeil.mogef.go.kr/hom/HOM_Main.do" target="_blank">여성새로일하기센터</a></li>
+								<li class="item"><a href="https://www.gasarang.go.kr/hpgsMain.do" target="_blank">가사랑</a></li>
+							</ul>
+						</div>
+						<div class="list list--related" style="display: none;">
+							<ul>
+								<li class="item"><a href="https://www.4insure.or.kr/ins4/ptl/Main.do" target="_blank">4대사회보험정보연계센터</a></li>
+								<li class="item"><a href="https://www.comwel.or.kr" target="_blank">근로복지공단</a></li>
+								<li class="item"><a href="https://www.hrdkorea.or.kr" target="_blank">한국산업인력공단</a></li>
+								<li class="item"><a href="https://ncs.go.kr" target="_blank">직무능력표준</a></li>
+								<li class="item"><a href="https://c.q-net.or.kr" target="_blank">CQ넷</a></li>
+								<li class="item"><a href="https://www.koreatech.ac.kr" target="_blank">한국기술교육대학교</a></li>
+								<li class="item"><a href="https://www.kopo.ac.kr" target="_blank">한국폴리텍대학</a></li>
+								<li class="item"><a href="https://www.hikorea.go.kr" target="_blank">하이코리아</a></li>
+								<li class="item"><a href="https://eps.hrdkorea.or.kr/h2/main/main.do" target="_blank">외국국적동포(H-2)취업교육홈페이지</a></li>
+								<li class="item"><a href="http://www.hugkorea.or.kr" target="_blank">외국인력상담센터</a></li>
+								<li class="item"><a href="https://www.kosha.or.kr" target="_blank">안전보건공단</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('.site .btnsite').on('click', function() {
+					var _btnIndex = $(this).index();
+					$('.site_list >div').slideUp(200);
+					if($('.site_list >div').eq(_btnIndex).is(':visible') === false) {
+						$('.site .btnsite').removeClass('active').removeAttr('title')
+						$(this).addClass('active').attr('title', '펼쳐짐')
+
+						$('.site_list >div').eq(_btnIndex).slideDown(200);
+					} else {
+						$('.site .btnsite').removeClass('active').removeAttr('title')
+					}
+				});
+			</script>
+
+			<div class="group">
+				<div class="area">
+					<div class="logos">
+						<a href="http://www.moel.go.kr" target="_blank"><img src="../images/main_new/footer_ci01.png" alt="고용노동부"></a>
+						<a href="https://www.keis.or.kr" target="_blank"><img src="../images/main_new/footer_ci02.png" alt="한국고용정보원"></a>
+
+						
+					</div>
+					<div class="flex">
+						<div class="flex_left">
+							<p>(27740) 충청북도 음성군 맹동면 태정로 6 한국고용정보원</p>
+							<p><strong>홈페이지 전산 이용 문의 1577-7114</strong> (유료, 한국고용정보원 고객상담센터, 평일 09시 ~ 18시)</p>
+							<p><strong>고용·노동 분야 제도 문의 국번없이 1350</strong> (유료, 고용노동부 고객상담센터, 평일 09시 ~ 18시)</p>
+							<p class="etc">
+								고용24는 <strong>통신판매중개자</strong>이며, 통신판매의 당사자가 아닙니다.<br>
+								상품(훈련), 상품(훈련)정보, 거래에 관한 <strong>의무와 책임은 판매자(훈련기관)</strong>에게 있습니다.
+							</p>
+						</div>
+						<div class="flex_right">
+							<div class="guide">
+								<a href="#" role="button">
+									<span>이용안내</span>
+									<i class="icon"></i>
+								</a>
+								<a href="#" role="button">
+									<span>원격지원</span>
+									<i class="icon"></i>
+								</a>
+							</div>
+							<div class="sns" style="display: none;">
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-youtube.svg" alt="유튜브"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-instagram.svg" alt="인스타그램"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-naverblog.svg" alt="블로그"></a>
+								<a href="#" target="_blank" title="새창 열림"><img src="../images/main_new/img-facebook.svg" alt="페이스북"></a>
+							</div>
+						</div>
+					</div>
+					<div class="control">
+						<div class="links">
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveUtzeStptPost.do')">이용약관</a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/selectBbttListPost.do')"><strong class="point_color02">개인정보처리방침</strong></a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveEmailAdrPrssPlcyPost.do')">이메일무단수집거부</a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0130/retrieveCpyrPolyPost.do')">저작권보호정책</a>
+							<a href="#none" onclick="fn_goPageUrl('/cm', 'X', '/e/a/0110/selectOpenApiIntroPost.do')">오픈API 서비스</a>
+							<a href="#none" onclick="fn_goPageUrl('/wk', 'EBG020000001790', '/s/a/1100/loginForm.do');">화상상담 관리자</a>
+							<a href="javascript:void(0)" onclick="fn_goPageUrl('/cm', 'X', '/c/d/0150/retrieveStmpPost.do')">사이트맵</a>
+						</div>
+						<span class="copyright">© 2024 Ministry of Employment and Labor, Korea Employment Information Service. All rights reserved.</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="dimmed"></div>
+</html>

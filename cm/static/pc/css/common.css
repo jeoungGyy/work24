@@ -3000,3 +3000,110 @@ input.error_chk_fun[type="checkbox"]:checked:after {content: none;}
 #footer .control .links a { display: block; padding: 16px 0;}
 #footer .control .links a ~ a { margin-left: 24px;}
 #footer .control .copyright { font-size: 14px; color: #555;}
+
+
+/* 현재위치 CSS 추가 */
+.location_list > li > a span { position: relative; padding-right: 18px; background: url(https://m.work24.go.kr/cm/static/images/ico16_ui_checked03.svg) no-repeat right 0;}
+.location ul li:not(.location_list > li)::after { background: url(../images/login_new/ico16_line_right_gray.png) no-repeat;}
+.location ul li select, 
+.location ul li .btn_downgrill { background: url(../images/login_new/arrow16_circle_down.png) no-repeat right;}
+.location .layer_search { top: 40px !important;}
+
+/* 로그인 CSS 추가 */
+.login--style .box_notice_wrap { margin-bottom: 40px !important;}
+.login--style .box_notice_wrap a { color: #4D65E1; text-decoration: underline;}
+.login--style .tab_wrap.line_type .tab_title { border: none;}
+.login--style .tab_wrap.line_type .tab_title li button { border: 1px solid #ddd;}
+.login--style .tab_wrap.line_type .tab_title li.active button { border-color: #4D65E1; background-color: #4D65E1;}
+.login--style .tab_wrap.line_type .tab_title li.active button span { color: #fff;}
+.login--style .box_join_person { display: flex; flex-wrap: wrap; max-width: initial !important; padding: 0;}
+.login--style .box_join_person a { display: flex; align-items: center; width: calc(50% - 16px); height: 128px; margin: 16px 0 0 16px; padding: 0 32px; border: 3px solid #F5F5F5; background-color: #F5F5F5; border-radius: 24px; transition: all ease-out .2s;}
+.login--style .box_join_person a::before { content: ''; display: block; width: 60px; height: 60px; margin-right: 24px;}
+.login--style .box_join_person a.link-bnk::before { background: url(../images/login_new/ico60_join1.png) no-repeat;}
+.login--style .box_join_person a.link-cmn::before { background: url(../images/login_new/ico60_join2.png) no-repeat;}
+.login--style .box_join_person a.link-easy::before { background: url(../images/login_new/ico60_join3.png) no-repeat;}
+.login--style .box_join_person a.link-easy .certification_box { display: block; margin: 4px 0 0 0;}
+.login--style .box_join_person a.link-easy .certification_box .btn { width: 20px; height: 20px; border-radius: 4px; background-size: 20px;}
+
+.login--style .box_join_person a.link-ipin::before { background: url(../images/login_new/ico60_join4.png) no-repeat;}
+.login--style .box_join_person a.link-id::before { background: url(../images/login_new/ico60_join5.png) no-repeat;}
+.login--style .box_join_person a::after { content: ''; display: block; width: 32px; height: 32px; margin-left: 24px; background: url(../images/login_new/ico32_join_arrow.png) no-repeat;}
+.login--style .box_join_person a:hover { border-color: #4D65E1; background-color: rgba(77, 101, 225, 0.04);}
+.login--style .box_join_person a:hover .btn_ico { color: #4D65E1; text-decoration: underline;}
+.login--style .box_join_person a:hover .b1_r { color: #4D65E1;}
+.login--style .box_join_person .btn { background-color: transparent;}
+.login--style .box_join_person .btn_ico { padding-left: 0; font-size: 18px; font-weight: 600; line-height: 28px;}
+.login--style .box_join_person .btn_ico.certificate:before { display: none !important;}
+.login--style .box_join_person .b1_r { font-size: 14px; letter-spacing: -0.8px; line-height: 24px;}
+.login--style .box_join_person .b1_r:before { display: none !important;}
+.login--style .tab_cont .certification_btn_group .cert_list { display: block; justify-content: initial; flex: 1; gap: initial;}
+.login--style .tab_cont .certification_btn_group.type3.box_btn_wrap { gap: initial; margin: -16px 0 0 -16px;}
+.login--style .tab_cont .certification_btn_group.type3 .cert_list dd { height: initial; margin-top: 4px; border: none; background-color: transparent;}
+.login--style .tab_cont .certification_btn_group.active_2 [class^='btn'].big { border: none;}
+.login--style .tab_cont .certification_btn_group.type3 .cert_list dt { height: initial;}
+.login--style .tab_cont .certification_btn_group.type3.row2 [class^='btn'].big { height: initial; padding: 0;}
+.login--style .tab_cont .certification_btn_group.type3 .cert_info { padding: 0;}
+.login--style .tab_cont .certification_btn_group.active_2 [class^='btn']:not(li *):hover { color: initial; background-color: transparent;}
+.login--style .box_join_person .btn.kakao { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_kakao.png);}
+.login--style .box_join_person .btn.kb_bank { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_KB.png);}
+.login--style .box_join_person .btn.payco { background-image: url(../images/login_new/logo80_80_payco.png);}
+.login--style .box_join_person .btn.pass { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_pass.png);}
+.login--style .box_join_person .btn.samsung_pass { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_Samsungpass.png);}
+.login--style .box_join_person .btn.naver { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_naver.png);}
+.login--style .box_join_person .btn.shinhan_bank { background-image: url(../images/login_new/logo80_80_shinhan.png);}
+.login--style .box_join_person .btn.toss { background-image: url(../images/login_new/logo80_80_toss.png);}
+.login--style .box_join_person .btn.banksalad { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_banksalad.png);}
+.login--style .box_join_person .btn.hana_bank { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_hana.png);}
+.login--style .box_join_person .btn.nh { background-image: url(https://m.work24.go.kr/cm/static/images/logo80_80_NH.png);}
+.login--style .point_color { font-weight: 600;}
+
+#contents .login--style .box_bot_txt { position: relative; margin-top: 60px; padding: 32px 24px 32px 60px; border: none;}
+#contents .login--style .box_bot_txt .join_info_wrap { display: flex; flex-wrap: initial; justify-content: initial;}
+#contents .login--style .box_bot_txt .img_before { width: 146px; height: 84px; margin-right: 40px;}
+#contents .login--style .box_bot_txt .img_after { position: absolute; right: 0; top: -39px;}
+#contents .login--style .box_bot_txt .ico_txt { display: block;}
+#contents .login--style .box_bot_txt .join_info { flex: 1; width: initial; margin: 8px 0 0 0;}
+#contents .login--style .box_bot_txt .join_info .list { display: flex; align-items: center; gap: initial; margin-top: 4px;}
+#contents .login--style .box_bot_txt .join_info .list li ~ li { margin-left: 8px;}
+#contents .login--style .box_bot_txt .join_info .list > li { margin-bottom: 8px;}
+#contents .login--style .box_bot_txt .join_info .list > li::before { display:inline-block;content:"";width:4px;height:4px;border-radius:4px;margin-right:8px;vertical-align:middle; margin-top: -2px; background-color: #555;}
+#contents .login--style .box_bot_txt .ico_txt.person::before { display: none;}
+#contents .login--style .box_bot_txt .box_bot_desc { margin-left: 0; line-height: 28px;}
+#contents .login--style .box_bot_txt .btn { display: flex; justify-content: center; align-items: center; height: 40px; border: 1px solid #ddd; background-color: #fff; border-radius: 20px;}
+#contents .login--style .box_bot_txt .btn span { color: #333; font-weight: 600;}
+#contents .login--style .box_bot_txt.green { background-color: #E8FCF0;}
+#contents .login--style .box_bot_txt.blue { background-color: #F3F8FF;}
+
+.login--style .box_join_person .box_form_login { margin: 0; padding: 0; border: none;}
+.login--style .box_form_login.type4 .box_value_chk { margin: 0; text-align: center;}
+.login--style .tab_cont .group { display: flex; justify-content: space-between;}
+.login--style .tab_cont .left { width: calc(50% - 8px); padding: 40px 32px; border: 1px solid #ddd; border-radius: 8px;}
+.login--style .tab_cont .left .box_radio-group { justify-content: center; flex-wrap: initial;}
+.login--style .tab_cont .left .box_radio-group input { position: relative; width: 22px; height: 22px; appearance: none; background-color: #fff; border: 1px solid #999; border-radius: 50%; transition: all ease-out .2s;}
+.login--style .tab_cont .left .box_radio-group input:checked { border-color: #4D65E1; background-color: #4D65E1;}
+.login--style .tab_cont .left .box_radio-group input:checked::before { content: ''; display: block; position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px; background-color: #fff; border-radius: 50%;}
+.login--style .tab_cont .left .text_al { margin-top: 32px; padding-top: 19px; text-align: center;}
+.login--style .tab_cont .left .text_al h4 { justify-content: center;}
+.login--style .tab_cont .left .text_al p { margin-top: 8px; color: #555; line-height: 28px;}
+.login--style .tab_cont .left .flex_al { display: block;}
+.login--style .tab_cont .left .list_txt { max-width: 100% !important; margin-top: 8px;}
+.login--style .tab_cont .left .list_tit { max-width: 100% !important; min-width: 100% !important; margin: 0; padding: 0; text-align: left;}
+.login--style .tab_cont .left .essential { display: none;}
+.login--style .tab_cont .left .c_number:before { display: none;}
+.login--style .tab_cont .left label { font-weight: 600;}
+.login--style .tab_cont .left .box_form_table li { margin-top: 32px;}
+.login--style .tab_cont .left .box_form_table li#liIsoaNo { padding-bottom: 57px;}
+.login--style .tab_cont .left .box_chk-group { display: block; margin: -18px 0 0 0; text-align: left;}
+.login--style .tab_cont .left .box_chk-group >span { display: block;}
+.login--style .tab_cont .left .txt_date-line { margin: 8px 5px 0;}
+.login--style .tab_cont .left .box_email_area .cell { width: calc(50% - 7px);}
+.login--style .tab_cont .right { width: calc(50% - 8px); margin: 0;}
+.login--style .tab_cont .right a { width: 100%; margin: 0;}
+.login--style .tab_cont .right a .big { min-width: inherit; height: initial; margin: 0; padding: 0; border: none;}
+.login--style .tab_cont .right a ~ a { margin-top: 16px;}
+
+
+
+
+
+
