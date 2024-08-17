@@ -5044,12 +5044,12 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 	- [고도화] common 신규 CSS
 */
 
-.bottom_layer .title { font-size: 18px; font-weight: 600; line-height: 28px;}
+.bottom_layer .title { font-size: 1.125rem; font-weight: 600; line-height: 1.75rem;}
 
-.quick_top { position:fixed;right:12px;bottom:82px;z-index:10}
-.quick_top a.btn_quick_top { display: flex; justify-content: center; align-items: center; width:40px;height:40px; background-color: #fff; border-radius: 50%; box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.08);}
-.quick_top a.btn_quick_top::after { content: ''; display: block; width: 24px; height: 24px; background:url("../images/main_new/btn_quick_top.svg") no-repeat;}
-.quick_top a.btn_quick_login{display: flex; width: 60px; height: 60px; margin-bottom: 24px; border-radius: 50%;color: var(--col_body); background-color: var(--col_green); font-weight: 600;}
+.quick_top { position:fixed;right:0.75rem;bottom:5.125rem;z-index:10}
+.quick_top a.btn_quick_top { display: flex; justify-content: center; align-items: center; width:2.5rem;height:2.5rem; background-color: #fff; border-radius: 50%; box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.08);}
+.quick_top a.btn_quick_top::after { content: ''; display: block; width: 1.5rem; height: 1.5rem; background:url("../images/main_new/btn_quick_top.svg") no-repeat;}
+.quick_top a.btn_quick_login{display: flex; width: 3.75rem; height: 3.75rem; margin-bottom: 1.5rem; border-radius: 50%;color: var(--col_body); background-color: var(--col_green); font-weight: 600;}
 .company .quick_top a.btn_quick_login {color: var(--col_white); background-color: var(--col_blue);}
 
 .contents .swiper-button-disabled { opacity: 0 !important;}
@@ -5061,71 +5061,71 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 .login--style .ico24_finance_certification { background: url(../images/login_new/ico24_join3.svg) no-repeat;}
 .login--style .ico24_finance_ipin { background: url(../images/login_new/ico24_join4.svg) no-repeat;}
 .login--style .ico24_finance_lock { background: url(../images/login_new/ico24_join5.svg) no-repeat;}
-.login--style .tab_menu { margin-top: 24px;}
+.login--style .tab_menu { margin-top: 1.5rem;}
 .login--style .tab_menu > ul { padding-right: 0;}
-.login--style .tab_menu > ul > li button { padding: 11px 24px;}
-.login--style .certification_type li a { height: 64px !important; border: none; background-color: #F5F5F5;}
+.login--style .tab_menu > ul > li button { padding: 0.6875rem 1.5rem;}
+.login--style .certification_type li a { height: 4rem !important; border: none; background-color: #F5F5F5;}
 .login--style .certification_type li a .txt { font-weight: 600;}
-.login--style .certification_type li a.link-easy .ico24_finance_certification { width: 24px;}
-.login--style .certification_type li a.link-easy .txt { width: 103px;}
-.login--style .certification_type li .ico_logo { display: flex; flex-wrap: wrap; flex: 1; margin: -4px 0 0 -4px;}
-.login--style .certification_type li .ico_logo i { display: block; width: 20px; height: 20px; margin: 4px 0 0 4px;}
-.login--style .certification_type li .ico_logo i.ico_kakao { background: url(../images/login_new/logo80_80_kakao.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_kb { background: url(../images/login_new/logo80_80_kb.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_payco { background: url(../images/login_new/logo80_80_payco.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_pass { background: url(../images/login_new/logo80_80_pass.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_samsungpass { background: url(../images/login_new/logo80_80_samsungpass.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_naver { background: url(../images/login_new/logo80_80_naver.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_shinhan { background: url(../images/login_new/logo80_80_shinhan.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_toss { background: url(../images/login_new/logo80_80_toss.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_banksalad { background: url(../images/login_new/logo80_80_banksalad.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_hana { background: url(../images/login_new/logo80_80_hana.png) no-repeat; background-size: 20px;}
-.login--style .certification_type li .ico_logo i.ico_nh { background: url(../images/login_new/logo80_80_nh.png) no-repeat; background-size: 20px;}
+.login--style .certification_type li a.link-easy .ico24_finance_certification { width: 1.5rem;}
+.login--style .certification_type li a.link-easy .txt { width: 6.4375rem;}
+.login--style .certification_type li .ico_logo { display: flex; flex-wrap: wrap; flex: 1; margin: -0.25rem 0 0 -0.25rem;}
+.login--style .certification_type li .ico_logo i { display: block; width: 1.25rem; height: 1.25rem; margin: 0.25rem 0 0 0.25rem;}
+.login--style .certification_type li .ico_logo i.ico_kakao { background: url(../images/login_new/logo80_80_kakao.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_kb { background: url(../images/login_new/logo80_80_kb.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_payco { background: url(../images/login_new/logo80_80_payco.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_pass { background: url(../images/login_new/logo80_80_pass.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_samsungpass { background: url(../images/login_new/logo80_80_samsungpass.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_naver { background: url(../images/login_new/logo80_80_naver.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_shinhan { background: url(../images/login_new/logo80_80_shinhan.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_toss { background: url(../images/login_new/logo80_80_toss.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_banksalad { background: url(../images/login_new/logo80_80_banksalad.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_hana { background: url(../images/login_new/logo80_80_hana.png) no-repeat; background-size: 1.25rem;}
+.login--style .certification_type li .ico_logo i.ico_nh { background: url(../images/login_new/logo80_80_nh.png) no-repeat; background-size: 1.25rem;}
 .login--style .certification_type.h70 li { height: initial;}
 .login--style .certification_type.h70 li a { height: initial;}
 .login--style .certification_type li { margin-top: 0;}
-.login--style .certification_type li ~ li { margin-top: 8px;}
-.login--style .mt_sm { margin-top: 24px !important;}
-.login--style .certification_type_h4 { margin-top: 16px; font-size: 14px; line-height: 24px;}
-.login--style .certification_type--style { margin-top: 8px;}
-.login--style .border_box { padding:  20px 16px 16px;}
-.login--style .border_box.mt_default--style { margin-top: 8px;}
+.login--style .certification_type li ~ li { margin-top: 0.5rem;}
+.login--style .mt_sm { margin-top: 1.5rem !important;}
+.login--style .certification_type_h4 { margin-top: 1rem; font-size: 0.875rem; line-height: 1.5rem;}
+.login--style .certification_type--style { margin-top: 0.5rem;}
+.login--style .border_box { padding:  1.25rem 1rem 1rem;}
+.login--style .border_box.mt_default--style { margin-top: 0.5rem;}
 .login--style .list_style.line li { padding-left: 0;}
 .login--style .list_style.line li::before { display: none;}
-.login--style .list_style.line li b { display: block; position: relative; margin-bottom: 4px; padding-left: 16px; font-size: 14px; font-weight: 600;}
-.login--style .list_style.line li b::before { content: ""; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #555; display: inline-block; position: absolute; top: 6px; left: 3px;}
+.login--style .list_style.line li b { display: block; position: relative; margin-bottom: 0.25rem; padding-left: 1rem; font-size: 0.875rem; font-weight: 600;}
+.login--style .list_style.line li b::before { content: ""; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #555; display: inline-block; position: absolute; top: 6px; left: 0.1875rem;}
 .login--style .list_style.line li strong { color: #EE2E62;}
-.login--style .list_style.line li:not(:last-child) { padding-bottom: 16px;}
-.login--style .list_style.line li:not(:last-child) + li { margin-top: 16px;}
-.login--style .list_style.blet--style { margin-left: 3px;}
-.login--style .list_style.blet--style li { padding-left: 12px;}
-.login--style .list_style.blet--style li ~ li { margin-top: 8px;}
-.login--style .list_style.blet--style li a { font-size: 14px;}
-.login--style .divider { margin-bottom: 12px;}
+.login--style .list_style.line li:not(:last-child) { padding-bottom: 1rem;}
+.login--style .list_style.line li:not(:last-child) + li { margin-top: 1rem;}
+.login--style .list_style.blet--style { margin-left: 0.1875rem;}
+.login--style .list_style.blet--style li { padding-left: 0.75rem;}
+.login--style .list_style.blet--style li ~ li { margin-top: 0.5rem;}
+.login--style .list_style.blet--style li a { font-size: 0.875rem;}
+.login--style .divider { margin-bottom: 0.75rem;}
 .login--style .divider:not(:last-child)::after { display: none;}
-.login--style .box_bot_txt { position: relative; padding: 26px 16px 20px; border-radius: 8px;}
+.login--style .box_bot_txt { position: relative; padding: 1.625rem 1rem 1.25rem; border-radius: 0.5rem;}
 .login--style .box_bot_txt.green { background-color: #E8FCF0;}
 .login--style .box_bot_txt.blue { background-color: #F3F8FF;}
-.login--style .box_bot_txt .box_bot_desc { margin-top: 12px; font-size: 14px; line-height: 24px;}
-.login--style .box_bot_txt .join_info { margin-top: 16px;}
-.login--style .box_bot_txt .s1_sb { font-size: 14px; font-weight: 600; line-height: 24px;}
-.login--style .box_bot_txt .list li { position: relative; padding-left: 16px; font-size: 14px; color: #555; line-height: 24px;}
-.login--style .box_bot_txt .list li ~ li { margin-top: 4px;}
-.login--style .box_bot_txt .list li::before { content: ""; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #555; display: inline-block; position: absolute; top: 9px; left: 3px;}
-.login--style .box_bot_txt .btn { display: flex; justify-content: center; align-items: center; height: 40px; margin-top: 24px; border: 1px solid #ddd; background-color: #fff; border-radius: 4px;}
+.login--style .box_bot_txt .box_bot_desc { margin-top: 0.75rem; font-size: 0.875rem; line-height: 1.5rem;}
+.login--style .box_bot_txt .join_info { margin-top: 1rem;}
+.login--style .box_bot_txt .s1_sb { font-size: 0.875rem; font-weight: 600; line-height: 1.5rem;}
+.login--style .box_bot_txt .list li { position: relative; padding-left: 1rem; font-size: 0.875rem; color: #555; line-height: 1.5rem;}
+.login--style .box_bot_txt .list li ~ li { margin-top: 0.25rem;}
+.login--style .box_bot_txt .list li::before { content: ""; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: #555; display: inline-block; position: absolute; top: 0.5625rem; left: 0.1875rem;}
+.login--style .box_bot_txt .btn { display: flex; justify-content: center; align-items: center; height: 2.5rem; margin-top: 1.5rem; border: 1px solid #ddd; background-color: #fff; border-radius: 0.25rem;}
 .login--style .box_bot_txt .btn span { font-size: 16px; font-weight: 600; color: #333;}
-.login--style .box_bot_txt .img_after { position: absolute; right: 9px; bottom: 84px; width: 118px; height: 80px;}
-.login--style .certification_type + .certification_type { margin-top: 8px;}
+.login--style .box_bot_txt .img_after { position: absolute; right: 0.5625rem; bottom: 84px; width: 7.375rem; height: 5rem;}
+.login--style .certification_type + .certification_type { margin-top: 0.5rem;}
 
-.login--style .tab_radio { margin-top: 24px !important;}
+.login--style .tab_radio { margin-top: 1.5rem !important;}
 .login--style .tab_radio .radio_area label::after { display: none;}
-.login--style .tab_radio .radio_area label::before { width: 22px; height: 22px;}
-.login--style .tab_radio .radio_area input:checked + label::after  {   display: block; content: ""; width: 12px; height: 12px; background: #fff; border-radius: 50%; position: absolute; top: 5px; left: 5px;}
-.login--style .tab_radio_content { margin-top: 24px;}
+.login--style .tab_radio .radio_area label::before { width: 1.375rem; height: 1.375rem;}
+.login--style .tab_radio .radio_area input:checked + label::after  {   display: block; content: ""; width: 0.75rem; height: 0.75rem; background: #fff; border-radius: 50%; position: absolute; top: 0.3125rem; left: 0.3125rem;}
+.login--style .tab_radio_content { margin-top: 1.5rem;}
 .login--style .tab_radio_content .required::after { display: none;}
 .login--style .tab_radio_content .mt_mini { margin-top: 0 !important;}
 .login--style .tab_radio_content .input_btn.btn_ico .id_form { gap: 0; width: 100%;}
-.login--style .tab_radio_content .id_form > span { width: 21px;}
+.login--style .tab_radio_content .id_form > span { width: 1.3125rem;}
 .login--style .tab_radio_content label { color: #333;}
 
 
