@@ -3014,10 +3014,13 @@ input.error_chk_fun[type="checkbox"]:checked:after {content: none;}
 .login--style .box_notice_wrap a { color: #4D65E1; text-decoration: underline;}
 .login--style .tab_wrap.line_type .tab_title { border: none;}
 .login--style .tab_wrap.line_type .tab_title li button { border: 1px solid #ddd;}
-.login--style .tab_wrap.line_type .tab_title li.active button { border-color: #4D65E1; background-color: #4D65E1;}
+.login--style .tab_wrap.line_type .tab_title li button#btnArea01 { border-radius: 8px 0 0 8px;}
+.login--style .tab_wrap.line_type .tab_title li button#btnArea02 { border-radius: 0 8px 8px 0;}
+.login--style .tab_wrap.line_type .tab_title li.active button { border-color: #4D65E1; border: none; background-color: #4D65E1;}
 .login--style .tab_wrap.line_type .tab_title li.active button span { color: #fff;}
+.login--style .tab_wrap.line_type .tab_title li.active button span::after { display: none;}
 .login--style .box_join_person { display: flex; flex-wrap: wrap; max-width: initial !important; padding: 0;}
-.login--style .box_join_person a { display: flex; align-items: center; width: calc(50% - 16px); height: 128px; margin: 16px 0 0 16px; padding: 0 32px; border: 3px solid #F5F5F5; background-color: #F5F5F5; border-radius: 24px; transition: all ease-out .2s;}
+.login--style .box_join_person a { display: flex; align-items: center; width: calc(50% - 16px); height: 128px; margin: 16px 0 0 16px; padding: 0 32px; border: 3px solid #F5F5F5; background-color: #F5F5F5; border-radius: 8px; transition: all ease-out .2s;}
 .login--style .box_join_person a::before { content: ''; display: block; width: 60px; height: 60px; margin-right: 24px;}
 .login--style .box_join_person a.link-bnk::before { background: url(../images/login_new/ico60_join1.png) no-repeat;}
 .login--style .box_join_person a.link-cmn::before { background: url(../images/login_new/ico60_join2.png) no-repeat;}
@@ -3073,6 +3076,8 @@ input.error_chk_fun[type="checkbox"]:checked:after {content: none;}
 #contents .login--style .box_bot_txt .btn span { color: #333; font-weight: 600;}
 #contents .login--style .box_bot_txt.green { background-color: #E8FCF0;}
 #contents .login--style .box_bot_txt.blue { background-color: #F3F8FF;}
+
+.login--style .tab_wrap .tab_title li button span { background: transparent;}
 
 .login--style .box_join_person .box_form_login { margin: 0; padding: 0; border: none;}
 .login--style .box_form_login.type4 .box_value_chk { margin: 0; text-align: center;}

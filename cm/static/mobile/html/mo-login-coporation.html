@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko" class="test">
-    <<head>
+    <head>
         <!-- 헤더에 csrf토큰 -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -532,11 +532,11 @@
 			<ul>
 				
 				<li>
-					<button type="button" id="btnArea01" data-key="tab-panel01">회원(개인)</button>
+					<button type="button" id="btnArea01" data-key="tab-panel01">개인회원</button>
 				</li>
 				
 				<li class="on">
-					<button type="button" id="btnArea02" data-key="tab-panel02">회원(기업)</button>
+					<button type="button" id="btnArea02" data-key="tab-panel02">기업회원</button>
 				</li>
 				
 			</ul>
@@ -546,7 +546,7 @@
 		<!-- .tab_menu의 data-target을 id로 -->
 		<div class="tab_contents">
 			
-			<!-- 탭 : 회원(개인) -->
+			<!-- 탭 : 개인회원 -->
 			<form id="indvLginForm" action="/cm/z/b/0210/openLginPage.do" method="POST" novalidate="novalidate">
 			<input type="hidden" id="indvLginTyCd" name="indvLginTyCd">
 			<input type="hidden" id="indvMberTyCd" name="indvMberTyCd">
@@ -573,20 +573,20 @@
 							</a>
 						</li>
 						<li>
-							<a href="javascript:void(0);" id="btnIndvRgstBnkCrt">
+							<a href="javascript:void(0);" id="btnIndvRgstBnkCrt" role="button">
 								<span class="ico24_finance_finance"></span> <!-- p[고도화] 클래스 수정 -->
 								<span class="txt">금융인증서</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:void(0);" id="btnIndvRgstCmnCrt">
+							<a href="javascript:void(0);" id="btnIndvRgstCmnCrt" role="button">
 								<span class="ico24_finance_joint"></span>
 								<span class="txt">공동인증서</span>
 							</a>
 						</li>
 						<li>
 							<!-- [고도화] 클래스 및 태그 추가 -->
-							<a href="javascript:void(0);" id="btnIndvEasyCrt" class="link-easy">
+							<a href="javascript:void(0);" id="btnIndvEasyCrt" class="link-easy" role="button">
 								<span class="ico24_finance_certification"></span>
 								<span class="txt">간편인증</span>
 								<div class="ico_logo">
@@ -606,13 +606,13 @@
 							<!-- //[고도화] 클래스 및 태그 추가 -->
 						</li>
 						<li>
-							<a href="javascript:void(0);" id="btnIndvIpinCrt">
+							<a href="javascript:void(0);" id="btnIndvIpinCrt" role="button">
 								<span class="ico24_finance_ipin"></span>
 								<span class="txt">아이핀인증</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:void(0);" id="btn_idpopup">
+							<a href="javascript:void(0);" id="btn_idpopup" role="button">
 								<span class="ico24_finance_lock"></span>
 								<span class="txt">아이디/비밀번호</span>
 							</a>
@@ -661,7 +661,7 @@
 				</div>
 				<!-- //[고도화] 태그 및 위치 수정 -->
 			</div>
-			<!-- // 탭 : 회원(개인) -->
+			<!-- // 탭 : 개인회원 -->
 
 			<!-- 아이디 pw팝업 -->
 			<div class="popup_full in_page" id="idpopup" tab-index="0" style="display: none;">
@@ -797,12 +797,12 @@
 							<ul>
 								<li>
 									<a href="#none" id="btnEntrCrt">
-										<span class="ico24_finance_joint"></span>
+										<span class="ico24_finance_joint" role="button"></span>
 										<span class="txt">공동인증서</span>
 									</a>
 								</li>
 								<li>
-									<a href="#none" id="btnEntrFinanCrt">
+									<a href="#none" id="btnEntrFinanCrt" role="button">
 										<span class="ico24_finance_finance"></span>
 										<span class="txt">사업자용 금융인증서</span>
 									</a>
@@ -814,7 +814,7 @@
 							<ul>
 								<li>
 									<!-- [고도화] 클래스 및 태그 추가 -->
-									<a href="javascript:void(0);"  class="link-easy">
+									<a href="javascript:void(0);"  class="link-easy" role="button">
 										<span class="ico24_finance_certification"></span>
 										<span class="txt">간편인증</span>
 										<div class="ico_logo">
@@ -874,7 +874,7 @@
 				</div>
 				<!-- //[고도화] 태그 및 위치 수정 -->
 			</div>
-			<!-- // 탭 : 회원(기업) -->
+			<!-- // 탭 : 기업회원 -->
 			<input type="hidden" id="keyIndex_agetSsnSco" name="keyIndex_agetSsnSco" value="8a108622b18d3d49fd5d134355b718bee70f00f9638928c0cf16e93e77b3a3d61eb6031342f438b74e36f033efd80b8392191cc09982ebe171512fbc1966a93cd837f71570027cdbfb5f82b6c995437a9456e29491670eeb28bbd628bb57f37f38568064a2052c2010d87831556af3376fbb452ad0b484467ef4712a55648aaea508a953546fcb90e185e5c1c92115ca840c451171453a4127088596bab4fd4b2b3c8306438aa599e6adcfedf9158434c25c8d19204eaf61645e8ea2c740d8bf24fc13c6dea1cc3cf19e0847823894413c20eccb0665069f05d12e0b266dc5ed802eacdcfaef5ce2039943af1c87dc985671657946e6edc6a002ec6ade50ad6f"><input type="hidden" id="keyboardType_agetSsnSco" name="keyboardType_agetSsnSco" value="qwertyMobile"><input type="hidden" id="fieldType_agetSsnSco" name="fieldType_agetSsnSco" value="password"><input type="hidden" id="transkeyUuid" name="transkeyUuid" value="1fd329a53ac6e52e165801d2c4bbf57d65d67077041f0744ea72d7e3e7956ab6"><input type="hidden" id="transkey_agetSsnSco" name="transkey_agetSsnSco" value=""><input type="hidden" id="transkey_HM_agetSsnSco" name="transkey_HM_agetSsnSco" value=""></form>
 	
 			
