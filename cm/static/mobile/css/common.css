@@ -5056,14 +5056,18 @@ a + .label_txt, .label_txt + span, .label_txt + strong {
 
 
 /* 로그인 CSS 수정 */
+.login--style .ico24_finance_finance { background: url(../images/login_new/ico24_join1.svg) no-repeat;}
 .login--style .ico24_finance_joint { background: url(../images/login_new/ico24_join2.svg) no-repeat;}
+.login--style .ico24_finance_certification { background: url(../images/login_new/ico24_join3.svg) no-repeat;}
+.login--style .ico24_finance_ipin { background: url(../images/login_new/ico24_join4.svg) no-repeat;}
+.login--style .ico24_finance_lock { background: url(../images/login_new/ico24_join5.svg) no-repeat;}
 .login--style .tab_menu { margin-top: 24px;}
 .login--style .tab_menu > ul { padding-right: 0;}
 .login--style .tab_menu > ul > li button { padding: 11px 24px;}
 .login--style .certification_type li a { height: 64px !important; border: none; background-color: #F5F5F5;}
 .login--style .certification_type li a .txt { font-weight: 600;}
-.login--style .certification_type li a.link-easy .ico24_finance_certification { width: 32px;}
-.login--style .certification_type li a.link-easy .txt { width: 103px; margin-left: 0;}
+.login--style .certification_type li a.link-easy .ico24_finance_certification { width: 24px;}
+.login--style .certification_type li a.link-easy .txt { width: 103px;}
 .login--style .certification_type li .ico_logo { display: flex; flex-wrap: wrap; flex: 1; margin: -4px 0 0 -4px;}
 .login--style .certification_type li .ico_logo i { display: block; width: 20px; height: 20px; margin: 4px 0 0 4px;}
 .login--style .certification_type li .ico_logo i.ico_kakao { background: url(../images/login_new/logo80_80_kakao.png) no-repeat; background-size: 20px;}
